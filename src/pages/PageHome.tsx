@@ -81,12 +81,13 @@ const PageHome = ({ headerHeight }: PageHomeProps) => {
   };
   const charToShow: any[] = allCharacters
     .sort((a, b) => characterSortMap.getSortFunc(sortCriteria, sortOrder)(a, b))
-    .filter((char) =>
-      char.characterKey === "Traveler"
-        ? allTravelerElements.some((ele) => elementFilter.includes(ele))
-        : elementFilter.includes(char.vision_key.toLowerCase()) &&
-          weaponFilter.includes(char.weapon_type.toLowerCase()) &&
-          char.name.toLowerCase().includes(searchName.toLowerCase())
+    .filter(
+      (char) =>
+        (char.characterKey === "Traveler"
+          ? allTravelerElements.some((ele) => elementFilter.includes(ele))
+          : elementFilter.includes(char.vision_key.toLowerCase())) &&
+        weaponFilter.includes(char.weapon_type.toLowerCase()) &&
+        char.name.toLowerCase().includes(searchName.toLowerCase())
     );
   const count = Math.ceil(charToShow.length / PER_PAGE);
   const _data = usePagination(charToShow, PER_PAGE);
