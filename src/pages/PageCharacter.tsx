@@ -140,7 +140,11 @@ const CharacterDisplayCard = ({
               )}
             </Box>
             {!!onClose && (
-              <CloseButton onClick={onClose} sx={{ borderRadius: 4 }} />
+              <CloseButton
+                onClick={onClose}
+                sx={{ borderRadius: 4 }}
+                aria-label="close"
+              />
             )}
           </Box>
           <Tabs

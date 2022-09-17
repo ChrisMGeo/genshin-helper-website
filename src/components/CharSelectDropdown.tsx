@@ -46,7 +46,12 @@ export default function CharSelectDropdown({
         aria-controls={open ? "basic-menu-open" : "basic-menu-close"}
         aria-haspopup="true"
         aria-expanded={open ? "true" : "false"}
-        startIcon={<ThumbSide src={characterAssets[characterKey].IconSide} />}
+        startIcon={
+          <ThumbSide
+            src={characterAssets[characterKey].IconSide}
+            alt={characterName}
+          />
+        }
       >
         {characterName ?? "Select a Character"}
       </Button>
