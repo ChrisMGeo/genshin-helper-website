@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/genshin-helper-website/static/css/main.e6c13ad2.css",
-    "main.js": "/genshin-helper-website/static/js/main.2e36c780.js",
+    "main.js": "/genshin-helper-website/static/js/main.c2057404.js",
     "static/js/860.caf70c78.chunk.js": "/genshin-helper-website/static/js/860.caf70c78.chunk.js",
-    "static/js/756.b4fdc506.chunk.js": "/genshin-helper-website/static/js/756.b4fdc506.chunk.js",
+    "static/js/756.e6424f14.chunk.js": "/genshin-helper-website/static/js/756.e6424f14.chunk.js",
     "static/js/787.651de070.chunk.js": "/genshin-helper-website/static/js/787.651de070.chunk.js",
     "static/js/811.8df2f9f9.chunk.js": "/genshin-helper-website/static/js/811.8df2f9f9.chunk.js",
     "static/js/807.77bbc88b.chunk.js": "/genshin-helper-website/static/js/807.77bbc88b.chunk.js",
@@ -35,9 +35,9 @@
     "static/media/constellation3.webp": "/genshin-helper-website/static/media/constellation3.2185ca854237b7dac5c2.webp",
     "static/media/passive3.webp": "/genshin-helper-website/static/media/passive3.6e726ad0460c98c06a92.webp",
     "main.e6c13ad2.css.map": "/genshin-helper-website/static/css/main.e6c13ad2.css.map",
-    "main.2e36c780.js.map": "/genshin-helper-website/static/js/main.2e36c780.js.map",
+    "main.c2057404.js.map": "/genshin-helper-website/static/js/main.c2057404.js.map",
     "860.caf70c78.chunk.js.map": "/genshin-helper-website/static/js/860.caf70c78.chunk.js.map",
-    "756.b4fdc506.chunk.js.map": "/genshin-helper-website/static/js/756.b4fdc506.chunk.js.map",
+    "756.e6424f14.chunk.js.map": "/genshin-helper-website/static/js/756.e6424f14.chunk.js.map",
     "787.651de070.chunk.js.map": "/genshin-helper-website/static/js/787.651de070.chunk.js.map",
     "811.8df2f9f9.chunk.js.map": "/genshin-helper-website/static/js/811.8df2f9f9.chunk.js.map",
     "807.77bbc88b.chunk.js.map": "/genshin-helper-website/static/js/807.77bbc88b.chunk.js.map",
@@ -46,6 +46,6 @@
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2e36c780.js"
+    "static/js/main.c2057404.js"
   ]
 }
