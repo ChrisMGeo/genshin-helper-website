@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/genshin-helper-website/static/css/main.e6c13ad2.css",
-    "main.js": "/genshin-helper-website/static/js/main.1b2653d1.js",
+    "main.js": "/genshin-helper-website/static/js/main.3e02bac1.js",
     "static/js/860.52be383a.chunk.js": "/genshin-helper-website/static/js/860.52be383a.chunk.js",
-    "static/js/955.73753bba.chunk.js": "/genshin-helper-website/static/js/955.73753bba.chunk.js",
+    "static/js/955.e751626c.chunk.js": "/genshin-helper-website/static/js/955.e751626c.chunk.js",
     "static/js/787.651de070.chunk.js": "/genshin-helper-website/static/js/787.651de070.chunk.js",
     "static/js/983.c6bfed5d.chunk.js": "/genshin-helper-website/static/js/983.c6bfed5d.chunk.js",
     "static/js/886.2e2e1db9.chunk.js": "/genshin-helper-website/static/js/886.2e2e1db9.chunk.js",
@@ -41,9 +41,9 @@
     "static/media/constellation3.webp": "/genshin-helper-website/static/media/constellation3.2185ca854237b7dac5c2.webp",
     "static/media/passive3.webp": "/genshin-helper-website/static/media/passive3.6e726ad0460c98c06a92.webp",
     "main.e6c13ad2.css.map": "/genshin-helper-website/static/css/main.e6c13ad2.css.map",
-    "main.1b2653d1.js.map": "/genshin-helper-website/static/js/main.1b2653d1.js.map",
+    "main.3e02bac1.js.map": "/genshin-helper-website/static/js/main.3e02bac1.js.map",
     "860.52be383a.chunk.js.map": "/genshin-helper-website/static/js/860.52be383a.chunk.js.map",
-    "955.73753bba.chunk.js.map": "/genshin-helper-website/static/js/955.73753bba.chunk.js.map",
+    "955.e751626c.chunk.js.map": "/genshin-helper-website/static/js/955.e751626c.chunk.js.map",
     "787.651de070.chunk.js.map": "/genshin-helper-website/static/js/787.651de070.chunk.js.map",
     "983.c6bfed5d.chunk.js.map": "/genshin-helper-website/static/js/983.c6bfed5d.chunk.js.map",
     "886.2e2e1db9.chunk.js.map": "/genshin-helper-website/static/js/886.2e2e1db9.chunk.js.map",
@@ -52,6 +52,6 @@
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.1b2653d1.js"
+    "static/js/main.3e02bac1.js"
   ]
 }
