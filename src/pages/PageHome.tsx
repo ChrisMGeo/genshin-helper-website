@@ -8,7 +8,7 @@ import {
 import {
   Avatar,
   Box,
-  Card,
+  Collapse,
   Grid,
   Pagination,
   Skeleton,
@@ -35,12 +35,15 @@ import usePagination from "../hooks/usePagination";
 import useMediaQueryUp from "../hooks/useMediaQueryUp";
 import CardContentEvenPadding from "../components/CardContentEvenPadding";
 import { allTravelerElements } from "../types/traveler";
+import StickyCard from "../components/StickyCard";
+import ExpandMore from "../components/ExpandMore";
+import { ExpandMoreRounded } from "@mui/icons-material";
 
-interface PageHomeProps {
-  headerHeight: number;
-}
-
-const PageHome = ({ headerHeight }: PageHomeProps) => {
+const PageHome = () => {
+  const [expanded, setExpanded] = useLocalStorage("expanded", false);
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
   const [page, setPage] = useState(1);
   const PER_PAGE = 25;
 
@@ -115,100 +118,103 @@ const PageHome = ({ headerHeight }: PageHomeProps) => {
   }, [elementFilter, weaponFilter, searchName]);
   return (
     <Box my={1} display="flex" flexDirection="column" gap={1}>
-      <Card
-        sx={{
-          borderRadius: 4,
-          position: "sticky",
-          top: `${headerHeight + 8}px`,
-          zIndex: 2,
-        }}
-      >
+      <StickyCard>
         <CardContentEvenPadding
           sx={{ display: "flex", flexDirection: "column", gap: 1 }}
         >
-          <Grid container spacing={1}>
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <Grid container spacing={1}>
+              <Grid item>
+                <ToggleButtonGroup
+                  value={elementFilter}
+                  onChange={handleElements}
+                >
+                  {allElements.map((element) => (
+                    <ToggleButton
+                      value={element}
+                      color="success"
+                      key={element}
+                      aria-label={element}
+                    >
+                      <FontAwesomeIcon
+                        icon={elementSvg[element] as any}
+                        color={theme.palette[element].main}
+                        style={{
+                          fontSize: `${toggleButtonSize}px`,
+                        }}
+                      />
+                    </ToggleButton>
+                  ))}
+                </ToggleButtonGroup>
+              </Grid>
+              <Grid item>
+                <ToggleButtonGroup
+                  value={weaponFilter}
+                  onChange={handleWeapons}
+                >
+                  {allWeaponTypeKeys.map((weapon) => (
+                    <ToggleButton
+                      value={weapon}
+                      key={weapon}
+                      color="success"
+                      aria-label={weapon}
+                    >
+                      <Avatar
+                        src={getWeaponIcon(weapon)}
+                        sx={{
+                          width: toggleButtonSizeMap,
+                          height: toggleButtonSizeMap,
+                        }}
+                        alt={weapon as string}
+                      />
+                    </ToggleButton>
+                  ))}
+                </ToggleButtonGroup>
+              </Grid>
+              <Grid item flexGrow={1}>
+                <TextField
+                  value={searchName}
+                  onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
+                    setSearchName(e.target.value)
+                  }
+                  autoFocus
+                  size="small"
+                  label="Character Name"
+                  sx={{ height: "100%" }}
+                  InputProps={{
+                    sx: { height: "100%" },
+                  }}
+                />
+              </Grid>
+              <Grid item>
+                <SortByButton
+                  sx={{ height: "100%" }}
+                  sortKeys={[...allCharacterSortCriteria]}
+                  value={sortCriteria}
+                  onChangeCriteria={setSortCriteria}
+                  order={sortOrder}
+                  onChangeOrder={setSortOrder}
+                />
+              </Grid>
+            </Grid>
+          </Collapse>
+          <Grid container spacing={1} alignItems="flex-end">
             <Grid item>
-              <ToggleButtonGroup
-                value={elementFilter}
-                onChange={handleElements}
-              >
-                {allElements.map((element) => (
-                  <ToggleButton
-                    value={element}
-                    color="success"
-                    key={element}
-                    aria-label={element}
-                  >
-                    <FontAwesomeIcon
-                      icon={elementSvg[element] as any}
-                      color={theme.palette[element].main}
-                      style={{
-                        fontSize: `${toggleButtonSize}px`,
-                      }}
-                    />
-                  </ToggleButton>
-                ))}
-              </ToggleButtonGroup>
-            </Grid>
-            <Grid item>
-              <ToggleButtonGroup value={weaponFilter} onChange={handleWeapons}>
-                {allWeaponTypeKeys.map((weapon) => (
-                  <ToggleButton
-                    value={weapon}
-                    key={weapon}
-                    color="success"
-                    aria-label={weapon}
-                  >
-                    <Avatar
-                      src={getWeaponIcon(weapon)}
-                      sx={{
-                        width: toggleButtonSizeMap,
-                        height: toggleButtonSizeMap,
-                      }}
-                      alt={weapon as string}
-                    />
-                  </ToggleButton>
-                ))}
-              </ToggleButtonGroup>
-            </Grid>
-            <Grid item flexGrow={1}>
-              <TextField
-                value={searchName}
-                onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-                  setSearchName(e.target.value)
-                }
-                autoFocus
-                size="small"
-                label="Character Name"
-                sx={{ height: "100%" }}
-                InputProps={{
-                  sx: { height: "100%" },
-                }}
-              />
-            </Grid>
-            <Grid item>
-              <SortByButton
-                sx={{ height: "100%" }}
-                sortKeys={[...allCharacterSortCriteria]}
-                value={sortCriteria}
-                onChangeCriteria={setSortCriteria}
-                order={sortOrder}
-                onChangeOrder={setSortOrder}
-              />
-            </Grid>
-          </Grid>
-          <Grid container alignItems="flex-end">
-            <Grid item flexGrow={1}>
               <Pagination
                 count={count}
                 page={page}
                 onChange={handlePageChange}
               />
             </Grid>
+            <Grid item flexGrow={1}></Grid>
+            <Grid item>
+              <ExpandMore expand={expanded} onClick={handleExpandClick}>
+                <ExpandMoreRounded />
+              </ExpandMore>
+            </Grid>
           </Grid>
         </CardContentEvenPadding>
-      </Card>
-      <div id="back-to-top-anchor" />
+      </StickyCard>
       <Suspense
         fallback={
           <Skeleton

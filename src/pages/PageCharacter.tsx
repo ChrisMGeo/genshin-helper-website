@@ -12,6 +12,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import { allTravelerElements, TravelerElementKey } from "../types/traveler";
 import DropdownButton from "../components/DropdownButton";
 import { theme } from "../Theme";
+import StickyCard from "../components/StickyCard";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -42,11 +43,7 @@ const a11yProps = (index: number) => {
   };
 };
 
-interface PageCharacterProps {
-  headerHeight: number;
-}
-
-const PageCharacter = ({ headerHeight }: PageCharacterProps) => {
+const PageCharacter = () => {
   const navigate = useNavigate();
   const onClose = useCallback(() => navigate("/"), [navigate]);
 
@@ -59,18 +56,14 @@ const PageCharacter = ({ headerHeight }: PageCharacterProps) => {
         fallback={<Skeleton variant="rectangular" width="100%" height={1000} />}
       >
         {characterKey && (
-          <CharacterDisplayCard
-            characterKey={characterKey}
-            onClose={onClose}
-            headerHeight={headerHeight}
-          />
+          <CharacterDisplayCard characterKey={characterKey} onClose={onClose} />
         )}
       </Suspense>
     </Box>
   );
 };
 
-interface CharacterDisplayCardProps extends PageCharacterProps {
+interface CharacterDisplayCardProps {
   characterKey: CharacterKey;
   onClose?: () => void;
 }
@@ -78,7 +71,6 @@ interface CharacterDisplayCardProps extends PageCharacterProps {
 const CharacterDisplayCard = ({
   characterKey,
   onClose,
-  headerHeight,
 }: CharacterDisplayCardProps) => {
   const [buildTab, setBuildTab] = useState(0);
   const handleBuildChange = (_e: React.SyntheticEvent, newValue: number) => {
@@ -96,14 +88,7 @@ const CharacterDisplayCard = ({
 
   return (
     <>
-      <Card
-        sx={{
-          borderRadius: 4,
-          position: "sticky",
-          top: `${headerHeight + 8}px`,
-          zIndex: 2,
-        }}
-      >
+      <StickyCard>
         <CardContentEvenPadding
           sx={{ display: "flex", flexDirection: "column", gap: 1 }}
         >
@@ -188,8 +173,7 @@ const CharacterDisplayCard = ({
             />
           </Tabs>
         </CardContentEvenPadding>
-      </Card>
-      <div id="back-to-top-anchor" />
+      </StickyCard>
       <Suspense
         fallback={
           <Skeleton

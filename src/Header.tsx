@@ -8,7 +8,6 @@ import {
   useTheme,
 } from "@mui/material";
 import { Suspense } from "react";
-import Offset from "./components/Offset";
 
 export default function Header() {
   return (
@@ -25,7 +24,11 @@ function HeaderContent() {
   if (isMobile) return <MobileHeader />;
   return (
     <>
-      <AppBar position="fixed" sx={{ display: "flex", flexWrap: "nowrap" }}>
+      <AppBar
+        sx={{ display: "flex", flexWrap: "nowrap" }}
+        position="static"
+        id="back-to-top-anchor"
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography variant="h6" noWrap>
@@ -34,14 +37,17 @@ function HeaderContent() {
           </Toolbar>
         </Container>
       </AppBar>
-      <Offset />
     </>
   );
 }
 function MobileHeader() {
   return (
     <>
-      <AppBar position="fixed" sx={{ display: "flex", flexWrap: "nowrap" }}>
+      <AppBar
+        position="static"
+        sx={{ display: "flex", flexWrap: "nowrap" }}
+        id="back-to-top-anchor"
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography variant="h6" noWrap>
@@ -50,7 +56,6 @@ function MobileHeader() {
           </Toolbar>
         </Container>
       </AppBar>
-      <Toolbar />
     </>
   );
 }

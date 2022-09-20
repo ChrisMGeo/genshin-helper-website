@@ -17,7 +17,6 @@ import Header from "./Header";
 import { theme } from "./Theme";
 import { lazy, Suspense } from "react";
 import Footer from "./Footer";
-import useElementSize from "./hooks/useElementSize";
 const PageHome = lazy(() => import("./pages/PageHome"));
 const PageCharacter = lazy(() => import("./pages/PageCharacter"));
 
@@ -72,10 +71,9 @@ const App = () => {
   );
 };
 const Content = () => {
-  const [headerRef, { height: headerHeight }] = useElementSize();
   return (
     <Grid container direction="column" minHeight="100vh">
-      <Grid item ref={headerRef}>
+      <Grid item>
         <Header />
       </Grid>
       <Container maxWidth="xl" sx={{ px: { xs: 0.5, sm: 1, md: 2 } }}>
@@ -88,11 +86,8 @@ const Content = () => {
           }
         >
           <Routes>
-            <Route index element={<PageHome headerHeight={headerHeight} />} />
-            <Route
-              path=":characterKey/*"
-              element={<PageCharacter headerHeight={headerHeight} />}
-            />
+            <Route index element={<PageHome />} />
+            <Route path=":characterKey/*" element={<PageCharacter />} />
           </Routes>
         </Suspense>
       </Container>
