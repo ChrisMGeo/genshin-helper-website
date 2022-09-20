@@ -20,11 +20,11 @@ interface CharSelectDropdownProps {
     | ElementKey;
 }
 
-export default function CharSelectDropdown({
+const CharSelectDropdown = ({
   characterKey,
   characterName,
   color = "success",
-}: CharSelectDropdownProps) {
+}: CharSelectDropdownProps) => {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -73,4 +73,5 @@ export default function CharSelectDropdown({
       </Menu>
     </>
   );
-}
+};
+export default CharSelectDropdown;

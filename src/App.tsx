@@ -20,7 +20,7 @@ import Footer from "./Footer";
 const PageHome = lazy(() => import("./pages/PageHome"));
 const PageCharacter = lazy(() => import("./pages/PageCharacter"));
 
-function ScrollTop({ children }: { children: React.ReactElement }) {
+const ScrollTop = ({ children }: { children: React.ReactElement }) => {
   const trigger = useScrollTrigger({
     target: window,
     disableHysteresis: true,
@@ -51,7 +51,7 @@ function ScrollTop({ children }: { children: React.ReactElement }) {
       </Box>
     </Zoom>
   );
-}
+};
 
 const App = () => {
   return (

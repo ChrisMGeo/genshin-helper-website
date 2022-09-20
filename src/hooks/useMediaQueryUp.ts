@@ -1,6 +1,6 @@
 import { useMediaQuery, useTheme } from "@mui/material";
 
-export default function useMediaQueryUp() {
+const useMediaQueryUp = () => {
   const theme = useTheme();
   const sm = useMediaQuery(theme.breakpoints.up("sm"));
   const md = useMediaQuery(theme.breakpoints.up("md"));
@@ -11,4 +11,5 @@ export default function useMediaQueryUp() {
   if (md) return "md";
   if (sm) return "sm";
   return "xs";
-}
+};
+export default useMediaQueryUp;

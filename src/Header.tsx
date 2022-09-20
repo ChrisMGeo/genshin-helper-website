@@ -9,15 +9,15 @@ import {
 } from "@mui/material";
 import { Suspense } from "react";
 
-export default function Header() {
+const Header = () => {
   return (
     <Suspense fallback={<Skeleton variant="rectangular" height={56} />}>
       <HeaderContent />
     </Suspense>
   );
-}
+};
 
-function HeaderContent() {
+const HeaderContent = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -39,8 +39,8 @@ function HeaderContent() {
       </AppBar>
     </>
   );
-}
-function MobileHeader() {
+};
+const MobileHeader = () => {
   return (
     <>
       <AppBar
@@ -58,4 +58,5 @@ function MobileHeader() {
       </AppBar>
     </>
   );
-}
+};
+export default Header;

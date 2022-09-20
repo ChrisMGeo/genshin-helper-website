@@ -3,14 +3,14 @@ import { grey } from "@mui/material/colors";
 import { Suspense } from "react";
 import packageInfo from "../package.json";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <Suspense fallback={<Skeleton variant="rectangular" height={64} />}>
       <FooterContent />
     </Suspense>
   );
-}
-function FooterContent() {
+};
+const FooterContent = () => {
   return (
     <AppBar position="static">
       <Box
@@ -32,4 +32,5 @@ function FooterContent() {
       </Box>
     </AppBar>
   );
-}
+};
+export default Footer;

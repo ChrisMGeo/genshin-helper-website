@@ -7,12 +7,12 @@ export type DropdownButtonProps = Omit<ButtonProps, "title"> & {
   id?: string;
   children: React.ReactNode;
 };
-export default function DropdownButton({
+const DropdownButton = ({
   title,
   children,
   id = "dropdownbtn",
   ...props
-}: DropdownButtonProps) {
+}: DropdownButtonProps) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = useCallback(
@@ -57,4 +57,5 @@ export default function DropdownButton({
       </Menu>
     </Suspense>
   );
-}
+};
+export default DropdownButton;
