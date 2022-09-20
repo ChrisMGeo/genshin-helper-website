@@ -30,7 +30,7 @@ import {
   SortOrder,
 } from "../types/sort";
 
-import { allCharInfo as allCharacters } from "../types/api";
+import { allCharacters } from "../types/api";
 import usePagination from "../hooks/usePagination";
 import useMediaQueryUp from "../hooks/useMediaQueryUp";
 import CardContentEvenPadding from "../components/CardContentEvenPadding";
@@ -122,7 +122,7 @@ const PageHome = () => {
         <CardContentEvenPadding
           sx={{ display: "flex", flexDirection: "column", gap: 1 }}
         >
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <Collapse in={expanded} timeout={200} unmountOnExit easing="linear">
             <Grid container spacing={1}>
               <Grid item>
                 <ToggleButtonGroup
@@ -198,7 +198,7 @@ const PageHome = () => {
               </Grid>
             </Grid>
           </Collapse>
-          <Grid container spacing={1} alignItems="flex-end">
+          <Grid container spacing={1} alignItems="center">
             <Grid item>
               <Pagination
                 count={count}

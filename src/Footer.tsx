@@ -20,13 +20,14 @@ function FooterContent() {
         gap={2}
       >
         <Typography variant="caption" sx={{ color: grey[200] }}>
-          Genshin Optimizer is not affiliated with or endorsed by HoYoverse.
+          Genshin Helper Website is not affiliated with or endorsed by
+          HoYoverse.
         </Typography>
         <Typography
           variant="caption"
           sx={{ color: grey[200], textAlign: "right" }}
         >
-          Genshin Optimizer Version: <code>{packageInfo.version}</code>
+          Genshin Helper Version: <code>{packageInfo.version}</code>
         </Typography>
       </Box>
     </AppBar>

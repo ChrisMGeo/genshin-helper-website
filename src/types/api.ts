@@ -1,4 +1,4 @@
-import { allCharacterKeys, CharacterKey } from "./consts";
+import { allCharacterKeys, CharacterKey, ElementKey } from "./consts";
 import allCharacterInfo from "../data/Characters/allCharacterInfo.json";
 import list from "../data/Characters/list.json";
 const allCharactersKeyPairs: { [characterKey in CharacterKey]: string } =
@@ -35,4 +35,14 @@ const allCharInfo = [
     };
   }),
 ];
-export { apiCharacterKeys, apiToCharKeyMap, allCharInfo };
+const allCharacters = allCharacterKeys.map((characterKey) => {
+  const result = allCharInfo.find((char) =>
+    characterKey === "Traveler"
+      ? char.characterKey === "Traveler" &&
+        (char.vision_key.toLowerCase() as ElementKey) === "anemo"
+      : char.characterKey === characterKey
+  );
+  if (result !== undefined) return result;
+  return allCharInfo[0];
+});
+export { apiCharacterKeys, apiToCharKeyMap, allCharInfo, allCharacters };

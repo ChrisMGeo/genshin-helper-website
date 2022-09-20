@@ -3,7 +3,7 @@ import { useState } from "react";
 import characterAssets from "../data/Characters";
 import { CharacterKey, ElementKey } from "../types/consts";
 import ThumbSide from "./ThumbSide";
-import { allCharInfo as allCharacterInfo } from "../types/api";
+import { allCharacters } from "../types/api";
 import { useNavigate } from "react-router-dom";
 
 interface CharSelectDropdownProps {
@@ -61,7 +61,7 @@ export default function CharSelectDropdown({
         onClose={() => handleClose()}
         MenuListProps={{ "aria-labelledby": "character-select-button" }}
       >
-        {allCharacterInfo.map((char) => (
+        {allCharacters.map((char) => (
           <MenuItem
             key={`${char.id}`}
             onClick={() => handleClose(char.characterKey)}

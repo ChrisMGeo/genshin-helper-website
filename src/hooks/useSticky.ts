@@ -3,9 +3,10 @@ import { useEffect, useRef, useState } from "react";
 /**
  * Returns a ref, and a stateful value bound to the ref
  */
-export function useSticky<T extends HTMLElement>() {
+export function useSticky<T extends HTMLElement>(length = 20) {
   const stickyRef = useRef<T>(null);
   const [sticky, setSticky] = useState(false);
+  const [stickyFactor, setStickyFactor] = useState(0);
 
   useEffect(() => {
     // Observe when ref enters or leaves sticky state
@@ -15,6 +16,13 @@ export function useSticky<T extends HTMLElement>() {
       const refPageOffset = stickyRef.current.getBoundingClientRect().top;
       const stickyOffset = parseInt(getComputedStyle(stickyRef.current).top);
       const stickyActive = refPageOffset <= stickyOffset;
+      if (refPageOffset <= stickyOffset && stickyFactor !== 1) {
+        setStickyFactor(1);
+      } else {
+        setStickyFactor(
+          1 - Math.min(Math.abs(refPageOffset - stickyOffset) / length, 1)
+        );
+      }
 
       if (stickyActive && !sticky) setSticky(true);
       else if (!stickyActive && sticky) setSticky(false);
@@ -31,7 +39,8 @@ export function useSticky<T extends HTMLElement>() {
       window.removeEventListener("resize", observe);
       window.removeEventListener("orientationchange", observe);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sticky]);
 
-  return [stickyRef, sticky] as const;
+  return [stickyRef, sticky, stickyFactor] as const;
 }

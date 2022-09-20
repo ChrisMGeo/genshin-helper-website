@@ -101,15 +101,17 @@ const CharacterPreview = ({
                 <Chip
                   label={isTraveler ? "????" : (vision_key as string) ?? "N/A"}
                   color={`${
-                    ((vision_key as string) ?? "default").toLowerCase() as
-                      | "geo"
-                      | "anemo"
-                      | "dendro"
-                      | "pyro"
-                      | "hydro"
-                      | "electro"
-                      | "cryo"
-                      | "default"
+                    isTraveler
+                      ? "default"
+                      : (((vision_key as string) ?? "default").toLowerCase() as
+                          | "geo"
+                          | "anemo"
+                          | "dendro"
+                          | "pyro"
+                          | "hydro"
+                          | "electro"
+                          | "cryo"
+                          | "default")
                   }`}
                   size="small"
                   variant="outlined"
