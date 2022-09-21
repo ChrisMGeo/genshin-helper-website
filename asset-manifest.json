@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/genshin-helper-website/static/css/main.e6c13ad2.css",
-    "main.js": "/genshin-helper-website/static/js/main.f8086216.js",
+    "main.js": "/genshin-helper-website/static/js/main.ff413c1a.js",
     "static/js/231.85230b76.chunk.js": "/genshin-helper-website/static/js/231.85230b76.chunk.js",
-    "static/js/128.058aa224.chunk.js": "/genshin-helper-website/static/js/128.058aa224.chunk.js",
+    "static/js/128.260c768c.chunk.js": "/genshin-helper-website/static/js/128.260c768c.chunk.js",
     "static/js/787.651de070.chunk.js": "/genshin-helper-website/static/js/787.651de070.chunk.js",
     "static/js/942.5a7b6242.chunk.js": "/genshin-helper-website/static/js/942.5a7b6242.chunk.js",
     "static/js/763.ce7ce151.chunk.js": "/genshin-helper-website/static/js/763.ce7ce151.chunk.js",
@@ -36,9 +36,9 @@
     "static/media/passive3.webp": "/genshin-helper-website/static/media/passive3.6e726ad0460c98c06a92.webp",
     "static/media/sprint.webp": "/genshin-helper-website/static/media/sprint.32cad734a09c3f0cbb53.webp",
     "main.e6c13ad2.css.map": "/genshin-helper-website/static/css/main.e6c13ad2.css.map",
-    "main.f8086216.js.map": "/genshin-helper-website/static/js/main.f8086216.js.map",
+    "main.ff413c1a.js.map": "/genshin-helper-website/static/js/main.ff413c1a.js.map",
     "231.85230b76.chunk.js.map": "/genshin-helper-website/static/js/231.85230b76.chunk.js.map",
-    "128.058aa224.chunk.js.map": "/genshin-helper-website/static/js/128.058aa224.chunk.js.map",
+    "128.260c768c.chunk.js.map": "/genshin-helper-website/static/js/128.260c768c.chunk.js.map",
     "787.651de070.chunk.js.map": "/genshin-helper-website/static/js/787.651de070.chunk.js.map",
     "942.5a7b6242.chunk.js.map": "/genshin-helper-website/static/js/942.5a7b6242.chunk.js.map",
     "763.ce7ce151.chunk.js.map": "/genshin-helper-website/static/js/763.ce7ce151.chunk.js.map",
@@ -47,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f8086216.js"
+    "static/js/main.ff413c1a.js"
   ]
 }
