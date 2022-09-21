@@ -61,7 +61,7 @@ const App = () => {
         <HashRouter basename="/">
           <Content />
           <ScrollTop>
-            <Fab size="small" color="success" aria-label="scroll back to top">
+            <Fab size="small" color="default" aria-label="scroll back to top">
               <KeyboardArrowUp />
             </Fab>
           </ScrollTop>
