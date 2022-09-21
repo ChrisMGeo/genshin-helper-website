@@ -1,3 +1,4 @@
+/*eslint-disable*/
 let Flower = "";
 try {
   // eslint-disable-next-line

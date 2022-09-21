@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import Icon from "./Icon.webp";
 import AwakenIcon from "./AwakenIcon.webp";
 

@@ -2,7 +2,17 @@ import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { allCharacterKeys, CharacterKey, ElementKey } from "../types/consts";
 // import allCharacterInfo from "../data/Characters/allCharacterInfo.json";
 import { allCharInfo as allCharacterInfo } from "../types/api";
-import { Box, Card, MenuItem, Skeleton, Tab, Tabs } from "@mui/material";
+import {
+  Box,
+  Card,
+  Grid,
+  MenuItem,
+  Skeleton,
+  Stack,
+  Tab,
+  Tabs,
+  Typography,
+} from "@mui/material";
 import { Suspense, useCallback, useState } from "react";
 // import characterAssets from "../data/Characters";
 import CardContentEvenPadding from "../components/CardContentEvenPadding";
@@ -13,6 +23,9 @@ import { allTravelerElements, TravelerElementKey } from "../types/traveler";
 import DropdownButton from "../components/DropdownButton";
 import { theme } from "../Theme";
 import StickyCard from "../components/StickyCard";
+import SkillTalentCard from "../components/SkillTalentCard";
+import PassiveTalentCard from "../components/PassiveTalentCard";
+import ConstellationCard from "../components/ConstellationCard";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -184,12 +197,89 @@ const CharacterDisplayCard = ({
       >
         <Card sx={{ borderRadius: 4 }}>
           <CardContentEvenPadding>
-            <TabPanel value={buildTab} index={0}>
-              Content one
-            </TabPanel>
-            <TabPanel value={buildTab} index={1}>
-              Content two
-            </TabPanel>
+            <Stack flexDirection="column" gap={2}>
+              <Typography variant="h5">Build Info</Typography>
+              <TabPanel value={buildTab} index={0}>
+                Content one
+              </TabPanel>
+              <TabPanel value={buildTab} index={1}>
+                Content two
+              </TabPanel>
+            </Stack>
+          </CardContentEvenPadding>
+        </Card>
+        <Card sx={{ borderRadius: 4 }}>
+          <CardContentEvenPadding>
+            <Stack flexDirection="column" gap={2}>
+              <Typography variant="h5">Skills</Typography>
+              <Grid container spacing={2}>
+                {characterInfo.skillTalents.map(
+                  (skillTalent: any, index: number) => (
+                    <Grid
+                      item
+                      xs={12}
+                      sm={characterInfo.skillTalents.length < 4 ? 12 : 6}
+                      md={
+                        characterInfo.skillTalents.length < 4
+                          ? 12 / characterInfo.skillTalents.length
+                          : 6
+                      }
+                      lg={12 / characterInfo.skillTalents.length}
+                      key={index}
+                    >
+                      <SkillTalentCard
+                        skillTalent={skillTalent}
+                        characterKey={characterKey}
+                        characterInfo={characterInfo}
+                        travelerElement={travelerElement}
+                      />
+                    </Grid>
+                  )
+                )}
+              </Grid>
+              <Typography variant="h5">Passives</Typography>
+              <Grid container spacing={2}>
+                {characterInfo.passiveTalents.map(
+                  (passive: any, index: number) => {
+                    return (
+                      <Grid
+                        item
+                        xs={12}
+                        sm={12}
+                        md={isTraveler ? 6 : 4}
+                        lg={isTraveler ? 6 : 4}
+                        key={index}
+                      >
+                        <PassiveTalentCard
+                          passiveTalent={passive}
+                          characterKey={characterKey}
+                          travelerElement={travelerElement}
+                          index={(index + 1) as 1 | 2 | 3}
+                        />
+                      </Grid>
+                    );
+                  }
+                )}
+              </Grid>
+              <Typography variant="h5">
+                Constellations - {characterInfo.constellation}
+              </Typography>
+              <Grid container spacing={2}>
+                {characterInfo.constellations.map(
+                  (constellation: any, index: number) => {
+                    return (
+                      <Grid item xs={12} sm={12} md={4} lg={4} key={index}>
+                        <ConstellationCard
+                          constellation={constellation}
+                          characterKey={characterKey}
+                          travelerElement={travelerElement}
+                        />
+                      </Grid>
+                    );
+                  }
+                )}
+              </Grid>
+            </Stack>
           </CardContentEvenPadding>
         </Card>
       </Suspense>

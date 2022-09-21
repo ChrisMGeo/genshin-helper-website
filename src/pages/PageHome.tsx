@@ -122,7 +122,7 @@ const PageHome = () => {
         <CardContentEvenPadding
           sx={{ display: "flex", flexDirection: "column", gap: 1 }}
         >
-          <Collapse in={expanded} timeout={200} unmountOnExit easing="linear">
+          <Collapse in={expanded} timeout={200} unmountOnExit>
             <Grid container spacing={1}>
               <Grid item>
                 <ToggleButtonGroup

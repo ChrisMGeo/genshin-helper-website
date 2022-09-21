@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import Icon from "./Icon.webp";
 import IconSide from "./IconSide.webp";
 
@@ -17,6 +18,13 @@ import Constellation4 from "./constellation4.webp";
 import Constellation5 from "./constellation5.webp";
 import Constellation6 from "./constellation6.webp";
 import Card from "./Character_Card.webp";
+let Sprint: string;
+try {
+  //eslint-disable-next-line
+  Sprint = require(`./sprint.webp`);
+} catch (e) {
+  Sprint = "";
+}
 
 const Character = {
   Icon: Icon,
@@ -25,6 +33,7 @@ const Character = {
   Banner: Banner,
   Bar: Bar,
   Skill: Skill,
+  Sprint,
   Burst: Burst,
   Passive1: Passive1,
   Passive2: Passive2,
