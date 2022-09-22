@@ -174,6 +174,7 @@ const PageHome = () => {
               </Grid>
               <Grid item flexGrow={1}>
                 <TextField
+                  color="success"
                   value={searchName}
                   onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
                     setSearchName(e.target.value)

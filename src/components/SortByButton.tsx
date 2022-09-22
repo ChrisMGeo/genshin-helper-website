@@ -32,7 +32,7 @@ const SortByButton = ({
     <Box display="flex" alignItems="center" gap={1}>
       Sort by:
       <ButtonGroup {...props}>
-        <DropdownButton title={`${value}`}>
+        <DropdownButton title={`${value}`} color="success">
           {sortKeys.map((key) => (
             <MenuItem
               key={key}
@@ -45,6 +45,7 @@ const SortByButton = ({
           ))}
         </DropdownButton>
         <Button
+          color="success"
           onClick={() =>
             onChangeOrder(order === "Ascending" ? "Descending" : "Ascending")
           }
