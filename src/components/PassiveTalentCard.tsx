@@ -11,12 +11,13 @@ import characterAssets from "../data/Characters";
 import { TravelerElementKey } from "../types/traveler";
 import CardContentEvenPadding from "./CardContentEvenPadding";
 import { useState } from "react";
+import { PassiveTalent } from "../types/Character";
 
 interface PassiveTalentCardProps {
-  passiveTalent: any;
+  passiveTalent: PassiveTalent;
   characterKey: CharacterKey;
   travelerElement: TravelerElementKey;
-  index: 1 | 2 | 3;
+  index: 1 | 2 | 3 | 4;
 }
 const PassiveTalentCard = ({
   passiveTalent,
@@ -41,7 +42,11 @@ const PassiveTalentCard = ({
             <Avatar
               src={
                 characterKey !== "Traveler"
-                  ? characterAssets[characterKey][`Passive${index}`]
+                  ? characterKey === "SangonomiyaKokomi"
+                    ? characterAssets[characterKey][`Passive${index}`]
+                    : characterAssets[characterKey][
+                        `Passive${index as 1 | 2 | 3}`
+                      ]
                   : characterAssets.Traveler.elements[travelerElement][
                       `Passive${index}`
                     ]

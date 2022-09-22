@@ -15,14 +15,10 @@ import {
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { getWeaponIcon } from "../types/icons";
+import { CharacterEx } from "../types/Character";
 
 interface CharacterPreviewProps {
-  characterInfo: {
-    name: string;
-    vision_key: string;
-    weapon_type: string;
-    characterKey: CharacterKey;
-  };
+  characterInfo: CharacterEx;
 }
 const CharacterPreview = ({
   characterInfo: { characterKey, name, vision_key, weapon_type },

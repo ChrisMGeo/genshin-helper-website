@@ -12,10 +12,11 @@ import characterAssets from "../data/Characters";
 import { TravelerElementKey } from "../types/traveler";
 import CardContentEvenPadding from "./CardContentEvenPadding";
 import { useState } from "react";
+import { CharacterEx, SkillTalent } from "../types/Character";
 
 interface SkillTalentCardProps {
-  skillTalent: any;
-  characterInfo: any;
+  skillTalent: SkillTalent;
+  characterInfo: CharacterEx;
   characterKey: CharacterKey;
   travelerElement: TravelerElementKey;
 }

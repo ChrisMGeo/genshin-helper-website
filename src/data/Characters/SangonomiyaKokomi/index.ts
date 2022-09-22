@@ -9,7 +9,8 @@ import Burst from "./Burst.webp";
 
 import Passive1 from "./passive1.webp";
 import Passive2 from "./passive2.webp";
-import Passive3 from "./passive3.webp";
+import Passive3 from "./passive.webp";
+import Passive4 from "./passive3.webp";
 
 import Constellation1 from "./constellation1.webp";
 import Constellation2 from "./constellation2.webp";
@@ -38,6 +39,7 @@ const Character = {
   Passive1: Passive1,
   Passive2: Passive2,
   Passive3: Passive3,
+  Passive4: Passive4,
   Constellation1: Constellation1,
   Constellation2: Constellation2,
   Constellation3: Constellation3,

@@ -1,6 +1,7 @@
 import { allCharacterKeys, CharacterKey, ElementKey } from "./consts";
 import allCharacterInfo from "../data/Characters/allCharacterInfo.json";
 import list from "../data/Characters/list.json";
+import { Character, CharacterEx } from "./Character";
 const allCharactersKeyPairs: { [characterKey in CharacterKey]: string } =
   allCharacterKeys.reduce(
     (acc: { [characterKey in CharacterKey]: string }, curr: CharacterKey) => {
@@ -24,8 +25,8 @@ const swapMap = <K extends string | symbol | number, V>(obj: {
   return Object.fromEntries(Object.entries(obj).map(([k, v]) => [v, k]));
 };
 const apiToCharKeyMap = swapMap(apiCharacterKeys);
-const allCharInfo = [
-  ...allCharacterInfo.map((charInfo, index) => {
+const allCharInfo: CharacterEx[] = [
+  ...allCharacterInfo.map((charInfo: Character, index: number) => {
     return {
       ...charInfo,
       id: list[index],
@@ -35,14 +36,16 @@ const allCharInfo = [
     };
   }),
 ];
-const allCharacters = allCharacterKeys.map((characterKey) => {
-  const result = allCharInfo.find((char) =>
-    characterKey === "Traveler"
-      ? char.characterKey === "Traveler" &&
-        (char.vision_key.toLowerCase() as ElementKey) === "anemo"
-      : char.characterKey === characterKey
-  );
-  if (result !== undefined) return result;
-  return allCharInfo[0];
-});
+const allCharacters: CharacterEx[] = allCharacterKeys.map(
+  (characterKey: CharacterKey) => {
+    const result = allCharInfo.find((char: CharacterEx) =>
+      characterKey === "Traveler"
+        ? char.characterKey === "Traveler" &&
+          (char.vision_key.toLowerCase() as ElementKey) === "anemo"
+        : char.characterKey === characterKey
+    );
+    if (result !== undefined) return result;
+    return allCharInfo[0];
+  }
+);
 export { apiCharacterKeys, apiToCharKeyMap, allCharInfo, allCharacters };

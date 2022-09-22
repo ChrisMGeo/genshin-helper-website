@@ -1,11 +1,14 @@
 /*eslint-disable*/
+import {
+  allTravelerElements,
+  TravelerElementKey,
+} from "../../../types/traveler";
 import Icon from "./Icon.webp";
 import IconSide from "./IconSide.webp";
 import TravelerFemaleCard from "./Traveler_Female_Card.webp";
 import TravelerMaleCard from "./Traveler_Male_Card.webp";
-const elements = ["geo", "electro", "anemo", "dendro"];
-let elementURLs: any = {};
-elements.forEach((element) => {
+let elementURLs: { [key in TravelerElementKey]?: any } = {};
+allTravelerElements.forEach((element: TravelerElementKey) => {
   let Sprint: string;
   try {
     Sprint = require(`./${element}/sprint.webp`);

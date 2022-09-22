@@ -38,6 +38,7 @@ import { allTravelerElements } from "../types/traveler";
 import StickyCard from "../components/StickyCard";
 import ExpandMore from "../components/ExpandMore";
 import { ExpandMoreRounded } from "@mui/icons-material";
+import { CharacterEx } from "../types/Character";
 
 const PageHome = () => {
   const [expanded, setExpanded] = useLocalStorage("expanded", false);
@@ -82,7 +83,7 @@ const PageHome = () => {
       setWeaponFilter(newWeapons);
     }
   };
-  const charToShow: any[] = allCharacters
+  const charToShow: CharacterEx[] = allCharacters
     .sort((a, b) => characterSortMap.getSortFunc(sortCriteria, sortOrder)(a, b))
     .filter(
       (char) =>

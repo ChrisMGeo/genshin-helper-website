@@ -1,6 +1,5 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { allCharacterKeys, CharacterKey, ElementKey } from "../types/consts";
-// import allCharacterInfo from "../data/Characters/allCharacterInfo.json";
 import { allCharInfo as allCharacterInfo } from "../types/api";
 import {
   Box,
@@ -14,7 +13,6 @@ import {
   Typography,
 } from "@mui/material";
 import { Suspense, useCallback, useState } from "react";
-// import characterAssets from "../data/Characters";
 import CardContentEvenPadding from "../components/CardContentEvenPadding";
 import CloseButton from "../components/CloseButton";
 import CharSelectDropdown from "../components/CharSelectDropdown";
@@ -26,6 +24,12 @@ import StickyCard from "../components/StickyCard";
 import SkillTalentCard from "../components/SkillTalentCard";
 import PassiveTalentCard from "../components/PassiveTalentCard";
 import ConstellationCard from "../components/ConstellationCard";
+import {
+  CharacterEx,
+  Constellation,
+  PassiveTalent,
+  SkillTalent,
+} from "../types/Character";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -96,7 +100,7 @@ const CharacterDisplayCard = ({
 
   const characterInfo = allCharacterInfo.find((char) =>
     isTraveler ? char.id === travelerId : char.characterKey === characterKey
-  ) as any;
+  ) as CharacterEx;
   console.log(characterInfo);
 
   return (
@@ -214,7 +218,7 @@ const CharacterDisplayCard = ({
               <Typography variant="h5">Skills</Typography>
               <Grid container spacing={2}>
                 {characterInfo.skillTalents.map(
-                  (skillTalent: any, index: number) => (
+                  (skillTalent: SkillTalent, index: number) => (
                     <Grid
                       item
                       xs={12}
@@ -240,7 +244,7 @@ const CharacterDisplayCard = ({
               <Typography variant="h5">Passives</Typography>
               <Grid container spacing={2}>
                 {characterInfo.passiveTalents.map(
-                  (passive: any, index: number) => {
+                  (passive: PassiveTalent, index: number) => {
                     return (
                       <Grid
                         item
@@ -266,7 +270,7 @@ const CharacterDisplayCard = ({
               </Typography>
               <Grid container spacing={2}>
                 {characterInfo.constellations.map(
-                  (constellation: any, index: number) => {
+                  (constellation: Constellation, index: number) => {
                     return (
                       <Grid item xs={12} sm={12} md={4} lg={4} key={index}>
                         <ConstellationCard

@@ -11,9 +11,10 @@ import characterAssets from "../data/Characters";
 import { TravelerElementKey } from "../types/traveler";
 import CardContentEvenPadding from "./CardContentEvenPadding";
 import { useState } from "react";
+import { Constellation } from "../types/Character";
 
 interface ConstellationCardProps {
-  constellation: any;
+  constellation: Constellation;
   characterKey: CharacterKey;
   travelerElement: TravelerElementKey;
 }
