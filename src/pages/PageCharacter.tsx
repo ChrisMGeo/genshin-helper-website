@@ -25,11 +25,17 @@ import SkillTalentCard from "../components/SkillTalentCard";
 import PassiveTalentCard from "../components/PassiveTalentCard";
 import ConstellationCard from "../components/ConstellationCard";
 import {
+  Build,
+  CharacterBuilds,
   CharacterEx,
+  CharacterWBuilds,
   Constellation,
   PassiveTalent,
   SkillTalent,
 } from "../types/Character";
+import untypedBuilds from "../data/Characters/characterBuilds.json";
+import BuildDisplay from "../components/BuildDisplay";
+const characterBuilds: CharacterBuilds = untypedBuilds as CharacterBuilds;
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -102,6 +108,13 @@ const CharacterDisplayCard = ({
     isTraveler ? char.id === travelerId : char.characterKey === characterKey
   ) as CharacterEx;
   console.log(characterInfo);
+  const characterWBuilds: CharacterWBuilds = (
+    characterKey === "Traveler"
+      ? characterBuilds.Traveler[travelerElement as TravelerElementKey]
+      : characterBuilds[characterKey as Exclude<CharacterKey, "Dori">]
+  ) as CharacterWBuilds;
+  const builds: Build[] = (characterWBuilds?.builds as Build[]) ?? [];
+  console.log(builds);
 
   return (
     <>
@@ -164,30 +177,21 @@ const CharacterDisplayCard = ({
               },
             }}
           >
-            <Tab
-              label="Item one"
-              {...a11yProps(0)}
-              sx={{
-                color: `${
-                  theme.palette[
-                    (characterInfo.vision_key.toLowerCase() as ElementKey) ??
-                      "primary"
-                  ].main
-                } !important`,
-              }}
-            />
-            <Tab
-              label="Item two"
-              {...a11yProps(1)}
-              sx={{
-                color: `${
-                  theme.palette[
-                    (characterInfo.vision_key.toLowerCase() as ElementKey) ??
-                      "primary"
-                  ].main
-                } !important`,
-              }}
-            />
+            {builds.map((build, index) => (
+              <Tab
+                label={build.name}
+                {...a11yProps(index)}
+                sx={{
+                  color: `${
+                    theme.palette[
+                      (characterInfo.vision_key.toLowerCase() as ElementKey) ??
+                        "primary"
+                    ].main
+                  } !important`,
+                }}
+                key={index}
+              />
+            ))}
           </Tabs>
         </CardContentEvenPadding>
       </StickyCard>
@@ -203,12 +207,11 @@ const CharacterDisplayCard = ({
           <CardContentEvenPadding>
             <Stack flexDirection="column" gap={2}>
               <Typography variant="h5">Build Info</Typography>
-              <TabPanel value={buildTab} index={0}>
-                Content one
-              </TabPanel>
-              <TabPanel value={buildTab} index={1}>
-                Content two
-              </TabPanel>
+              {builds.map((build: Build, index) => (
+                <TabPanel value={buildTab} index={index} key={index}>
+                  <BuildDisplay build={build} />
+                </TabPanel>
+              ))}
             </Stack>
           </CardContentEvenPadding>
         </Card>

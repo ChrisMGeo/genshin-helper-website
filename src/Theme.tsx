@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme, darkScrollbar } from "@mui/material";
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -115,5 +115,12 @@ export const theme = createTheme({
       color: { main: "#aaaaaa" },
       name: "physical",
     }),
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: defaultTheme.palette.mode === "dark" ? darkScrollbar() : null,
+      },
+    },
   },
 });

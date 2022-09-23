@@ -1,4 +1,5 @@
-import { CharacterKey } from "./consts";
+import { ArtifactSetKey, CharacterKey, WeaponKey } from "./consts";
+import { TravelerElementKey } from "./traveler";
 
 export interface Character {
   name: string;
@@ -61,3 +62,35 @@ export interface CharacterEx extends Character {
   characterKey: CharacterKey;
   id: string;
 }
+type CharacterBuildswoTraveler = {
+  [characterKey in Exclude<CharacterKey, "Traveler">]?: CharacterWBuilds;
+};
+export interface CharacterBuilds extends CharacterBuildswoTraveler {
+  Traveler: { [travelerElement in TravelerElementKey]?: CharacterWBuilds };
+}
+
+export interface CharacterWBuilds {
+  characterKey: CharacterKey;
+  notes?: string;
+  builds: Build[];
+}
+export interface Build {
+  name: string;
+  weapons: Weapon[];
+  artifactSets: ArtifactSet[][];
+  artifactMainStats: string;
+  artifactSubStats: string;
+  talentPriority: string;
+  abilityTips: string;
+  notes: string;
+}
+export interface WeaponWithNote {
+  key: WeaponKey;
+  note: string;
+}
+export type Weapon = WeaponKey | WeaponWithNote;
+export interface ArtifactSetWithNote {
+  key: ArtifactSetKey;
+  note: string;
+}
+export type ArtifactSet = ArtifactSetKey | ArtifactSetWithNote;

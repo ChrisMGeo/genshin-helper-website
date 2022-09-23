@@ -22,12 +22,15 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-artifactIndex.tsx
-characterIndex.tsx
-fetcher.js
-indexer.js
-travelerIndex.tsx
-weaponIndex.tsx
-index.js
-allCharacterInfo.json
-list.json
+/artifactIndex.tsx
+/characterIndex.tsx
+/fetcher.js
+/indexer.js
+/travelerIndex.tsx
+/weaponIndex.tsx
+/index.js
+/allCharacterInfo.json
+/list.json
+/characterBuilds.json
+/allArtifactSetInfo.json
+/allWeaponInfo.json
