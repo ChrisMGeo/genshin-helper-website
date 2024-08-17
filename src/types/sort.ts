@@ -1,5 +1,3 @@
-import { TranslatedCharacterInfo as Character } from "../consts/character-info";
-
 export const allSortOrders = ["ascending", "descending"] as const;
 export type SortOrder = typeof allSortOrders[number];
 export const allCharacterSortCriteria = ["name", "rarity"] as const;
