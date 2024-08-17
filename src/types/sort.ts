@@ -35,6 +35,8 @@ const createSortMap = <
         return ascending[sortCriteria];
       } else {
         const d = descending[sortCriteria];
+        console.log(d);
+        console.log(ascending[sortCriteria]);
         return d === undefined
           ? (a: SortObject, b: SortObject): -1 | 0 | 1 =>
             (-1 * ascending[sortCriteria](a, b)) as -1 | 0 | 1
