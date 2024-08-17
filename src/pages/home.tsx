@@ -49,6 +49,8 @@ const PageHome = () => {
   const brPt = useMediaQueryUp();
   const toggleButtonSize = toggleButtonSizeMap[brPt];
 
+  const viteConfig = { base: "/genshin-helper-website" }
+
   const [elementFilter, setElementFilter] = useLocalStorage("elementFilter", [
     ...allElements,
   ] as Element[]);
@@ -159,7 +161,7 @@ const PageHome = () => {
                       aria-label={weapon}
                     >
                       <Avatar
-                        src={`/weapon-types/${weapon}.webp`}
+                        src={`${viteConfig.base}/weapon-types/${weapon}.webp`}
                         sx={{
                           width: toggleButtonSizeMap,
                           height: toggleButtonSizeMap,

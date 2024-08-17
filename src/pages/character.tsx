@@ -27,6 +27,7 @@ import StickyCard from "../components/sticky-card";
 import { translatedCharacterInfo } from "../consts/character-info";
 import CardLight from "../components/card-light";
 import UnityRichTextComponent from "../components/unity-rich-text";
+const viteConfig = {base: "/genshin-helper-website"};
 
 // interface TabPanelProps {
 //   children?: React.ReactNode;
@@ -218,7 +219,7 @@ const CharacterDisplayCard = ({
                     >
                       <SkillCard
                         skill={skillTalent}
-                        index={skillTalent === characterInfo.energySkill ? `/characters/${characterKey}/elemental-skill.png` : `/characters/${characterKey}/skill-${index + 1}.png`}
+                        index={skillTalent === characterInfo.energySkill ? `${viteConfig.base}/characters/${characterKey}/elemental-skill.png` : `${viteConfig.base}/characters/${characterKey}/skill-${index + 1}.png`}
                       />
                     </Grid>
                   )
@@ -239,7 +240,7 @@ const CharacterDisplayCard = ({
                       >
                         <SkillCard
                           skill={passive}
-                          index={`/characters/${characterKey}/passive-${index + 1}.png`}
+                          index={`${viteConfig.base}/characters/${characterKey}/passive-${index + 1}.png`}
                         />
                       </Grid>
                     );
@@ -256,7 +257,7 @@ const CharacterDisplayCard = ({
                       <Grid item xs={12} sm={12} md={4} lg={4} key={index}>
                         <SkillCard
                           skill={constellation}
-                          index={`/characters/${characterKey}/constellation-${index + 1}.png`}
+                          index={`${viteConfig.base}/characters/${characterKey}/constellation-${index + 1}.png`}
                         />
                       </Grid>
                     );

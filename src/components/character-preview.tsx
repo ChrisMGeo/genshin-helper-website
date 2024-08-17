@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { TranslatedCharacterInfo } from "../consts/character-info";
+const viteConfig = { base: "/genshin-helper-website" };
 // import { TranslatedTravelerInfo } from "../consts/traveler-info";
 
 interface CharacterPreviewProps {
@@ -45,7 +46,7 @@ const CharacterPreview = ({
                 height: "100%",
                 opacity: 0.7,
                 backgroundImage: `url(${!isTraveler
-                  ? `/characters/${characterInfo.nameId}/name-card-p.png`
+                  ? `${viteConfig.base}/characters/${characterInfo.nameId}/name-card-p.png`
                   : ""
                   })`,
                 backgroundPosition: "center",
@@ -64,7 +65,7 @@ const CharacterPreview = ({
             >
               <Box
                 component="img"
-                src={`/characters/${characterInfo.nameId}/icon.png`}
+                src={`${viteConfig.base}/characters/${characterInfo.nameId}/icon.png`}
                 width="102.39px"
                 height="102.39px"
                 sx={{ mt: "auto" }}
@@ -114,8 +115,8 @@ const CharacterPreview = ({
                     }`}
                   src={
                     isTraveler
-                      ? '/weapon-types/sword.webp'
-                      : `/weapon-types/${characterInfo.weaponType.toLowerCase()}.webp`
+                      ? `${viteConfig.base}/weapon-types/sword.webp`
+                      : `${viteConfig.base}/weapon-types/${characterInfo.weaponType.toLowerCase()}.webp`
                   }
                   sx={{ height: 24, width: 24 }}
                 >
