@@ -26,7 +26,6 @@ import SortByButton from "../components/sort-by-button";
 import {
   allCharacterSortCriteria,
   CharacterSortCriteria,
-  characterSortMap,
   SortOrder,
 } from "../types/sort";
 
@@ -84,7 +83,20 @@ const PageHome = () => {
   };
   const allCharacterInfo = translatedCharacterInfo();
   const charToShow = [...allCharacterInfo]
-    .sort((a, b) => characterSortMap.getSortFunc(sortCriteria, sortOrder)(a, b))
+    .sort(
+      (a, b) => {
+        let ascendingRes = 0;
+        switch (sortCriteria) {
+          case "name":
+            ascendingRes = a.name.localeCompare(b.name);
+            break;
+          case "rarity":
+            ascendingRes = a.rarity - b.rarity;
+            break;
+        }
+        return sortOrder === "ascending" ? ascendingRes : -ascendingRes;
+      }
+    )
     .filter(
       (char) =>
         (char.nameId.startsWith("traveler")
