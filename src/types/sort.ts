@@ -1,6 +1,9 @@
-import { Character } from "./Character";
+import { TranslatedCharacterInfo as Character } from "../consts/character-info";
 
-export type SortOrder = "Ascending" | "Descending";
+export const allSortOrders = ["ascending", "descending"] as const;
+export type SortOrder = typeof allSortOrders[number];
+export const allCharacterSortCriteria = ["name", "rarity"] as const;
+export type CharacterSortCriteria = typeof allCharacterSortCriteria[number];
 
 const createSortMap = <
   SortCriteria extends number | string | symbol,
@@ -13,10 +16,10 @@ const createSortMap = <
     [key in SortCriteria]?: (a: SortObject, b: SortObject) => -1 | 0 | 1;
   }
 ): {
-  Ascending: {
+  ascending: {
     [key in SortCriteria]: (a: SortObject, b: SortObject) => -1 | 0 | 1;
   };
-  Descending: {
+  descending: {
     [key in SortCriteria]?: (a: SortObject, b: SortObject) => -1 | 0 | 1;
   };
   getSortFunc: (
@@ -25,48 +28,45 @@ const createSortMap = <
   ) => (a: SortObject, b: SortObject) => -1 | 0 | 1;
 } => {
   return {
-    Ascending: ascending,
-    Descending: descending,
+    ascending: ascending,
+    descending: descending,
     getSortFunc: (sortCriteria: SortCriteria, sortOrder: SortOrder) => {
-      if (sortOrder === "Ascending") {
+      if (sortOrder === "ascending") {
         return ascending[sortCriteria];
       } else {
         const d = descending[sortCriteria];
         return d === undefined
           ? (a: SortObject, b: SortObject): -1 | 0 | 1 =>
-              (-1 * ascending[sortCriteria](a, b)) as -1 | 0 | 1
+            (-1 * ascending[sortCriteria](a, b)) as -1 | 0 | 1
           : d;
       }
     },
   };
 };
-//CHARACTER SORTING
-export const allCharacterSortCriteria = ["Name", "Rarity"] as const;
-export type CharacterSortCriteria = typeof allCharacterSortCriteria[number];
 
 const ascendingCharacterSortMap: {
   [key in CharacterSortCriteria]: (a: Character, b: Character) => -1 | 0 | 1;
 } = {
-  Name: (a: Character, b: Character) => {
+  name: (a: Character, b: Character) => {
     const nameA = a.name.toUpperCase();
     const nameB = b.name.toUpperCase();
     if (nameA < nameB) return 1;
     if (nameA > nameB) return -1;
     return 0;
   },
-  Rarity: (a: Character, b: Character) => {
+  rarity: (a: Character, b: Character) => {
     if (a.rarity > b.rarity) return 1;
     if (a.rarity < b.rarity) return -1;
-    return (-1 * ascendingCharacterSortMap["Name"](a, b)) as -1 | 0 | 1;
+    return (-1 * ascendingCharacterSortMap["name"](a, b)) as -1 | 0 | 1;
   },
 };
 const descendingCharacterSortMap: {
   [key in CharacterSortCriteria]?: (a: Character, b: Character) => -1 | 0 | 1;
 } = {
-  Rarity: (a: Character, b: Character) => {
+  rarity: (a: Character, b: Character) => {
     if (a.rarity > b.rarity) return -1;
     if (a.rarity < b.rarity) return 1;
-    return (-1 * ascendingCharacterSortMap["Name"](a, b)) as -1 | 0 | 1;
+    return (-1 * ascendingCharacterSortMap["name"](a, b)) as -1 | 0 | 1;
   },
 };
 

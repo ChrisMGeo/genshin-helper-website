@@ -1,59 +1,24 @@
 import { KeyboardArrowUp } from "@mui/icons-material";
-import "./App.scss";
+import './App.css'
 import {
   StyledEngineProvider,
   CssBaseline,
   ThemeProvider,
-  useScrollTrigger,
-  Zoom,
-  Box,
   Fab,
   Grid,
   Container,
   Skeleton,
 } from "@mui/material";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import Header from "./Header";
-import { theme } from "./Theme";
-import { lazy, Suspense } from "react";
-import Footer from "./Footer";
-const PageHome = lazy(() => import("./pages/PageHome"));
-const PageCharacter = lazy(() => import("./pages/PageCharacter"));
+import ScrollTop from "./components/scroll-top";
+import { theme } from "./theme";
+import { Suspense } from "react";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import PageHome from "./pages/home";
+import PageCharacter from "./pages/character";
 
-const ScrollTop = ({ children }: { children: React.ReactElement }) => {
-  const trigger = useScrollTrigger({
-    target: window,
-    disableHysteresis: true,
-    threshold: 100,
-  });
-
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    const anchor = (
-      (event.target as HTMLDivElement).ownerDocument || document
-    ).querySelector("#back-to-top-anchor");
-
-    if (anchor) {
-      anchor.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    }
-  };
-
-  return (
-    <Zoom in={trigger}>
-      <Box
-        onClick={handleClick}
-        role="presentation"
-        sx={{ position: "fixed", bottom: 85, right: 16 }}
-      >
-        {children}
-      </Box>
-    </Zoom>
-  );
-};
-
-const App = () => {
+function App() {
   return (
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
@@ -69,7 +34,8 @@ const App = () => {
       </ThemeProvider>
     </StyledEngineProvider>
   );
-};
+}
+
 const Content = () => {
   return (
     <Grid container direction="column" minHeight="100vh">
@@ -99,4 +65,4 @@ const Content = () => {
   );
 };
 
-export default App;
+export default App

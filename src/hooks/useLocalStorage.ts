@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
-const useLocalStorage = <Type>(storageKey: string, fallbackState: Type) => {
+const useLocalStorage = <Type>(storageKey: string, fallbackState: Type): [Type, Dispatch<SetStateAction<Type>>] => {
   const getItemRes = localStorage.getItem(storageKey);
-  const [value, setValue] = useState(
+  const [value, setValue] = useState<Type>(
     getItemRes === undefined || getItemRes === null
       ? fallbackState
       : JSON.parse(getItemRes)

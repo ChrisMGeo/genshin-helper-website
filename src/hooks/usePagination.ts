@@ -1,5 +1,5 @@
 import { useState } from "react";
-const usePagination = (data: any[], itemsPerPage: number) => {
+const usePagination = <T>(data: T[], itemsPerPage: number) => {
   const [currentPage, setCurrentPage] = useState(1);
   const maxPage = Math.ceil(data.length / itemsPerPage);
   const currentData = () => {

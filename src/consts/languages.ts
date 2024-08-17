@@ -1,0 +1,17 @@
+export const languages: { [key: string]: string } = {
+  "en": "English",
+  "de": "Deutsch",
+  "es": "Español",
+  "fr": "Français",
+  "id": "Bahasa Indonesia",
+  "it": "Italiano",
+  "jp": "日本語",
+  "kr": "한국어",
+  "pt": "Português",
+  "ru": "Русский",
+  "th": "ภาษาไทย",
+  "tr": "Türkçe",
+  "vi": "Tiếng Việt",
+  "chs": "简体中文",
+  "cht": "繁體中文",
+};
