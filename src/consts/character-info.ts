@@ -5593,6 +5593,7 @@ export const translatedCharacterInfo = (
 }
 
 export type TranslatedCharacterInfo = ReturnType<typeof translatedCharacterInfo>[number];
+export type CharacterId = CharacterInfo['nameId'];
 
 /*
  type AvatarData = {

@@ -1831,11 +1831,13 @@ export const translatedArtifactInfo = () => {
       })),
       setBonuses: Object.fromEntries(Object.keys(setBonuses).map(key => {
         const { descHash } = (setBonuses as unknown as { [key: number]: { descHash: number } })[parseInt(key)]
-        return [key as keyof ArtifactInfo["setBonuses"], {
-          desc: t(`dm.${descHash}`)
-        }]
+        return [
+          parseInt(key) as number, {
+            desc: t(`dm.${descHash}`)
+          }]
       }))
     }
   })
 }
 export type TranslatedArtifactInfo = ReturnType<typeof translatedArtifactInfo>[number];
+export type ArtifactId = ArtifactInfo["nameId"];

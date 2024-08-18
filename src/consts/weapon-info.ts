@@ -5371,3 +5371,4 @@ export const translatedWeaponInfo = () => {
 }
 
 export type TranslatedWeaponInfo = ReturnType<typeof translatedWeaponInfo>[number];
+export type WeaponId = WeaponInfo["nameId"];
