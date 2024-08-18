@@ -5564,17 +5564,13 @@ export const translatedCharacterInfo = (
 ) => {
   const { t } = useTranslation();
   return characterInfo.map((info) => {
-    const { id, nameId, nameHash, descHash, constellations, constellationHash, energySkill, skills, passives, rarity, vision, weaponType, titleHash, detailHash } = info;
+    const { nameHash, descHash, constellations, constellationHash, energySkill, skills, passives, titleHash, detailHash, ...rest } = info;
     return {
-      id,
+      ...rest,
       name: t(`dm.${nameHash}`),
       desc: t(`dm.${descHash}`),
       title: t(`dm.${titleHash}`),
       detail: t(`dm.${detailHash}`),
-      weaponType,
-      vision,
-      rarity,
-      nameId,
       constellation: t(`dm.${constellationHash}`),
       constellations: constellations.map(({ nameHash, descHash }) => ({
         name: t(`dm.${nameHash}`),
