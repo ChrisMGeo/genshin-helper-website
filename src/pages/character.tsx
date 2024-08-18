@@ -11,6 +11,7 @@ import {
   // MenuItem,
   Skeleton,
   Stack,
+  Tab,
   // Tab,
   Tabs,
   Typography,
@@ -23,40 +24,40 @@ import CharSelectDropdown from "../components/char-select-dropdown";
 // import DropdownButton from "../components/dropdown-button";
 import { theme } from "../theme";
 import StickyCard from "../components/sticky-card";
-// import BuildDisplay from "../components/BuildDisplay";
+import BuildDisplay from "../components/build-display";
 import { translatedCharacterInfo } from "../consts/character-info";
 import CardLight from "../components/card-light";
 import UnityRichTextComponent from "../components/unity-rich-text";
-const viteConfig = { base: "/genshin-helper-website" };
+import characterBuilds from "../consts/character-builds";
 
-// interface TabPanelProps {
-//   children?: React.ReactNode;
-//   index: number;
-//   value: number;
-// }
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
 
-// const TabPanel = (props: TabPanelProps) => {
-//   const { children, value, index, ...other } = props;
+const TabPanel = (props: TabPanelProps) => {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && children}
+    </div>
+  );
+};
 //
-//   return (
-//     <div
-//       role="tabpanel"
-//       hidden={value !== index}
-//       id={`simple-tabpanel-${index}`}
-//       aria-labelledby={`simple-tab-${index}`}
-//       {...other}
-//     >
-//       {value === index && children}
-//     </div>
-//   );
-// };
-//
-// const a11yProps = (index: number) => {
-//   return {
-//     id: `simple-tab-${index}`,
-//     "aria-controls": `simple-tabpanel-${index}`,
-//   };
-// };
+const a11yProps = (index: number) => {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+};
 
 const PageCharacter = () => {
   const navigate = useNavigate();
@@ -87,6 +88,7 @@ const CharacterDisplayCard = ({
   characterKey,
   onClose,
 }: CharacterDisplayCardProps) => {
+  const builds = characterBuilds.find(buildInfo => buildInfo.nameId === characterKey)?.builds;
   const [buildTab, setBuildTab] = useState(0);
   const handleBuildChange = (_e: React.SyntheticEvent, newValue: number) => {
     setBuildTab(newValue);
@@ -161,20 +163,20 @@ const CharacterDisplayCard = ({
               },
             }}
           >
-            {/* {builds.map((build, index) => ( */}
-            {/*   <Tab */}
-            {/*     label={build.name} */}
-            {/*     {...a11yProps(index)} */}
-            {/*     sx={{ */}
-            {/*       color: `${theme.palette[ */}
-            {/*         (characterInfo.vision_key.toLowerCase() as ElementKey) ?? */}
-            {/*         "primary" */}
-            {/*       ].main */}
-            {/*         } !important`, */}
-            {/*     }} */}
-            {/*     key={index} */}
-            {/*   /> */}
-            {/* ))} */}
+            {(builds ?? [{ name: "WIP" }]).map((build, index) => (
+              <Tab
+                label={build.name}
+                {...a11yProps(index)}
+                sx={{
+                  color: `${theme.palette[
+                    (characterInfo.vision.toLowerCase() as Element) ??
+                    "primary"
+                  ].main
+                    } !important`,
+                }}
+                key={index}
+              />
+            ))}
           </Tabs>
         </CardContentEvenPadding>
       </StickyCard>
@@ -190,11 +192,11 @@ const CharacterDisplayCard = ({
           <CardContentEvenPadding>
             <Stack flexDirection="column" gap={2}>
               <Typography variant="h5">Build Info</Typography>
-              {/* {builds.map((build: Build, index) => ( */}
-              {/*   <TabPanel value={buildTab} index={index} key={index}> */}
-              {/*     <BuildDisplay build={build} /> */}
-              {/*   </TabPanel> */}
-              {/* ))} */}
+              {(builds ?? []).map((build, index) => (
+                <TabPanel value={buildTab} index={index} key={index}>
+                  <BuildDisplay build={build} />
+                </TabPanel>
+              ))}
             </Stack>
           </CardContentEvenPadding>
         </Card>
