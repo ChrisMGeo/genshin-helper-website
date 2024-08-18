@@ -4,7 +4,6 @@ import { Element } from "../consts";
 import ThumbSide from "./thumb-side";
 import { useNavigate } from "react-router-dom";
 import { translatedCharacterInfo } from "../consts/character-info";
-const viteConfig = {base: "/genshin-helper-website"};
 
 interface CharSelectDropdownProps {
   characterKey: string;
@@ -48,7 +47,7 @@ const CharSelectDropdown = ({
         aria-expanded={open ? "true" : "false"}
         startIcon={
           <ThumbSide
-            src={`${viteConfig.base}/characters/${characterKey}/side-icon.png`}
+            src={`/genshin-helper-website/characters/${characterKey}/side-icon.png`}
             alt={characterName}
           />
         }
