@@ -1,24 +1,36 @@
-// @ts-nocheck
-import convert from 'xml-js'
+import convert, { Element as XMLJSElement, ElementCompact as XMLJSElementCompact } from 'xml-js'
 import colorToHex from './colors'
 
+export type UPElement = {
+  type: 'element'
+  name: string
+  elements: (UPElement | XMLJSElement)[]
+  key: number
+};
+
+const isUPElement = (element: XMLJSElement): element is UPElement => {
+  return element.type === 'element'
+};
+
+
 export default class UnityRichTextParser {
+  currentId: number
   constructor() {
     this.currentId = 0
   }
 
-  addKeyToElements(elements) {
+  addKeyToElements(elements: (XMLJSElement | UPElement)[]) {
     return elements.map((element) => {
-      if (element.type !== 'element') return element
-      element.key = this.currentId
-      this.currentId++
-      element.elements = [...this.addKeyToElements(element.elements)]
+      if (isUPElement(element)) {
+        element.key = this.currentId++
+        element.elements = [...this.addKeyToElements(element.elements ?? [])]
+      }
       return element
     })
   }
 
-  parse(text) {
-    let result = [
+  parse(text: string) {
+    let result: XMLJSElement | XMLJSElementCompact = [
       {
         type: 'text',
         text: text
@@ -30,6 +42,7 @@ export default class UnityRichTextParser {
         return `${data[0]} value="${data[0] === 'color' ? colorToHex(data[1]) : data[1]}"`
       })
       const textToParse = `<unityText>${convertColorSize}</unityText>`
+      // @ts-ignore
       result = convert.xml2js(textToParse, { compact: false, spaces: 4 })
 
       const { elements: { 0: { elements } } } = result

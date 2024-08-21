@@ -1,56 +1,28 @@
-// @ts-nocheck
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
 import UnityParser from './utils/unityParser'
 
-import './styles.css'
+import styles from './styles.module.css'
 
-export default class UnityRichTextComponent extends PureComponent {
-  static propTypes = {
-    children: PropTypes.string,
-    onBold: PropTypes.func,
-    onItalic: PropTypes.func,
-    onSize: PropTypes.func,
-    onColor: PropTypes.func
-  }
+type UnityRichTextProps = {
+  children: string,
+  onBold?: () => object,
+  onItalic?: () => object,
+  onSize?: (size: number) => object,
+  onColor?: (color: string) => object
+};
 
-  static defaultProps = {
-    onBold: () => {
-      return { fontWeight: 'bold' }
-    },
-    onItalic: () => {
-      return { fontStyle: 'italic' }
-    },
-    onSize: (size) => {
-      return { fontSize: `${size}px` }
-    },
-    onColor: (color) => {
-      return { color: color }
-    }
-  }
+const UnityRichTextComponent = ({ children, onBold = () => ({ fontWeight: 'bold' }), onItalic = () => ({ fontStyle: 'italic' }), onSize = (size) => ({ fontSize: `${size}px` }), onColor = (color) => ({ color: color }) }: UnityRichTextProps) => {
+  const parser = new UnityParser();
 
-  constructor(props) {
-    super()
-    this.parser = new UnityParser()
-  }
-
-  parseElements(elements) {
-    return elements.map((element) => {
+  const parseElements = (elements: any | any[]) => {
+    return elements.map((element: any) => {
       if (element.type === 'text') {
         return element.text
       } else if (element.type === 'element') {
-        return this.createElementSpan(element)
+        return createElementSpan(element)
       }
     })
   }
-
-  createElementSpan(element) {
-    const {
-      onBold,
-      onItalic,
-      onSize,
-      onColor
-    } = this.props
+  const createElementSpan = (element: any) => {
     let style
     switch (element.name) {
       case 'b':
@@ -72,21 +44,19 @@ export default class UnityRichTextComponent extends PureComponent {
 
     return (
       <span
-        // className={styles.unityTextSpan}
+        className={styles.unityTextSpan}
         key={element.key}
         style={style}
       >
-        {this.parseElements(element.elements)}
+        {parseElements(element.elements)}
       </span>
     )
   }
 
-  render() {
-    const { children } = this.props
-    const parsedChildren = this.parser.parse(children)
+  const parsedChildren = parser.parse(children)
 
-    return (
-      this.parseElements(parsedChildren)
-    )
-  }
-}
+  return (
+    parseElements(parsedChildren)
+  )
+};
+export default UnityRichTextComponent;
