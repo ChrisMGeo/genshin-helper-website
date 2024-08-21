@@ -1,5 +1,5 @@
 import { Card, CardProps } from "@mui/material";
-import { useSticky } from "../hooks/useSticky";
+import { useSticky } from "../hooks/use-sticky";
 
 const StickyCard = ({ children, ...rest }: CardProps) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

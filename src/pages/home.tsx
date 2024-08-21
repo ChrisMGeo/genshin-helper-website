@@ -21,7 +21,7 @@ import { ChangeEvent, MouseEvent, Suspense, useEffect, useState } from "react";
 import { elementSvg } from "../components/stat-icon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { theme } from "../theme";
-import useLocalStorage from "../hooks/useLocalStorage";
+import useLocalStorage from "../hooks/use-local-storage";
 import SortByButton from "../components/sort-by-button";
 import {
   allCharacterSortCriteria,
@@ -29,8 +29,8 @@ import {
   SortOrder,
 } from "../types/sort";
 
-import usePagination from "../hooks/usePagination";
-import useMediaQueryUp from "../hooks/useMediaQueryUp";
+import usePagination from "../hooks/use-pagination";
+import useMediaQueryUp from "../hooks/use-media-query-up";
 import CardContentEvenPadding from "../components/card-content-even-padding";
 // import { allTravelerElements } from "../types/traveler";
 import StickyCard from "../components/sticky-card";
