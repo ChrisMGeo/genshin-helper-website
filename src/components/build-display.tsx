@@ -97,6 +97,9 @@ const WeaponDisplay = ({ weaponInfo: { nameId, rarity, name, refinementInfo } }:
           </div>
           <div style={{ overflowY: "auto", maxHeight: "80px" }}>
             <Typography variant="body2" color="text.secondary" component="div">
+              <UnityRichTextComponent>{`<b><color=#ffd780>${refinementInfo[0].name}</color></b>`}</UnityRichTextComponent>
+            </Typography>
+            <Typography variant="body2" color="text.secondary" component="div">
               <UnityRichTextComponent>{refinementInfo[0].desc.split("\\n").join("\n")}</UnityRichTextComponent>
             </Typography>
           </div>
@@ -156,7 +159,7 @@ const ArtifactSetDisplay = ({
                 .map((num: number) => {
                   const exists = num in setBonuses;
                   if (!exists) return "";
-                  return `${num !== 1 ? `<b>${t(`ui.character.artifact.pieceBonus${num}`)}:</b> ` : ""}${setBonuses[num].desc.split("\\n").join("\n")}`;
+                  return `${num !== 1 ? `<color=#ffd780><b>${t(`ui.character.artifact.pieceBonus${num}`)}:</b></color> ` : ""}${setBonuses[num].desc.split("\\n").join("\n")}`;
                 })
                 .join("\n")}</UnityRichTextComponent>
             </Typography>
