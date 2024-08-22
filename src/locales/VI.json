@@ -25,6 +25,10 @@
     "artifactSets": "Bộ Thánh Di Vật",
     "skills": "Kỹ Năng",
     "passives": "Thiên Phú Cố Định",
-    "constellations": "Cung Mệnh"
+    "constellations": "Cung Mệnh",
+    "artifact": {
+      "pieceBonus2": "Bộ 2 Món",
+      "pieceBonus4": "Bộ 4 Món"
+    }
   }
 }

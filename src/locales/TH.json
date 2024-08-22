@@ -25,6 +25,10 @@
     "artifactSets": "เซ็ตอาร์ติแฟกต์",
     "skills": "สกิล",
     "passives": "พรสวรรค์ติดตัว",
-    "constellations": "กลุ่มดาว"
+    "constellations": "กลุ่มดาว",
+    "artifact": {
+      "pieceBonus2": "เซ็ต 2 ชิ้น",
+      "pieceBonus4": "เซ็ต 4 ชิ้น"
+    }
   }
 }

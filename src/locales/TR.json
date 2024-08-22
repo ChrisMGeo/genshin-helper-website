@@ -25,6 +25,10 @@
     "artifactSets": "Yadigar Seti",
     "skills": "Beceri",
     "passives": "Pasif Yetenek",
-    "constellations": "Takımyıldızlar"
+    "constellations": "Takımyıldızlar",
+    "artifact": {
+      "pieceBonus2": "2 Parçalı Set",
+      "pieceBonus4": "4 Parçalı Set"
+    }
   }
 }

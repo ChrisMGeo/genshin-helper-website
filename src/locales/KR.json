@@ -25,6 +25,10 @@
     "artifactSets": "성유물 세트",
     "skills": "스킬",
     "passives": "고유 특성",
-    "constellations": "운명의 자리"
+    "constellations": "운명의 자리",
+    "artifact": {
+      "pieceBonus2": "2세트",
+      "pieceBonus4": "4세트"
+    }
   }
 }

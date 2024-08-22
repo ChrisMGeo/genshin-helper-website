@@ -25,6 +25,10 @@
     "artifactSets": "Набор артефактов",
     "skills": "Навык",
     "passives": "Пассивный талант",
-    "constellations": "Созвездия"
+    "constellations": "Созвездия",
+    "artifact": {
+      "pieceBonus2": "2 предмета",
+      "pieceBonus4": "4 предмета"
+    }
   }
 }

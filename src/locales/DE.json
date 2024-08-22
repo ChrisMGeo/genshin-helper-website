@@ -18,6 +18,10 @@
     "weapons": "Waffen",
     "artifactSets": "Artefaktset",
     "skills": "Fähigkeit",
-    "constellations": "Sternbilder"
+    "constellations": "Sternbilder",
+    "artifact": {
+      "pieceBonus2": "Set mit 2 Teilen",
+      "pieceBonus4": "Set mit 4 Teilen"
+    }
   }
 }

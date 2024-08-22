@@ -110,6 +110,7 @@ const ArtifactSetDisplay = ({
 }: {
   artifactInfo: TranslatedArtifactInfo,
 }) => {
+  const { t } = useTranslation();
   return (
     <CardLight sx={{ borderRadius: 4, display: "flex", maxHeight: "144px" }}>
       <div
@@ -155,7 +156,7 @@ const ArtifactSetDisplay = ({
                 .map((num: number) => {
                   const exists = num in setBonuses;
                   if (!exists) return "";
-                  return `${num}-Piece Set: ${setBonuses[num].desc.split("\\n").join("\n")}`;
+                  return `${num !== 1 ? `<b>${t(`ui.character.artifact.pieceBonus${num}`)}:</b> ` : ""}${setBonuses[num].desc.split("\\n").join("\n")}`;
                 })
                 .join("\n")}</UnityRichTextComponent>
             </Typography>

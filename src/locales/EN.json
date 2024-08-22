@@ -25,7 +25,11 @@
     "artifactSets": "Artifact Sets",
     "skills": "Skill",
     "passives": "Passives",
-    "constellations": "Constellations"
+    "constellations": "Constellations",
+    "artifact": {
+      "pieceBonus2": "2-Piece Set",
+      "pieceBonus4": "4-Piece Set"
+    }
   },
   "header": {
     "title": "Genshin Helper Website"

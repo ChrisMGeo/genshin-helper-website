@@ -20,6 +20,10 @@
     "weapons": "Armes",
     "artifactSets": "Set d'artéfacts",
     "skills": "Capacité",
-    "passives": "Aptitude passive"
+    "passives": "Aptitude passive",
+    "artifact": {
+      "pieceBonus2": "Set de 2 pièces",
+      "pieceBonus4": "Set de 4 pièces"
+    }
   }
 }

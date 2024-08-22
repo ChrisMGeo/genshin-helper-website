@@ -25,6 +25,10 @@
     "artifactSets": "聖遺物セット",
     "skills": "スキル",
     "passives": "固有天賦",
-    "constellations": "命ノ星座"
+    "constellations": "命ノ星座",
+    "artifact": {
+      "pieceBonus2": "2セット",
+      "pieceBonus4": "4セット"
+    }
   }
 }

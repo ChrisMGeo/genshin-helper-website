@@ -16,6 +16,10 @@
     "artifactSets": "Conjunto de artefactos",
     "skills": "Habilidad",
     "passives": "Talento pasivo",
-    "constellations": "Constelaciones"
+    "constellations": "Constelaciones",
+    "artifact": {
+      "pieceBonus2": "Conjunto de 2 piezas",
+      "pieceBonus4": "Conjunto de 4 piezas"
+    }
   }
 }
