@@ -16,6 +16,21 @@ import TextMapRU from './textmaps/RU.json';
 import TextMapTH from './textmaps/TH.json';
 import TextMapTR from './textmaps/TR.json';
 import TextMapVI from './textmaps/VI.json';
+import UICHS from '../locales/CHS.json';
+import UICHT from '../locales/CHT.json';
+import UIDE from '../locales/DE.json';
+import UIEN from '../locales/EN.json';
+import UIES from '../locales/ES.json';
+import UIFR from '../locales/FR.json';
+import UIID from '../locales/ID.json';
+import UIIT from '../locales/IT.json';
+import UIJP from '../locales/JP.json';
+import UIKR from '../locales/KR.json';
+import UIPT from '../locales/PT.json';
+import UIRU from '../locales/RU.json';
+import UITH from '../locales/TH.json';
+import UITR from '../locales/TR.json';
+import UIVI from '../locales/VI.json';
 
 i18n
   // detect user language
@@ -36,6 +51,9 @@ i18n
         translation: {
           dm: {
             ...TextMapCHS
+          },
+          ui: {
+            ...UICHS
           }
         }
       },
@@ -43,6 +61,9 @@ i18n
         translation: {
           dm: {
             ...TextMapCHT
+          },
+          ui: {
+            ...UICHT
           }
         }
       },
@@ -50,6 +71,9 @@ i18n
         translation: {
           dm: {
             ...TextMapDE
+          },
+          ui: {
+            ...UIDE
           }
         }
       },
@@ -57,6 +81,9 @@ i18n
         translation: {
           dm: {
             ...TextMapEN
+          },
+          ui: {
+            ...UIEN
           }
         }
       },
@@ -64,6 +91,9 @@ i18n
         translation: {
           dm: {
             ...TextMapES
+          },
+          ui: {
+            ...UIES
           }
         }
       },
@@ -71,6 +101,9 @@ i18n
         translation: {
           dm: {
             ...TextMapFR
+          },
+          ui: {
+            ...UIFR
           }
         }
       },
@@ -78,6 +111,9 @@ i18n
         translation: {
           dm: {
             ...TextMapID
+          },
+          ui: {
+            ...UIID
           }
         }
       },
@@ -85,6 +121,9 @@ i18n
         translation: {
           dm: {
             ...TextMapIT
+          },
+          ui: {
+            ...UIIT
           }
         }
       },
@@ -92,6 +131,9 @@ i18n
         translation: {
           dm: {
             ...TextMapJP
+          },
+          ui: {
+            ...UIJP
           }
         }
       },
@@ -99,6 +141,9 @@ i18n
         translation: {
           dm: {
             ...TextMapKR
+          },
+          ui: {
+            ...UIKR
           }
         }
       },
@@ -106,6 +151,9 @@ i18n
         translation: {
           dm: {
             ...TextMapPT
+          },
+          ui: {
+            ...UIPT
           }
         }
       },
@@ -113,6 +161,9 @@ i18n
         translation: {
           dm: {
             ...TextMapRU
+          },
+          ui: {
+            ...UIRU
           }
         }
       },
@@ -120,6 +171,9 @@ i18n
         translation: {
           dm: {
             ...TextMapTH
+          },
+          ui: {
+            ...UITH
           }
         }
       },
@@ -127,6 +181,9 @@ i18n
         translation: {
           dm: {
             ...TextMapTR
+          },
+          ui: {
+            ...UITR
           }
         }
       },
@@ -134,6 +191,9 @@ i18n
         translation: {
           dm: {
             ...TextMapVI
+          },
+          ui: {
+            ...UIVI
           }
         }
       }

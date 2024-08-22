@@ -29,6 +29,7 @@ import { translatedCharacterInfo } from "../consts/character-info";
 import CardLight from "../components/card-light";
 import UnityRichTextComponent from "../components/unity-rich-text";
 import characterBuilds from "../consts/character-builds";
+import { useTranslation } from "react-i18next";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -101,6 +102,7 @@ const CharacterDisplayCard = ({
     // isTraveler ? char.nameId === travelerId : 
     char.nameId === characterKey
   )!;
+  const { t } = useTranslation();
 
   return (
     <>
@@ -191,7 +193,7 @@ const CharacterDisplayCard = ({
         <Card sx={{ borderRadius: 4 }}>
           <CardContentEvenPadding>
             <Stack flexDirection="column" gap={2}>
-              <Typography variant="h5">Build Info</Typography>
+              <Typography variant="h5">{t("ui.character.buildInfo")}</Typography>
               {(builds ?? []).map((build, index) => (
                 <TabPanel value={buildTab} index={index} key={index}>
                   <BuildDisplay build={build} />
@@ -203,7 +205,7 @@ const CharacterDisplayCard = ({
         <Card sx={{ borderRadius: 4 }}>
           <CardContentEvenPadding>
             <Stack flexDirection="column" gap={2}>
-              <Typography variant="h5">Skills</Typography>
+              <Typography variant="h5">{t("ui.character.skills")}</Typography>
               <Grid container spacing={2}>
                 {[...characterInfo.skills, characterInfo.energySkill].map(
                   (skillTalent, index: number, arr) => (
@@ -227,7 +229,7 @@ const CharacterDisplayCard = ({
                   )
                 )}
               </Grid>
-              <Typography variant="h5">Passives</Typography>
+              <Typography variant="h5">{t("ui.character.passives")}</Typography>
               <Grid container spacing={2}>
                 {characterInfo.passives.map(
                   (passive, index: number) => {
@@ -250,7 +252,7 @@ const CharacterDisplayCard = ({
                 )}
               </Grid>
               <Typography variant="h5">
-                Constellations - {characterInfo.constellation}
+                {t("ui.character.constellations")} - {characterInfo.constellation}
               </Typography>
               <Grid container spacing={2}>
                 {characterInfo.constellations.map(

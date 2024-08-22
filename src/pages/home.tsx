@@ -37,8 +37,10 @@ import StickyCard from "../components/sticky-card";
 import ExpandMore from "../components/expand-more";
 import { ExpandMoreRounded } from "@mui/icons-material";
 import { translatedCharacterInfo } from "../consts/character-info";
+import { useTranslation } from "react-i18next";
 const toggleButtonSizeMap = { xs: 14, sm: 21, md: 21, lg: 28, xl: 28 };
 const PageHome = () => {
+  const { t } = useTranslation();
   const [expanded, setExpanded] = useLocalStorage("expanded", false);
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -192,7 +194,7 @@ const PageHome = () => {
                   }
                   autoFocus
                   size="small"
-                  label="Character Name"
+                  label={t("ui.home.search.characterName")}
                   sx={{ height: "100%" }}
                   InputProps={{
                     sx: { height: "100%" },
@@ -207,6 +209,7 @@ const PageHome = () => {
                   onChangeCriteria={(s) => setSortCriteria(s as CharacterSortCriteria)}
                   order={sortOrder}
                   onChangeOrder={setSortOrder}
+                  displayValue={(key) => t(`ui.sort.criterias.${key}`)}
                 />
               </Grid>
             </Grid>

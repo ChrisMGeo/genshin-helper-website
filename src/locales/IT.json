@@ -1,0 +1,21 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "Nome",
+      "rarity": "Rarità"
+    }
+  },
+  "home": {
+    "search": {
+      "characterName": "Nome del personaggio"
+    }
+  },
+  "character": {
+    "buildInfo": "Informazioni sulla costruzione",
+    "weapons": "Armi",
+    "artifactSets": "Set di manufatti",
+    "skills": "Abilità",
+    "passives": "Talento passivo",
+    "constellations": "Costellazioni"
+  }
+}

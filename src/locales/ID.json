@@ -1,0 +1,20 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "Nama",
+      "rarity": "Keanehan"
+    }
+  },
+  "home": {
+    "search": {
+      "characterName": "Nama Karakter"
+    }
+  },
+  "character": {
+    "buildInfo": "Membangun informasi",
+    "weapons": "Senjata",
+    "artifactSets": "Set Artefak",
+    "passives": "Talenta Pasif",
+    "constellations": "Konstelasi"
+  }
+}

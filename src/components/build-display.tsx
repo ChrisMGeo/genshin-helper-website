@@ -14,6 +14,7 @@ import { CharacterBuild } from "../consts/character-builds";
 import { translatedWeaponInfo, TranslatedWeaponInfo } from "../consts/weapon-info";
 import { TranslatedArtifactInfo, translatedArtifactInfo } from "../consts/artifact-info";
 import UnityRichTextComponent from "./unity-rich-text";
+import { useTranslation } from "react-i18next";
 
 interface BuildDisplayProps {
   build: CharacterBuild["builds"][number];
@@ -23,11 +24,12 @@ const BuildDisplay = ({
 }: BuildDisplayProps) => {
   const allWeaponInfo = translatedWeaponInfo();
   const allArtifactInfo = translatedArtifactInfo();
+  const { t } = useTranslation();
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} lg={6}>
         <Stack flexDirection="column" spacing={2}>
-          <Typography variant="h6">Weapons</Typography>
+          <Typography variant="h6">{t("ui.character.weapons")}</Typography>
 
           {weapons.map((weaponId, index) => (
             <Fragment key={index}>
@@ -40,7 +42,7 @@ const BuildDisplay = ({
       <Grid item xs={12} lg={6}>
         <Stack flexDirection="column" spacing={2}>
           {" "}
-          <Typography variant="h6">Artifact Sets</Typography>
+          <Typography variant="h6">{t("ui.character.artifactSets")}</Typography>
           {artifactSets.map((artifactId, index) => (
             <Fragment key={index}>
               <ArtifactSetDisplay artifactInfo={allArtifactInfo.find(artifactInfo => artifactInfo.nameId === artifactId)!} />

@@ -1,0 +1,30 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "姓名",
+      "rarity": "稀有度"
+    }
+  },
+  "elements": {
+    "anemo": "风",
+    "geo": "岩",
+    "electro": "雷",
+    "hydro": "水",
+    "pyro": "火",
+    "cryo": "冰",
+    "dendro": "草"
+  },
+  "home": {
+    "search": {
+      "characterName": "角色名称"
+    }
+  },
+  "character": {
+    "buildInfo": "构建信息",
+    "weapons": "武器",
+    "artifactSets": "圣遗物套装",
+    "skills": "技能",
+    "passives": "固有天赋",
+    "constellations": "命之座"
+  }
+}

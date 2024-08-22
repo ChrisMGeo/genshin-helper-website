@@ -13,6 +13,7 @@ import {
 import { Link as RouterLink } from "react-router-dom";
 import { TranslatedCharacterInfo } from "../consts/character-info";
 // import { TranslatedTravelerInfo } from "../consts/traveler-info";
+import { useTranslation } from "react-i18next";
 
 interface CharacterPreviewProps {
   characterInfo: TranslatedCharacterInfo;
@@ -20,6 +21,7 @@ interface CharacterPreviewProps {
 const CharacterPreview = ({
   characterInfo
 }: CharacterPreviewProps) => {
+  const { t } = useTranslation();
   const isTraveler = characterInfo.nameId as any === "traveler";
   return (
     <Suspense
@@ -93,7 +95,7 @@ const CharacterPreview = ({
               </Typography>
               <Stack direction="row" justifyContent="end" alignItems="center">
                 <Chip
-                  label={isTraveler ? "????" : characterInfo.vision?.toUpperCase() ?? "N/A"}
+                  label={isTraveler ? "????" : t(`ui.elements.${characterInfo.vision}`) ?? "N/A"}
                   color={`${isTraveler
                     ? "default"
                     : (((characterInfo.vision as string) ?? "default").toLowerCase() as

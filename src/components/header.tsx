@@ -39,6 +39,7 @@ const LocaleDropdown = () => {
 const HeaderContent = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const { t } = useTranslation();
 
   if (isMobile) return <MobileHeader />;
   return (
@@ -51,7 +52,7 @@ const HeaderContent = () => {
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography variant="h6" noWrap>
-              Genshin Helper Website
+              {t("ui.header.title")}
             </Typography>
             <LocaleDropdown />
           </Toolbar>
@@ -61,6 +62,7 @@ const HeaderContent = () => {
   );
 };
 const MobileHeader = () => {
+  const { t } = useTranslation();
   return (
     <>
       <AppBar
@@ -71,7 +73,7 @@ const MobileHeader = () => {
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography variant="h6" noWrap>
-              Genshin Helper Website
+              {t("ui.header.title")}
             </Typography>
             <LocaleDropdown />
           </Toolbar>

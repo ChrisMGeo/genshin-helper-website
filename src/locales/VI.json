@@ -1,0 +1,30 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "Tên",
+      "rarity": "Độ hiếm"
+    }
+  },
+  "elements": {
+    "anemo": "Phong",
+    "geo": "Nham",
+    "electro": "Lôi",
+    "hydro": "Thủy",
+    "pyro": "Hỏa",
+    "cryo": "Băng",
+    "dendro": "Thảo"
+  },
+  "home": {
+    "search": {
+      "characterName": "Tên nhân vật"
+    }
+  },
+  "character": {
+    "buildInfo": "Thông tin bản dựng",
+    "weapons": "Vũ Khí",
+    "artifactSets": "Bộ Thánh Di Vật",
+    "skills": "Kỹ Năng",
+    "passives": "Thiên Phú Cố Định",
+    "constellations": "Cung Mệnh"
+  }
+}

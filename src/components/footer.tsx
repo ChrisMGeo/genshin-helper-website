@@ -2,6 +2,7 @@ import { AppBar, Box, Skeleton, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import { Suspense } from "react";
 import packageInfo from "../../package.json";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
   );
 };
 const FooterContent = () => {
+  const { t } = useTranslation();
   return (
     <AppBar position="static">
       <Box
@@ -20,14 +22,13 @@ const FooterContent = () => {
         gap={2}
       >
         <Typography variant="caption" sx={{ color: grey[200] }}>
-          Genshin Helper Website is not affiliated with or endorsed by
-          HoYoverse.
+          {t("ui.footer.contents")}
         </Typography>
         <Typography
           variant="caption"
           sx={{ color: grey[200], textAlign: "right" }}
         >
-          Genshin Helper Version: <code>{packageInfo.version}</code>
+          {t("ui.footer.versionText")}: <code>{packageInfo.version}</code>
         </Typography>
       </Box>
     </AppBar>

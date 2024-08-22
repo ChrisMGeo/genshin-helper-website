@@ -1,0 +1,30 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "İsim",
+      "rarity": "Nadirlik"
+    }
+  },
+  "elements": {
+    "anemo": "Rüzgar",
+    "geo": "Toprak",
+    "electro": "Elektrik",
+    "hydro": "Su",
+    "pyro": "Ateş",
+    "cryo": "Buz",
+    "dendro": "Doğa"
+  },
+  "home": {
+    "search": {
+      "characterName": "Karakter Adı"
+    }
+  },
+  "character": {
+    "buildInfo": "Yapı bilgisi",
+    "weapons": "Silahlar",
+    "artifactSets": "Yadigar Seti",
+    "skills": "Beceri",
+    "passives": "Pasif Yetenek",
+    "constellations": "Takımyıldızlar"
+  }
+}

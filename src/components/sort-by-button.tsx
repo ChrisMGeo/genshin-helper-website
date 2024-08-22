@@ -16,12 +16,11 @@ import { SortOrder } from "../types/sort";
 interface SortByButtonProps extends ButtonGroupProps {
   sortKeys: string[];
   value: string;
+  displayValue: (str: string) => string;
   onChangeCriteria: (v: string) => void;
   order: SortOrder;
   onChangeOrder: (v: SortOrder) => void;
 }
-
-const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 const SortByButton = ({
   sortKeys,
@@ -29,13 +28,14 @@ const SortByButton = ({
   onChangeCriteria,
   order,
   onChangeOrder,
+  displayValue,
   ...props
 }: SortByButtonProps) => {
   return (
     <Box display="flex" alignItems="center" gap={1}>
       Sort by:
       <ButtonGroup {...props}>
-        <DropdownButton title={`${value}`} color="success">
+        <DropdownButton title={`${displayValue(value)}`} color="success">
           {sortKeys.map((key) => (
             <MenuItem
               key={key}
@@ -43,7 +43,7 @@ const SortByButton = ({
               disabled={value === key}
               onClick={() => onChangeCriteria(key)}
             >
-              {capitalize(key)}
+              {displayValue(key)}
             </MenuItem>
           ))}
         </DropdownButton>

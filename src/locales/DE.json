@@ -1,0 +1,23 @@
+{
+  "sort": {
+    "criterias": {
+      "rarity": "Seltenheit"
+    }
+  },
+  "elements": {
+    "electro": "Elektro",
+    "cryo": "Kryo"
+  },
+  "home": {
+    "search": {
+      "characterName": "Charaktername"
+    }
+  },
+  "character": {
+    "buildInfo": "Build-Informationen",
+    "weapons": "Waffen",
+    "artifactSets": "Artefaktset",
+    "skills": "Fähigkeit",
+    "constellations": "Sternbilder"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "Имя",
+      "rarity": "редкость"
+    }
+  },
+  "elements": {
+    "anemo": "Анемо",
+    "geo": "Гео",
+    "electro": "Электро",
+    "hydro": "Гидро",
+    "pyro": "Пиро",
+    "cryo": "Крио",
+    "dendro": "Дендро"
+  },
+  "home": {
+    "search": {
+      "characterName": "Имя персонажа"
+    }
+  },
+  "character": {
+    "buildInfo": "Информация о сборке",
+    "weapons": "Оружие",
+    "artifactSets": "Набор артефактов",
+    "skills": "Навык",
+    "passives": "Пассивный талант",
+    "constellations": "Созвездия"
+  }
+}

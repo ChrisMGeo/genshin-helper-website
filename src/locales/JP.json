@@ -1,0 +1,30 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "名前",
+      "rarity": "希少"
+    }
+  },
+  "elements": {
+    "anemo": "風",
+    "geo": "岩",
+    "electro": "雷",
+    "hydro": "水",
+    "pyro": "炎",
+    "cryo": "冰",
+    "dendro": "草"
+  },
+  "home": {
+    "search": {
+      "characterName": "キャラクター名"
+    }
+  },
+  "character": {
+    "buildInfo": "ビルド情報",
+    "weapons": "武器",
+    "artifactSets": "聖遺物セット",
+    "skills": "スキル",
+    "passives": "固有天賦",
+    "constellations": "命ノ星座"
+  }
+}

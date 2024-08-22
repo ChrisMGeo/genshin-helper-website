@@ -1,0 +1,30 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "ชื่อ",
+      "rarity": "ความหายาก"
+    }
+  },
+  "elements": {
+    "anemo": "ลม",
+    "geo": "หิน",
+    "electro": "ไฟฟ้า",
+    "hydro": "น้ำ'",
+    "pyro": "ไฟ",
+    "cryo": "น้ำแข็ง",
+    "dendro": "ไม้"
+  },
+  "home": {
+    "search": {
+      "characterName": "ชื่อตัวละคร"
+    }
+  },
+  "character": {
+    "buildInfo": "ข้อมูลการสร้าง",
+    "weapons": "อาวุธ",
+    "artifactSets": "เซ็ตอาร์ติแฟกต์",
+    "skills": "สกิล",
+    "passives": "พรสวรรค์ติดตัว",
+    "constellations": "กลุ่มดาว"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "이름",
+      "rarity": "희박"
+    }
+  },
+  "elements": {
+    "anemo": "바람",
+    "geo": "바위",
+    "electro": "번개",
+    "hydro": "물",
+    "pyro": "불",
+    "cryo": "얼음",
+    "dendro": "풀"
+  },
+  "home": {
+    "search": {
+      "characterName": "캐릭터 이름"
+    }
+  },
+  "character": {
+    "buildInfo": "빌드 정보",
+    "weapons": "무기",
+    "artifactSets": "성유물 세트",
+    "skills": "스킬",
+    "passives": "고유 특성",
+    "constellations": "운명의 자리"
+  }
+}

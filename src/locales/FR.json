@@ -1,0 +1,25 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "Nom",
+      "rarity": "Rareté"
+    }
+  },
+  "elements": {
+    "anemo": "Anémo",
+    "geo": "Géo",
+    "electro": "Électro"
+  },
+  "home": {
+    "search": {
+      "characterName": "Nom du personnage"
+    }
+  },
+  "character": {
+    "buildInfo": "Informations sur la construction",
+    "weapons": "Armes",
+    "artifactSets": "Set d'artéfacts",
+    "skills": "Capacité",
+    "passives": "Aptitude passive"
+  }
+}

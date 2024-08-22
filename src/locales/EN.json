@@ -1,0 +1,37 @@
+{
+  "sort": {
+    "criterias": {
+      "name": "Name",
+      "rarity": "Rarity"
+    }
+  },
+  "elements": {
+    "anemo": "Anemo",
+    "geo": "Geo",
+    "electro": "Electro",
+    "hydro": "Hydro",
+    "pyro": "Pyro",
+    "cryo": "Cryo",
+    "dendro": "Dendro"
+  },
+  "home": {
+    "search": {
+      "characterName": "Character Name"
+    }
+  },
+  "character": {
+    "buildInfo": "Build Info",
+    "weapons": "Weapons",
+    "artifactSets": "Artifact Sets",
+    "skills": "Skill",
+    "passives": "Passives",
+    "constellations": "Constellations"
+  },
+  "header": {
+    "title": "Genshin Helper Website"
+  },
+  "footer": {
+    "contents": "Genshin Helper Website is not affiliated with or endorsed by HoYoverse.",
+    "versionText": "Genshin Helper Version"
+  }
+}
