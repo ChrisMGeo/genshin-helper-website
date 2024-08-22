@@ -1,7 +1,5 @@
 import UnityParser from './utils/unityParser'
 
-import styles from './styles.module.css'
-
 type UnityRichTextProps = {
   children: string,
   onBold?: () => object,
@@ -44,7 +42,6 @@ const UnityRichTextComponent = ({ children, onBold = () => ({ fontWeight: 'bold'
 
     return (
       <span
-        className={styles.unityTextSpan}
         key={element.key}
         style={style}
       >
