@@ -223,7 +223,7 @@ const CharacterDisplayCard = ({
                     >
                       <SkillCard
                         skill={skillTalent}
-                        index={skillTalent === characterInfo.energySkill ? `/genshin-helper-website/characters/${characterKey}/elemental-burst.png` : `/genshin-helper-website/characters/${characterKey}/skill-${index + 1}.png`}
+                        index={skillTalent === characterInfo.energySkill ? `/genshin-helper-website/characters/${characterKey}/elemental-burst.webp` : `/genshin-helper-website/characters/${characterKey}/skill-${index + 1}.webp`}
                       />
                     </Grid>
                   )
@@ -244,7 +244,7 @@ const CharacterDisplayCard = ({
                       >
                         <SkillCard
                           skill={passive}
-                          index={`/genshin-helper-website/characters/${characterKey}/passive-${index + 1}.png`}
+                          index={`/genshin-helper-website/characters/${characterKey}/passive-${index + 1}.webp`}
                         />
                       </Grid>
                     );
@@ -261,7 +261,7 @@ const CharacterDisplayCard = ({
                       <Grid item xs={12} sm={12} md={4} lg={4} key={index}>
                         <SkillCard
                           skill={constellation}
-                          index={`/genshin-helper-website/characters/${characterKey}/constellation-${index + 1}.png`}
+                          index={`/genshin-helper-website/characters/${characterKey}/constellation-${index + 1}.webp`}
                         />
                       </Grid>
                     );

@@ -47,7 +47,7 @@ const CharSelectDropdown = ({
         aria-expanded={open ? "true" : "false"}
         startIcon={
           <ThumbSide
-            src={`/genshin-helper-website/characters/${characterKey}/side-icon.png`}
+            src={`/genshin-helper-website/characters/${characterKey}/side-icon.webp`}
             alt={characterName}
           />
         }

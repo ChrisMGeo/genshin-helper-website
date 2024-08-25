@@ -47,7 +47,7 @@ const CharacterPreview = ({
                 height: "100%",
                 opacity: 0.7,
                 backgroundImage: `url(${!isTraveler
-                  ? `/genshin-helper-website/characters/${characterInfo.nameId}/name-card-p.png`
+                  ? `/genshin-helper-website/characters/${characterInfo.nameId}/name-card-p.webp`
                   : ""
                   })`,
                 backgroundPosition: "center",
@@ -66,7 +66,7 @@ const CharacterPreview = ({
             >
               <Box
                 component="img"
-                src={`/genshin-helper-website/characters/${characterInfo.nameId}/icon.png`}
+                src={`/genshin-helper-website/characters/${characterInfo.nameId}/icon.webp`}
                 width="102.39px"
                 height="102.39px"
                 sx={{ mt: "auto" }}

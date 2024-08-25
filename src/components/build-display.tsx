@@ -74,7 +74,7 @@ const WeaponDisplay = ({ weaponInfo: { nameId, rarity, name, refinementInfo } }:
         <CardMedia
           component="img"
           alt={`${key}`}
-          src={`/genshin-helper-website/weapons/${nameId}/awaken-icon.png`}
+          src={`/genshin-helper-website/weapons/${nameId}/awaken-icon.webp`}
           sx={{
             width: 92,
             height: 92,
@@ -127,7 +127,7 @@ const ArtifactSetDisplay = ({
         <CardMedia
           component="img"
           alt={`${key}`}
-          src={`/genshin-helper-website/artifacts/${key}/set-icon.png`}
+          src={`/genshin-helper-website/artifacts/${key}/set-icon.webp`}
           sx={{
             width: 92,
             height: 92,
