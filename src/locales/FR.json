@@ -3,7 +3,8 @@
     "criterias": {
       "name": "Nom",
       "rarity": "Rareté"
-    }
+    },
+    "sortBy": "Trier par"
   },
   "elements": {
     "anemo": "Anémo",
@@ -25,5 +26,12 @@
       "pieceBonus2": "Set de 2 pièces",
       "pieceBonus4": "Set de 4 pièces"
     }
+  },
+  "header": {
+    "title": "Site Web d'assistance Genshin"
+  },
+  "footer": {
+    "contents": "Le site Web Genshin Helper n’est ni affilié ni approuvé par HoYoverse.",
+    "versionText": "Version d'assistance Genshin"
   }
 }

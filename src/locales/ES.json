@@ -3,7 +3,8 @@
     "criterias": {
       "name": "Nombre",
       "rarity": "Rareza"
-    }
+    },
+    "sortBy": "Ordenar por"
   },
   "home": {
     "search": {
@@ -21,5 +22,12 @@
       "pieceBonus2": "Conjunto de 2 piezas",
       "pieceBonus4": "Conjunto de 4 piezas"
     }
+  },
+  "header": {
+    "title": "Sitio web de ayuda de Genshin"
+  },
+  "footer": {
+    "contents": "El sitio web Genshin Helper no está afiliado ni respaldado por HoYoverse.",
+    "versionText": "Versión de ayuda de Genshin"
   }
 }

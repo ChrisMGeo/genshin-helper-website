@@ -3,7 +3,8 @@
     "criterias": {
       "name": "Name",
       "rarity": "Rarity"
-    }
+    },
+    "sortBy": "Sort by"
   },
   "elements": {
     "anemo": "Anemo",

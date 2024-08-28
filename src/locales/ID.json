@@ -3,7 +3,8 @@
     "criterias": {
       "name": "Nama",
       "rarity": "Keanehan"
-    }
+    },
+    "sortBy": "Urutkan berdasarkan"
   },
   "home": {
     "search": {
@@ -20,5 +21,12 @@
       "pieceBonus2": "Set 2 Bagian",
       "pieceBonus4": "Set 4 Bagian"
     }
+  },
+  "header": {
+    "title": "Situs Pembantu Genshin"
+  },
+  "footer": {
+    "contents": "Situs Web Pembantu Genshin tidak berafiliasi atau didukung oleh HoYoverse.",
+    "versionText": "Versi Pembantu Genshin"
   }
 }

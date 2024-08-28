@@ -3,7 +3,8 @@
     "criterias": {
       "name": "İsim",
       "rarity": "Nadirlik"
-    }
+    },
+    "sortBy": "Göre sırala"
   },
   "elements": {
     "anemo": "Rüzgar",
@@ -30,5 +31,12 @@
       "pieceBonus2": "2 Parçalı Set",
       "pieceBonus4": "4 Parçalı Set"
     }
+  },
+  "header": {
+    "title": "Genshin Yardımcı Web Sitesi"
+  },
+  "footer": {
+    "contents": "Genshin Yardımcı Web Sitesi HoYoverse'ye bağlı değildir veya HoYoverse tarafından desteklenmemektedir.",
+    "versionText": "Genshin Yardımcı Sürümü"
   }
 }

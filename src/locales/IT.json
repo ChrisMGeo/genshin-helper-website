@@ -3,7 +3,8 @@
     "criterias": {
       "name": "Nome",
       "rarity": "Rarità"
-    }
+    },
+    "sortBy": "Ordina per"
   },
   "home": {
     "search": {
@@ -21,5 +22,12 @@
       "pieceBonus2": "Set da 2 pezzi",
       "pieceBonus4": "Set da 4 pezzi"
     }
+  },
+  "header": {
+    "title": "Sito Web di Genshin Helper"
+  },
+  "footer": {
+    "contents": "Il sito Web Genshin Helper non è affiliato o approvato da HoYoverse.",
+    "versionText": "Versione Genshin Helper"
   }
 }

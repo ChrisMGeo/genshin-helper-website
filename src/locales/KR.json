@@ -3,7 +3,8 @@
     "criterias": {
       "name": "이름",
       "rarity": "희박"
-    }
+    },
+    "sortBy": "정렬 기준"
   },
   "elements": {
     "anemo": "바람",
@@ -30,5 +31,12 @@
       "pieceBonus2": "2세트",
       "pieceBonus4": "4세트"
     }
+  },
+  "header": {
+    "title": "겐신 도우미 웹사이트"
+  },
+  "footer": {
+    "contents": "Genshin Helper Website는 HoYoverse와 제휴하거나 보증하지 않습니다.",
+    "versionText": "겐신 도우미 버전"
   }
 }

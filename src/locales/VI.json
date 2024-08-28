@@ -3,7 +3,8 @@
     "criterias": {
       "name": "Tên",
       "rarity": "Độ hiếm"
-    }
+    },
+    "sortBy": "Sắp xếp theo"
   },
   "elements": {
     "anemo": "Phong",
@@ -30,5 +31,12 @@
       "pieceBonus2": "Bộ 2 Món",
       "pieceBonus4": "Bộ 4 Món"
     }
+  },
+  "header": {
+    "title": "Trang web trợ giúp Genshin"
+  },
+  "footer": {
+    "contents": "Trang web Trợ giúp Genshin không được liên kết hoặc xác nhận bởi HoYoverse.",
+    "versionText": "Phiên bản trợ giúp Genshin"
   }
 }

@@ -3,7 +3,8 @@
     "criterias": {
       "name": "ชื่อ",
       "rarity": "ความหายาก"
-    }
+    },
+    "sortBy": "เรียงตาม"
   },
   "elements": {
     "anemo": "ลม",
@@ -30,5 +31,12 @@
       "pieceBonus2": "เซ็ต 2 ชิ้น",
       "pieceBonus4": "เซ็ต 4 ชิ้น"
     }
+  },
+  "header": {
+    "title": "เว็บไซต์เก็นชินเฮลเปอร์"
+  },
+  "footer": {
+    "contents": "เว็บไซต์ Genshin Helper ไม่มีส่วนเกี่ยวข้องหรือรับรองโดย HoYoverse",
+    "versionText": "เวอร์ชั่นเก็นชินเฮลเปอร์"
   }
 }

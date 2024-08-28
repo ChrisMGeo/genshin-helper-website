@@ -3,7 +3,8 @@
     "criterias": {
       "name": "姓名",
       "rarity": "稀有度"
-    }
+    },
+    "sortBy": "排序方式"
   },
   "elements": {
     "anemo": "風",
@@ -30,5 +31,12 @@
       "pieceBonus2": "2件套裝",
       "pieceBonus4": "4件套裝"
     }
+  },
+  "header": {
+    "title": "元神助手網站"
+  },
+  "footer": {
+    "contents": "原神助理網站不隸屬於HoYoverse，也不受其認可。",
+    "versionText": "原神助手版"
   }
 }

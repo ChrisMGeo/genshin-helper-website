@@ -3,7 +3,8 @@
     "criterias": {
       "name": "名前",
       "rarity": "希少"
-    }
+    },
+    "sortBy": "並べ替え"
   },
   "elements": {
     "anemo": "風",
@@ -30,5 +31,12 @@
       "pieceBonus2": "2セット",
       "pieceBonus4": "4セット"
     }
+  },
+  "header": {
+    "title": "原神ヘルパーウェブサイト"
+  },
+  "footer": {
+    "contents": "Genshin Helper Web サイトは HoYverse と提携または承認されていません。",
+    "versionText": "原神ヘルパーバージョン"
   }
 }
