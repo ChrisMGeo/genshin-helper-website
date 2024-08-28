@@ -1811,6 +1811,80 @@ const artifactInfo = [
         "descHash": 194753136
       }
     }
+  },
+  {
+    "id": 15037,
+    "nameId": "scroll_of_the_hero_of_cinder_city",
+    "nameHash": 1087496331,
+    "minRarity": 4,
+    "maxRarity": 5,
+    "setBonuses": {
+      "2": {
+        "descHash": 1465136737
+      },
+      "4": {
+        "descHash": 823248225
+      }
+    },
+    "pieces": {
+      "flower": {
+        "nameHash": 719571060,
+        "descHash": 1581483672
+      },
+      "feather": {
+        "nameHash": 3332472116,
+        "descHash": 2211451192
+      },
+      "sands": {
+        "nameHash": 1058777436,
+        "descHash": 3812310632
+      },
+      "goblet": {
+        "nameHash": 3684642964,
+        "descHash": 3362107848
+      },
+      "circlet": {
+        "nameHash": 200509436,
+        "descHash": 2911404720
+      }
+    }
+  },
+  {
+    "id": 15038,
+    "nameId": "obsidian_codex",
+    "nameHash": 2725855635,
+    "minRarity": 4,
+    "maxRarity": 5,
+    "setBonuses": {
+      "2": {
+        "descHash": 2857779545
+      },
+      "4": {
+        "descHash": 3301228329
+      }
+    },
+    "pieces": {
+      "flower": {
+        "nameHash": 3491228732,
+        "descHash": 4219710144
+      },
+      "feather": {
+        "nameHash": 464847012,
+        "descHash": 2878903784
+      },
+      "sands": {
+        "nameHash": 800137332,
+        "descHash": 1443080024
+      },
+      "goblet": {
+        "nameHash": 3203708732,
+        "descHash": 896589488
+      },
+      "circlet": {
+        "nameHash": 1863731340,
+        "descHash": 3603843416
+      }
+    }
   }
 ] as const;
 export default artifactInfo;

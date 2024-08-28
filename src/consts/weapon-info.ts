@@ -1470,6 +1470,36 @@ const weaponInfo = [
     ]
   },
   {
+    "id": 11431,
+    "type": "sword",
+    "nameId": "flute_of_ezpitzal",
+    "rarity": 4,
+    "nameHash": 3434743027,
+    "descHash": 2033585341,
+    "refinementInfo": [
+      {
+        "nameHash": 641137867,
+        "descHash": 1202080585
+      },
+      {
+        "nameHash": 1317648891,
+        "descHash": 749488785
+      },
+      {
+        "nameHash": 1892110635,
+        "descHash": 2052768985
+      },
+      {
+        "nameHash": 2790338987,
+        "descHash": 2931565025
+      },
+      {
+        "nameHash": 1959332915,
+        "descHash": 2652634777
+      }
+    ]
+  },
+  {
     "id": 12401,
     "type": "claymore",
     "nameId": "favonius_greatsword",
@@ -2100,6 +2130,36 @@ const weaponInfo = [
     ]
   },
   {
+    "id": 12431,
+    "type": "claymore",
+    "nameId": "earth_shaker",
+    "rarity": 4,
+    "nameHash": 2481464075,
+    "descHash": 469532517,
+    "refinementInfo": [
+      {
+        "nameHash": 2824611011,
+        "descHash": 1106830769
+      },
+      {
+        "nameHash": 529466347,
+        "descHash": 4120989449
+      },
+      {
+        "nameHash": 1062506011,
+        "descHash": 283333489
+      },
+      {
+        "nameHash": 426612339,
+        "descHash": 3544584305
+      },
+      {
+        "nameHash": 3611039419,
+        "descHash": 178699713
+      }
+    ]
+  },
+  {
     "id": 13401,
     "type": "polearm",
     "nameId": "dragon_s_bane",
@@ -2636,6 +2696,36 @@ const weaponInfo = [
       {
         "nameHash": 4019696531,
         "descHash": 3488627601
+      }
+    ]
+  },
+  {
+    "id": 13431,
+    "type": "polearm",
+    "nameId": "footprint_of_the_rainbow",
+    "rarity": 4,
+    "nameHash": 415520051,
+    "descHash": 845466069,
+    "refinementInfo": [
+      {
+        "nameHash": 4067650259,
+        "descHash": 1875602489
+      },
+      {
+        "nameHash": 2396964763,
+        "descHash": 3656135553
+      },
+      {
+        "nameHash": 810092707,
+        "descHash": 311578129
+      },
+      {
+        "nameHash": 3093827683,
+        "descHash": 4160912473
+      },
+      {
+        "nameHash": 663168267,
+        "descHash": 514220601
       }
     ]
   },
@@ -3206,6 +3296,66 @@ const weaponInfo = [
       {
         "nameHash": 22949795,
         "descHash": 1843893521
+      }
+    ]
+  },
+  {
+    "id": 14427,
+    "type": "catalyst",
+    "nameId": "ash_graven_drinking_horn",
+    "rarity": 4,
+    "nameHash": 422144187,
+    "descHash": 1970749037,
+    "refinementInfo": [
+      {
+        "nameHash": 2452156291,
+        "descHash": 2549641625
+      },
+      {
+        "nameHash": 155836435,
+        "descHash": 2554988529
+      },
+      {
+        "nameHash": 3912935251,
+        "descHash": 372277385
+      },
+      {
+        "nameHash": 2275380699,
+        "descHash": 2714650921
+      },
+      {
+        "nameHash": 63399523,
+        "descHash": 2916162057
+      }
+    ]
+  },
+  {
+    "id": 14431,
+    "type": "catalyst",
+    "nameId": "ring_of_yaxche",
+    "rarity": 4,
+    "nameHash": 3092853059,
+    "descHash": 2465912757,
+    "refinementInfo": [
+      {
+        "nameHash": 3167934411,
+        "descHash": 4177367921
+      },
+      {
+        "nameHash": 1784212683,
+        "descHash": 210855793
+      },
+      {
+        "nameHash": 4125747035,
+        "descHash": 2205018745
+      },
+      {
+        "nameHash": 4169591259,
+        "descHash": 3306972617
+      },
+      {
+        "nameHash": 1279937955,
+        "descHash": 1527140721
       }
     ]
   },
@@ -3884,6 +4034,36 @@ const weaponInfo = [
     ]
   },
   {
+    "id": 15431,
+    "type": "bow",
+    "nameId": "chain_breaker",
+    "rarity": 4,
+    "nameHash": 565052971,
+    "descHash": 2165764013,
+    "refinementInfo": [
+      {
+        "nameHash": 4131533283,
+        "descHash": 1383279281
+      },
+      {
+        "nameHash": 1067095707,
+        "descHash": 3878715561
+      },
+      {
+        "nameHash": 1381129923,
+        "descHash": 2816651209
+      },
+      {
+        "nameHash": 249335131,
+        "descHash": 1571072649
+      },
+      {
+        "nameHash": 1171552563,
+        "descHash": 710690633
+      }
+    ]
+  },
+  {
     "id": 11501,
     "type": "sword",
     "nameId": "aquila_favonia",
@@ -4459,6 +4639,36 @@ const weaponInfo = [
       {
         "nameHash": 533413131,
         "descHash": 1496008745
+      }
+    ]
+  },
+  {
+    "id": 12513,
+    "type": "claymore",
+    "nameId": "fang_of_the_mountain_king",
+    "rarity": 5,
+    "nameHash": 1183454019,
+    "descHash": 665015597,
+    "refinementInfo": [
+      {
+        "nameHash": 3276718699,
+        "descHash": 138973009
+      },
+      {
+        "nameHash": 2213372475,
+        "descHash": 4032450441
+      },
+      {
+        "nameHash": 3949991923,
+        "descHash": 470856129
+      },
+      {
+        "nameHash": 1767544347,
+        "descHash": 3147604913
+      },
+      {
+        "nameHash": 2770785803,
+        "descHash": 176628873
       }
     ]
   },
@@ -5059,6 +5269,36 @@ const weaponInfo = [
       {
         "nameHash": 1934855067,
         "descHash": 3211055345
+      }
+    ]
+  },
+  {
+    "id": 14516,
+    "type": "catalyst",
+    "nameId": "surf_s_up",
+    "rarity": 5,
+    "nameHash": 1673987515,
+    "descHash": 2031726741,
+    "refinementInfo": [
+      {
+        "nameHash": 3837080627,
+        "descHash": 3744504841
+      },
+      {
+        "nameHash": 89994195,
+        "descHash": 1214735841
+      },
+      {
+        "nameHash": 1079513851,
+        "descHash": 3111313161
+      },
+      {
+        "nameHash": 708169307,
+        "descHash": 520701065
+      },
+      {
+        "nameHash": 832268067,
+        "descHash": 1337581857
       }
     ]
   },
