@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import DropdownButton from "./dropdown-button";
 import { SortOrder } from "../types/sort";
+import { useTranslation } from "react-i18next";
 
 interface SortByButtonProps extends ButtonGroupProps {
   sortKeys: string[];
@@ -31,9 +32,10 @@ const SortByButton = ({
   displayValue,
   ...props
 }: SortByButtonProps) => {
+  const { t } = useTranslation();
   return (
     <Box display="flex" alignItems="center" gap={1}>
-      Sort by:
+      {t("ui.sort.sortBy")}:
       <ButtonGroup {...props}>
         <DropdownButton title={`${displayValue(value)}`} color="success">
           {sortKeys.map((key) => (
