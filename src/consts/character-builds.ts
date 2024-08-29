@@ -26,6 +26,7 @@ const characterBuilds = [
           "amos_bow",
           "hunter_s_path",
           "ibis_piercer",
+          "the_viridescent_hunt",
           "hamayumi",
           "prototype_crescent",
           "song_of_stillness",
@@ -220,7 +221,7 @@ const characterBuilds = [
           "bloodstained_chivalry",
           "pale_flame",
           "emblem_of_severed_fate",
-          "noblesse_oblige"
+          "husk_of_opulent_dreams"
         ]
       },
       {
@@ -490,7 +491,7 @@ const characterBuilds = [
           "song_of_broken_pines",
           "blackcliff_slasher",
           "luxurious_sea_lord",
-          "prototype_archaic"
+          "prototype_archaic",
         ],
         "artifactSets": [
           "crimson_witch_of_flames",
@@ -525,7 +526,7 @@ const characterBuilds = [
           "dodoco_tales",
           "blackcliff_agate",
           "mappa_mare",
-          "magic_guide"
+          "magic_guide",
         ],
         "artifactSets": [
           "crimson_witch_of_flames",
@@ -652,7 +653,8 @@ const characterBuilds = [
           "favonius_greatsword",
           "wolf_s_gravestone",
           "makhaira_aquamarine",
-          "the_bell"
+          "the_bell",
+          "prototype_archaic"
         ],
         "artifactSets": [
           "tenacity_of_the_millelith",
@@ -827,7 +829,7 @@ const characterBuilds = [
       {
         "name": "OFF-FIELD AGGRAVATE DPS",
         "artifactMainStats": "Sands - ATK% / Energy Recharge\nGoblet - Electro DMG\nCirclet - Crit Rate / DMG",
-        "artifactSubStats": "1. Energy Recharge*\n2. Crit Rate / DMG\n3. ATK%\n4. Energy Recharge\n5. Elemental Mastery\n6. Flat ATK\n\n* Prioritize Energy Recharge first until you can burst off cooldown",
+        "artifactSubStats": "1. Energy Recharge*\n2. Crit Rate / DMG\n3. ATK%\n4. Elemental Mastery\n5. Flat ATK\n\n* Prioritize Energy Recharge first until you can burst off cooldown",
         "talentPriority": "1. Burst\n2. Skill\n",
         "abilityTips": "Beidou's skill grants you an Electro status for a brief moment upon holding it. This means it can be used for status-cleansing (No particular effective element). Can only be done on herself\n\nDo note the weapon rankings are based on Beidou's unbuffed state.",
         "weapons": [
@@ -844,14 +846,14 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "emblem_of_severed_fate",
-          "thundering_fury",
+          "emblem_of_severed_fate",
           "thundersoother"
         ]
       },
       {
         "name": "OFF-FIELD DPS ✩",
         "artifactMainStats": "Sands - ATK% / Energy Recharge\nGoblet - Electro DMG\nCirclet - Crit Rate / DMG",
-        "artifactSubStats": "1. Energy Recharge*\n2. Crit Rate / DMG\n3. ATK%\n4. Energy Recharge\n5. Elemental Mastery\n6. Flat ATK\n\n* Prioritize Energy Recharge first until you can burst off cooldown",
+        "artifactSubStats": "1. Energy Recharge*\n2. Crit Rate / DMG\n3. ATK%\n4. Elemental Mastery\n5. Flat ATK\n\n* Prioritize Energy Recharge first until you can burst off cooldown",
         "talentPriority": "1. Burst\n2. Skill\n",
         "abilityTips": "",
         "weapons": [
@@ -868,7 +870,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "emblem_of_severed_fate",
-          "thundering_fury",
+          "emblem_of_severed_fate",
           "thundersoother"
         ]
       }
@@ -926,7 +928,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "emblem_of_severed_fate",
-          "thundering_fury",
+          "emblem_of_severed_fate",
           "gilded_dreams",
           "noblesse_oblige",
           "thundersoother"
@@ -1209,6 +1211,7 @@ const characterBuilds = [
         "abilityTips": "",
         "weapons": [
           "mistsplitter_reforged",
+          "primordial_jade_cutter",
           "haran_geppaku_futsu",
           "freedom_sworn",
           "light_of_foliar_incision",
@@ -1275,7 +1278,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "emblem_of_severed_fate",
-          "thundering_fury",
+          "emblem_of_severed_fate",
           "tenacity_of_the_millelith"
         ]
       }
@@ -1308,7 +1311,7 @@ const characterBuilds = [
         "artifactSets": [
           "golden_troupe",
           "emblem_of_severed_fate",
-          "thundering_fury",
+          "emblem_of_severed_fate",
           "thundersoother",
           "tenacity_of_the_millelith"
         ]
@@ -1400,7 +1403,7 @@ const characterBuilds = [
           "thundering_fury",
           "gladiator_s_finale",
           "gilded_dreams",
-          "thundering_fury",
+          "emblem_of_severed_fate",
           "thundersoother"
         ]
       }
@@ -1473,7 +1476,7 @@ const characterBuilds = [
           "emblem_of_severed_fate",
           "noblesse_oblige",
           "nymph_s_dream",
-          "noblesse_oblige",
+          "emblem_of_severed_fate",
           "blizzard_strayer"
         ]
       }
@@ -1546,7 +1549,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "emblem_of_severed_fate",
-          "noblesse_oblige"
+          "emblem_of_severed_fate"
         ]
       }
     ]
@@ -1578,6 +1581,7 @@ const characterBuilds = [
           "fading_twilight",
           "blackcliff_warbow",
           "the_stringless",
+          "elegy_for_the_end",
           "rust"
         ],
         "artifactSets": [
@@ -1634,7 +1638,7 @@ const characterBuilds = [
         "artifactSets": [
           "emblem_of_severed_fate",
           "noblesse_oblige",
-          "noblesse_oblige"
+          "emblem_of_severed_fate"
         ]
       },
       {
@@ -1743,6 +1747,7 @@ const characterBuilds = [
           "summit_shaper",
           "finale_of_the_deep",
           "kagotsurube_isshin",
+          "lion_s_roar",
           "harbinger_of_dawn",
           "the_flute",
           "sword_of_narzissenkreuz"
@@ -1778,7 +1783,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "emblem_of_severed_fate",
-          "noblesse_oblige"
+          "tenacity_of_the_millelith"
         ]
       },
       {
@@ -1802,7 +1807,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "emblem_of_severed_fate",
-          "noblesse_oblige"
+          "tenacity_of_the_millelith"
         ]
       }
     ]
@@ -1934,6 +1939,34 @@ const characterBuilds = [
     ]
   },
   {
+    "nameId": "mualani",
+    "element": "hydro",
+    "weapon": "catalyst",
+    "notes": "VAPORIZE DPS\nIn a smiliar fashion to Kirara, who runs into enemies to stack her shield in Urgent Neko Parcel state, Mualani can use her Elemental Skill to ride Sharky Surfboard and mark enemies that she runs into. While on Sharky Surfboard, Normal Attacking can cause her to perform Sharky Bites, which can fire additional missiles if she attacks a marked enemy. Sharky Bites are considered Normal Attack damage.\n\nRegarding Weapon Choices:\nSacrificial Jade: When paired with Obsidian Codex or Marechaussee Hunter, Crit Rate substats are no longer desireable.\n\nRegarding Artifact Sets:\nMarechaussee Hunter: Only to be used when paired with Furina.",
+    "builds": [
+      {
+        "name": "VAPORIZE DPS\n✩",
+        "artifactMainStats": "Sands - HP%/Elemental Mastery\nGoblet - Hydro DMG\nCirclet - Crit Rate/DMG",
+        "artifactSubStats": "1. Crit Rate/DMG\n2. Elemental Mastery\n3. HP%\n4. Flat HP",
+        "talentPriority": "1. Skill\n2. Burst",
+        "abilityTips": "",
+        "weapons": [
+          "surf_s_up",
+          "sacrificial_jade",
+          "a_thousand_floating_dreams",
+          "tome_of_the_eternal_flow",
+          "ring_of_yaxche"
+        ],
+        "artifactSets": [
+          "obsidian_codex",
+          "heart_of_depth",
+          "marechaussee_hunter",
+          "marechaussee_hunter"
+        ]
+      }
+    ]
+  },
+  {
     "nameId": "diona",
     "element": "cryo",
     "weapon": "bow",
@@ -1955,6 +1988,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "noblesse_oblige",
+          "scroll_of_the_hero_of_cinder_city",
           "emblem_of_severed_fate",
           "maiden_beloved",
           "ocean_hued_clam",
@@ -1992,11 +2026,12 @@ const characterBuilds = [
           "favonius_greatsword"
         ],
         "artifactSets": [
-          "blizzard_strayer",
+          "noblesse_oblige",
           "emblem_of_severed_fate",
-          "gilded_dreams",
           "blizzard_strayer",
-          "noblesse_oblige"
+          "scroll_of_the_hero_of_cinder_city",
+          "gilded_dreams",
+          "emblem_of_severed_fate"
         ]
       }
     ]
@@ -2053,6 +2088,7 @@ const characterBuilds = [
           "kagotsurube_isshin",
           "aquila_favonia",
           "iron_sting",
+          "rust",
           "favonius_sword"
         ],
         "artifactSets": [
@@ -2091,6 +2127,7 @@ const characterBuilds = [
           "missive_windspear",
           "deathmatch",
           "blackcliff_pole",
+          "the_catch",
           "engulfing_lightning",
           "skyward_spine",
           "lithic_spear",
@@ -2143,6 +2180,7 @@ const characterBuilds = [
           "primordial_jade_winged_spear",
           "engulfing_lightning",
           "skyward_spine",
+          "the_catch",
           "prototype_starglitter"
         ],
         "artifactSets": [
@@ -2174,6 +2212,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "tenacity_of_the_millelith",
+          "scroll_of_the_hero_of_cinder_city",
           "tenacity_of_the_millelith",
           "noblesse_oblige"
         ]
@@ -2198,7 +2237,7 @@ const characterBuilds = [
         "artifactSets": [
           "tenacity_of_the_millelith",
           "blizzard_strayer",
-          "blizzard_strayer",
+          "tenacity_of_the_millelith",
           "noblesse_oblige",
           "emblem_of_severed_fate"
         ]
@@ -2222,6 +2261,7 @@ const characterBuilds = [
           "dialogues_of_the_desert_sages",
           "engulfing_lightning",
           "prototype_starglitter",
+          "the_catch",
           "rightful_reward",
           "black_tassel"
         ],
@@ -2262,7 +2302,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "pale_flame",
-          "pale_flame",
+          "emblem_of_severed_fate",
           "golden_troupe",
           "golden_troupe",
           "gladiator_s_finale"
@@ -2435,7 +2475,7 @@ const characterBuilds = [
           "blizzard_strayer",
           "blizzard_strayer",
           "emblem_of_severed_fate",
-          "blizzard_strayer",
+          "emblem_of_severed_fate",
           "noblesse_oblige"
         ]
       }
@@ -2543,7 +2583,7 @@ const characterBuilds = [
           "blizzard_strayer",
           "blizzard_strayer",
           "emblem_of_severed_fate",
-          "blizzard_strayer",
+          "emblem_of_severed_fate",
           "noblesse_oblige"
         ]
       }
@@ -2635,7 +2675,7 @@ const characterBuilds = [
           "marechaussee_hunter",
           "blizzard_strayer",
           "shimenawa_s_reminiscence",
-          "blizzard_strayer"
+          "marechaussee_hunter"
         ]
       }
     ]
@@ -2783,6 +2823,7 @@ const characterBuilds = [
         "artifactSets": [
           "viridescent_venerer",
           "noblesse_oblige",
+          "scroll_of_the_hero_of_cinder_city",
           "emblem_of_severed_fate",
           "golden_troupe",
           "tenacity_of_the_millelith",
@@ -2851,7 +2892,7 @@ const characterBuilds = [
           "viridescent_venerer",
           "noblesse_oblige",
           "ocean_hued_clam",
-          "noblesse_oblige",
+          "emblem_of_severed_fate",
           "emblem_of_severed_fate"
         ]
       },
@@ -2933,7 +2974,7 @@ const characterBuilds = [
           "viridescent_venerer",
           "noblesse_oblige",
           "emblem_of_severed_fate",
-          "viridescent_venerer"
+          "emblem_of_severed_fate"
         ]
       }
     ]
@@ -3105,7 +3146,8 @@ const characterBuilds = [
         "artifactSets": [
           "viridescent_venerer",
           "noblesse_oblige",
-          "song_of_days_past"
+          "song_of_days_past",
+          "scroll_of_the_hero_of_cinder_city"
         ]
       },
       {
@@ -3132,7 +3174,8 @@ const characterBuilds = [
         "artifactSets": [
           "viridescent_venerer",
           "noblesse_oblige",
-          "song_of_days_past"
+          "song_of_days_past",
+          "scroll_of_the_hero_of_cinder_city"
         ]
       }
     ]
@@ -3165,7 +3208,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "nighttime_whispers_in_the_echoing_woods",
-          "noblesse_oblige",
+          "emblem_of_severed_fate",
           "husk_of_opulent_dreams",
           "thundersoother",
           "lavawalker",
@@ -3207,7 +3250,8 @@ const characterBuilds = [
         "talentPriority": "1. Skill*\n2. Normal Attack = Burst\n\n*Dependence on Skill's talent level depends on your total DEF and whether Furina is in the team or not",
         "abilityTips": "",
         "weapons": [
-          "favonius_greatsword"
+          "favonius_greatsword",
+          "verdict"
         ],
         "artifactSets": [
           "archaic_petra"
@@ -3309,6 +3353,7 @@ const characterBuilds = [
         ],
         "artifactSets": [
           "archaic_petra",
+          "scroll_of_the_hero_of_cinder_city",
           "deepwood_memories",
           "instructor",
           "tenacity_of_the_millelith",
@@ -3371,7 +3416,7 @@ const characterBuilds = [
         "artifactSets": [
           "husk_of_opulent_dreams",
           "golden_troupe",
-          "archaic_petra",
+          "husk_of_opulent_dreams",
           "archaic_petra",
           "tenacity_of_the_millelith",
           "noblesse_oblige"
@@ -3387,6 +3432,7 @@ const characterBuilds = [
           "uraku_misugiri",
           "primordial_jade_cutter",
           "cinnabar_spindle",
+          "wolf_fang",
           "light_of_foliar_incision",
           "mistsplitter_reforged",
           "haran_geppaku_futsu",
@@ -3395,7 +3441,7 @@ const characterBuilds = [
         "artifactSets": [
           "husk_of_opulent_dreams",
           "golden_troupe",
-          "archaic_petra",
+          "husk_of_opulent_dreams",
           "archaic_petra",
           "tenacity_of_the_millelith",
           "noblesse_oblige"
@@ -3425,7 +3471,7 @@ const characterBuilds = [
           "husk_of_opulent_dreams",
           "desert_pavilion_chronicle",
           "retracing_bolide",
-          "archaic_petra"
+          "emblem_of_severed_fate"
         ]
       }
     ]
@@ -3458,7 +3504,7 @@ const characterBuilds = [
         "artifactSets": [
           "nighttime_whispers_in_the_echoing_woods",
           "golden_troupe",
-          "archaic_petra",
+          "emblem_of_severed_fate",
           "marechaussee_hunter"
         ]
       }
@@ -3490,7 +3536,7 @@ const characterBuilds = [
         "artifactSets": [
           "golden_troupe",
           "husk_of_opulent_dreams",
-          "archaic_petra"
+          "husk_of_opulent_dreams"
         ]
       }
     ]
@@ -3680,6 +3726,7 @@ const characterBuilds = [
           "the_widsith",
           "sacrificial_jade",
           "skyward_atlas",
+          "rust",
           "memory_of_dust",
           "solar_pearl",
           "favonius_codex",
@@ -3771,7 +3818,7 @@ const characterBuilds = [
     "nameId": "emilie",
     "element": "dendro",
     "weapon": "polearm",
-    "notes": "OFF-FIELD DPS\nEmilie does not use the Burning reaction as her primary source of damage, but rather she uses the reaction to help her continuously deal Dendro damage. Thus, Emilie would rather build offensive stats rather than focus on building around the Burning reaction.\n\nRegarding Weapon Choices:\nDeathmatch: At [R5], this weapon will perform better than Engulfing Lightning, and it will perform a little worse than Staff of Homa if she is played in single-target.\n\nRegarding Artifact Sets:\nDeepwood Memories: This set has significantly less value on Emilie if someone else in the team can hold it.\n\nRegarding Substats:\nEnergy Recharge: Emilie does not need to burst every rotation, so ER% becomes less important. ",
+    "notes": "OFF-FIELD DPS\nEmilie does not use the Burning reaction as her primary source of damage, but rather she uses the reaction to help her continuously deal Dendro damage. Thus, Emilie would rather build offensive stats rather than focus on building around the Burning reaction.\n\nRegarding Weapon Choices:\nDeathmatch: At [R5], this weapon will perform better than Engulfing Lightning, and it will perform a little worse than Staff of Homa if she is played in single-target.\n\nRegarding Artifact Sets:\nDeepwood Memories: This set has significantly less value on Emilie if someone else in the team can hold it.\n\nRegarding Substats:\nEnergy Recharge: Emilie does not need to burst every rotation in some teams, so ER% becomes less important. ",
     "builds": [
       {
         "name": "OFF-FIELD DPS\n ✩",
@@ -3790,6 +3837,8 @@ const characterBuilds = [
           "deathmatch",
           "skyward_spine",
           "missive_windspear",
+          "lithic_spear",
+          "prospector_s_drill",
           "favonius_lance",
           "kitain_cross_spear"
         ],
