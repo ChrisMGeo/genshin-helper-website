@@ -19,7 +19,8 @@
     "constellations": "Konstelasi",
     "artifact": {
       "pieceBonus2": "Set 2 Bagian",
-      "pieceBonus4": "Set 4 Bagian"
+      "pieceBonus4": "Set 4 Bagian",
+      "chooseFromGroup": "Pilih salah satu dari berikut ini, yang berbeda dari pilihan Anda sebelumnya:"
     }
   },
   "header": {

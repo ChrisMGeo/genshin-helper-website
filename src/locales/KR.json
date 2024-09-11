@@ -29,7 +29,8 @@
     "constellations": "운명의 자리",
     "artifact": {
       "pieceBonus2": "2세트",
-      "pieceBonus4": "4세트"
+      "pieceBonus4": "4세트",
+      "chooseFromGroup": "이전 선택과 다른 다음 중 하나를 선택하십시오."
     }
   },
   "header": {

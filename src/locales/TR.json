@@ -29,14 +29,15 @@
     "constellations": "Takımyıldızlar",
     "artifact": {
       "pieceBonus2": "2 Parçalı Set",
-      "pieceBonus4": "4 Parçalı Set"
+      "pieceBonus4": "4 Parçalı Set",
+      "chooseFromGroup": "Önceki seçiminizden farklı olan aşağıdakilerden birini seçin:"
     }
   },
   "header": {
     "title": "Genshin Yardımcı Web Sitesi"
   },
   "footer": {
-    "contents": "Genshin Yardımcı Web Sitesi HoYoverse'ye bağlı değildir veya HoYoverse tarafından desteklenmemektedir.",
+    "contents": "Genshin Yardımcı Web Sitesi, HoYoverse'ye bağlı değildir veya HoYoverse tarafından desteklenmemektedir.",
     "versionText": "Genshin Yardımcı Sürümü"
   }
 }

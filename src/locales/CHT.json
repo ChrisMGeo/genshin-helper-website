@@ -29,7 +29,8 @@
     "constellations": "命之座",
     "artifact": {
       "pieceBonus2": "2件套裝",
-      "pieceBonus4": "4件套裝"
+      "pieceBonus4": "4件套裝",
+      "chooseFromGroup": "選擇以下與您之前的選擇不同的選項之一："
     }
   },
   "header": {

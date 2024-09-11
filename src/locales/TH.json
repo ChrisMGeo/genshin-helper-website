@@ -29,7 +29,8 @@
     "constellations": "กลุ่มดาว",
     "artifact": {
       "pieceBonus2": "เซ็ต 2 ชิ้น",
-      "pieceBonus4": "เซ็ต 4 ชิ้น"
+      "pieceBonus4": "เซ็ต 4 ชิ้น",
+      "chooseFromGroup": "เลือกรายการใดรายการหนึ่งต่อไปนี้ ซึ่งจะแตกต่างจากตัวเลือกก่อนหน้าของคุณ:"
     }
   },
   "header": {

@@ -29,7 +29,8 @@
     "constellations": "Cung Mệnh",
     "artifact": {
       "pieceBonus2": "Bộ 2 Món",
-      "pieceBonus4": "Bộ 4 Món"
+      "pieceBonus4": "Bộ 4 Món",
+      "chooseFromGroup": "Chọn một trong những điều sau đây, khác với lựa chọn trước đó của bạn:"
     }
   },
   "header": {

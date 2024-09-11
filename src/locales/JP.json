@@ -29,7 +29,8 @@
     "constellations": "命ノ星座",
     "artifact": {
       "pieceBonus2": "2セット",
-      "pieceBonus4": "4セット"
+      "pieceBonus4": "4セット",
+      "chooseFromGroup": "以前の選択とは異なるものを次のいずれか 1 つ選択します。"
     }
   },
   "header": {

@@ -24,7 +24,8 @@
     "passives": "Aptitude passive",
     "artifact": {
       "pieceBonus2": "Set de 2 pièces",
-      "pieceBonus4": "Set de 4 pièces"
+      "pieceBonus4": "Set de 4 pièces",
+      "chooseFromGroup": "Choisissez l'une des options suivantes, différente de votre choix précédent :"
     }
   },
   "header": {

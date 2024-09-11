@@ -29,7 +29,8 @@
     "constellations": "Constellations",
     "artifact": {
       "pieceBonus2": "2-Piece Set",
-      "pieceBonus4": "4-Piece Set"
+      "pieceBonus4": "4-Piece Set",
+      "chooseFromGroup": "Choose one of the following, that is different from your previous choice:"
     }
   },
   "header": {

@@ -20,7 +20,8 @@
     "constellations": "Costellazioni",
     "artifact": {
       "pieceBonus2": "Set da 2 pezzi",
-      "pieceBonus4": "Set da 4 pezzi"
+      "pieceBonus4": "Set da 4 pezzi",
+      "chooseFromGroup": "Scegli una delle seguenti opzioni, diversa dalla scelta precedente:"
     }
   },
   "header": {

@@ -1,7 +1,7 @@
 import { CharacterId } from "./character-info";
 import { Element, WeaponType } from "."
 import { WeaponId } from "./weapon-info";
-import { ArtifactId } from "./artifact-info";
+import { ArtifactGroupId, ArtifactId } from "./artifact-info";
 
 const characterBuilds = [
   {
@@ -25,7 +25,6 @@ const characterBuilds = [
           "slingshot",
           "amos_bow",
           "hunter_s_path",
-          "ibis_piercer",
           "the_viridescent_hunt",
           "hamayumi",
           "prototype_crescent",
@@ -37,13 +36,120 @@ const characterBuilds = [
           "scion_of_the_blazing_sun"
         ],
         "artifactSets": [
-          "shimenawa_s_reminiscence",
-          "wanderer_s_troupe",
-          "crimson_witch_of_flames",
-          "crimson_witch_of_flames",
-          "gilded_dreams",
-          "crimson_witch_of_flames",
-          "crimson_witch_of_flames"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "wanderer_s_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "marechaussee_hunter"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "marechaussee_hunter"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "marechaussee_hunter"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       },
       {
@@ -59,9 +165,40 @@ const characterBuilds = [
           "the_viridescent_hunt"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "instructor",
-          "the_exile"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "20-er"
+              },
+              {
+                "type": "group",
+                "id": "20-er"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "the_exile"
+            }
+          }
         ]
       }
     ]
@@ -83,7 +220,6 @@ const characterBuilds = [
           "staff_of_homa",
           "lumidouce_elegy",
           "engulfing_lightning",
-          "the_catch",
           "primordial_jade_winged_spear",
           "skyward_spine",
           "calamity_queller",
@@ -99,11 +235,65 @@ const characterBuilds = [
           "prototype_starglitter"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "crimson_witch_of_flames",
-          "crimson_witch_of_flames",
-          "noblesse_oblige",
-          "the_exile"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "the_exile"
+              },
+              {
+                "type": "set",
+                "id": "scholar"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -127,7 +317,6 @@ const characterBuilds = [
           "summit_shaper",
           "aquila_favonia",
           "blackcliff_longsword",
-          "iron_sting",
           "the_alley_flash",
           "skyward_blade",
           "the_black_sword",
@@ -136,9 +325,41 @@ const characterBuilds = [
           "prototype_rancour"
         ],
         "artifactSets": [
-          "crimson_witch_of_flames",
-          "crimson_witch_of_flames",
-          "thundering_fury"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          }
         ]
       },
       {
@@ -160,10 +381,52 @@ const characterBuilds = [
           "festering_desire"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "emblem_of_severed_fate",
-          "crimson_witch_of_flames",
-          "crimson_witch_of_flames"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       },
       {
@@ -187,9 +450,40 @@ const characterBuilds = [
           "sacrificial_sword"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "instructor",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "20-er"
+              },
+              {
+                "type": "group",
+                "id": "20-er"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       }
     ]
@@ -218,10 +512,50 @@ const characterBuilds = [
           "prototype_archaic"
         ],
         "artifactSets": [
-          "bloodstained_chivalry",
-          "pale_flame",
-          "emblem_of_severed_fate",
-          "husk_of_opulent_dreams"
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "bloodstained_chivalry"
+              },
+              {
+                "type": "set",
+                "id": "pale_flame"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "pale_flame"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "husk_of_opulent_dreams"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       },
       {
@@ -244,13 +578,83 @@ const characterBuilds = [
           "prototype_archaic"
         ],
         "artifactSets": [
-          "lavawalker",
-          "crimson_witch_of_flames",
-          "emblem_of_severed_fate",
-          "crimson_witch_of_flames",
-          "crimson_witch_of_flames",
-          "retracing_bolide",
-          "crimson_witch_of_flames"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "husk_of_opulent_dreams"
+              }
+            ]
+          }
         ]
       },
       {
@@ -265,9 +669,27 @@ const characterBuilds = [
           "favonius_greatsword"
         ],
         "artifactSets": [
-          "tenacity_of_the_millelith",
-          "husk_of_opulent_dreams",
-          "husk_of_opulent_dreams"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          }
         ]
       }
     ]
@@ -290,18 +712,63 @@ const characterBuilds = [
           "lost_prayer_to_the_sacred_winds",
           "kagura_s_verity",
           "the_widsith",
-          "dodoco_tales",
           "solar_pearl",
           "blackcliff_agate",
           "mappa_mare"
         ],
         "artifactSets": [
-          "crimson_witch_of_flames",
-          "gilded_dreams",
-          "wanderer_s_troupe",
-          "crimson_witch_of_flames",
-          "shimenawa_s_reminiscence",
-          "retracing_bolide"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "wanderer_s_troupe"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          }
         ]
       },
       {
@@ -316,8 +783,26 @@ const characterBuilds = [
           "thrilling_tales_of_dragon_slayers"
         ],
         "artifactSets": [
-          "tenacity_of_the_millelith",
-          "noblesse_oblige"
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       }
     ]
@@ -343,10 +828,44 @@ const characterBuilds = [
           "rightful_reward"
         ],
         "artifactSets": [
-          "flower_of_paradise_lost",
-          "gilded_dreams",
-          "emblem_of_severed_fate",
-          "crimson_witch_of_flames"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          }
         ]
       },
       {
@@ -358,7 +877,6 @@ const characterBuilds = [
         "weapons": [
           "favonius_lance",
           "engulfing_lightning",
-          "the_catch",
           "kitain_cross_spear",
           "prototype_starglitter",
           "skyward_spine",
@@ -366,9 +884,37 @@ const characterBuilds = [
           "rightful_reward"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "tenacity_of_the_millelith",
-          "instructor"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "set",
+                "id": "vourukasha_s_glow"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          }
         ]
       }
     ]
@@ -393,11 +939,47 @@ const characterBuilds = [
           "prototype_starglitter"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "ocean_hued_clam",
-          "song_of_days_past",
-          "emblem_of_severed_fate",
-          "maiden_beloved"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "song_of_days_past"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          }
         ]
       },
       {
@@ -415,17 +997,58 @@ const characterBuilds = [
           "skyward_spine",
           "primordial_jade_winged_spear",
           "vortex_vanquisher",
-          "the_catch",
           "deathmatch",
           "ballad_of_the_fjords",
           "missive_windspear",
           "favonius_lance"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "emblem_of_severed_fate",
-          "golden_troupe",
-          "crimson_witch_of_flames"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -445,7 +1068,6 @@ const characterBuilds = [
         "weapons": [
           "serpent_spine",
           "redhorn_stonethresher",
-          "verdict",
           "beacon_of_the_reed_sea",
           "wolf_s_gravestone",
           "rainslasher",
@@ -453,16 +1075,59 @@ const characterBuilds = [
           "the_unforged",
           "skyward_pride",
           "mailed_flower",
-          "lithic_blade",
           "tidal_shadow",
           "ultimate_overlord_s_mega_magic_sword"
         ],
         "artifactSets": [
-          "crimson_witch_of_flames",
-          "marechaussee_hunter",
-          "gilded_dreams",
-          "crimson_witch_of_flames",
-          "vermillion_hereafter"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "vermillion_hereafter"
+            }
+          }
         ]
       }
     ]
@@ -491,13 +1156,47 @@ const characterBuilds = [
           "song_of_broken_pines",
           "blackcliff_slasher",
           "luxurious_sea_lord",
-          "prototype_archaic",
+          "prototype_archaic"
         ],
         "artifactSets": [
-          "crimson_witch_of_flames",
-          "gilded_dreams",
-          "crimson_witch_of_flames",
-          "gladiator_s_finale"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          }
         ]
       }
     ]
@@ -515,7 +1214,6 @@ const characterBuilds = [
         "talentPriority": "1. Normal Attack\n2. Burst\n3. Skill\n\n",
         "abilityTips": "Klee has access to a number of animation cancels that allow her to deal damage with her talents faster than normal. \n\nHer N1 can be canceled through holding a directional key while clicking attack. This can be chained over and over again to produce a \"machine gun\" effect.\n\nHer optimal combos include N1C and N2C. N1C is higher DPS but eats stamina faster, while N2C has more consistency in keeping enemies stunned and gives a higher chance of obtaining her A1 passive onto the following CA.",
         "weapons": [
-          "the_widsith",
           "lost_prayer_to_the_sacred_winds",
           "kagura_s_verity",
           "the_widsith",
@@ -523,18 +1221,66 @@ const characterBuilds = [
           "tulaytullah_s_remembrance",
           "memory_of_dust",
           "solar_pearl",
-          "dodoco_tales",
           "blackcliff_agate",
           "mappa_mare",
           "magic_guide",
+          "apprentice_s_notes"
         ],
         "artifactSets": [
-          "crimson_witch_of_flames",
-          "lavawalker",
-          "crimson_witch_of_flames",
-          "crimson_witch_of_flames",
-          "wanderer_s_troupe",
-          "marechaussee_hunter"
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "wanderer_s_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          }
         ]
       }
     ]
@@ -559,20 +1305,64 @@ const characterBuilds = [
           "dragon_s_bane",
           "deathmatch",
           "primordial_jade_winged_spear",
-          "lithic_spear",
           "missive_windspear",
           "white_tassel",
-          "blackcliff_pole",
           "kitain_cross_spear",
           "rightful_reward"
         ],
         "artifactSets": [
-          "crimson_witch_of_flames",
-          "shimenawa_s_reminiscence",
-          "gilded_dreams",
-          "crimson_witch_of_flames",
-          "retracing_bolide",
-          "marechaussee_hunter"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          }
         ]
       }
     ]
@@ -595,17 +1385,61 @@ const characterBuilds = [
           "polar_star",
           "hunter_s_path",
           "skyward_harp",
-          "slingshot",
-          "amos_bow",
-          "rust"
+          "amos_bow"
         ],
         "artifactSets": [
-          "shimenawa_s_reminiscence",
-          "crimson_witch_of_flames",
-          "gilded_dreams",
-          "echoes_of_an_offering",
-          "retracing_bolide",
-          "crimson_witch_of_flames"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "echoes_of_an_offering"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -632,15 +1466,54 @@ const characterBuilds = [
           "serpent_spine",
           "luxurious_sea_lord",
           "favonius_greatsword",
-          "akuoumaru",
           "prototype_archaic"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "vourukasha_s_glow",
-          "lavawalker",
-          "crimson_witch_of_flames",
-          "crimson_witch_of_flames"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "vourukasha_s_glow"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       },
       {
@@ -657,11 +1530,54 @@ const characterBuilds = [
           "prototype_archaic"
         ],
         "artifactSets": [
-          "tenacity_of_the_millelith",
-          "instructor",
-          "ocean_hued_clam",
-          "maiden_beloved",
-          "deepwood_memories"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "20-hp"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          }
         ]
       },
       {
@@ -678,10 +1594,47 @@ const characterBuilds = [
           "favonius_greatsword"
         ],
         "artifactSets": [
-          "gilded_dreams",
-          "flower_of_paradise_lost",
-          "crimson_witch_of_flames",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "crimson_witch_of_flames"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       }
     ]
@@ -711,14 +1664,72 @@ const characterBuilds = [
           "blackcliff_warbow"
         ],
         "artifactSets": [
-          "marechaussee_hunter",
-          "lavawalker",
-          "vermillion_hereafter",
-          "shimenawa_s_reminiscence",
-          "crimson_witch_of_flames",
-          "retracing_bolide",
-          "desert_pavilion_chronicle",
-          "wanderer_s_troupe"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "vermillion_hereafter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "set",
+                "id": "marechaussee_hunter"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "desert_pavilion_chronicle"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "wanderer_s_troupe"
+            }
+          }
         ]
       }
     ]
@@ -744,15 +1755,50 @@ const characterBuilds = [
           "calamity_queller",
           "vortex_vanquisher",
           "deathmatch",
-          "white_tassel",
           "ballad_of_the_fjords"
         ],
         "artifactSets": [
-          "fragment_of_harmonic_whimsy",
-          "gladiator_s_finale",
-          "desert_pavilion_chronicle",
-          "crimson_witch_of_flames",
-          "echoes_of_an_offering"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "fragment_of_harmonic_whimsy"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "desert_pavilion_chronicle"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "crimson_witch_of_flames"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "echoes_of_an_offering"
+            }
+          }
         ]
       }
     ]
@@ -784,10 +1830,53 @@ const characterBuilds = [
           "prototype_crescent"
         ],
         "artifactSets": [
-          "golden_troupe",
-          "thundering_fury",
-          "thundersoother",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       },
       {
@@ -810,12 +1899,60 @@ const characterBuilds = [
           "slingshot"
         ],
         "artifactSets": [
-          "golden_troupe",
-          "thundering_fury",
-          "thundering_fury",
-          "gilded_dreams",
-          "thundering_fury",
-          "thundersoother"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          }
         ]
       }
     ]
@@ -837,7 +1974,6 @@ const characterBuilds = [
           "serpent_spine",
           "beacon_of_the_reed_sea",
           "redhorn_stonethresher",
-          "the_unforged",
           "akuoumaru",
           "luxurious_sea_lord",
           "skyward_pride",
@@ -845,9 +1981,41 @@ const characterBuilds = [
           "prototype_archaic"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate",
-          "thundersoother"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          }
         ]
       },
       {
@@ -859,7 +2027,6 @@ const characterBuilds = [
         "weapons": [
           "wolf_s_gravestone",
           "beacon_of_the_reed_sea",
-          "the_unforged",
           "serpent_spine",
           "redhorn_stonethresher",
           "akuoumaru",
@@ -869,9 +2036,41 @@ const characterBuilds = [
           "rainslasher"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate",
-          "thundersoother"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          }
         ]
       }
     ]
@@ -899,14 +2098,47 @@ const characterBuilds = [
           "memory_of_dust",
           "blackcliff_agate",
           "mappa_mare",
-          "dodoco_tales",
-          "magic_guide"
+          "dodoco_tales"
         ],
         "artifactSets": [
-          "thundering_fury",
-          "gilded_dreams",
-          "thundersoother",
-          "thundering_fury"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       },
       {
@@ -927,11 +2159,55 @@ const characterBuilds = [
           "thrilling_tales_of_dragon_slayers"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate",
-          "gilded_dreams",
-          "noblesse_oblige",
-          "thundersoother"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          }
         ]
       },
       {
@@ -951,12 +2227,58 @@ const characterBuilds = [
           "thrilling_tales_of_dragon_slayers"
         ],
         "artifactSets": [
-          "flower_of_paradise_lost",
-          "gilded_dreams",
-          "emblem_of_severed_fate",
-          "thundering_fury",
-          "instructor",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       }
     ]
@@ -982,9 +2304,40 @@ const characterBuilds = [
           "forest_regalia"
         ],
         "artifactSets": [
-          "gilded_dreams",
-          "flower_of_paradise_lost",
-          "thundering_fury"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          }
         ]
       },
       {
@@ -999,15 +2352,57 @@ const characterBuilds = [
           "song_of_broken_pines",
           "redhorn_stonethresher",
           "the_unforged",
-          "serpent_spine",
           "skyward_pride",
-          "lithic_blade",
           "prototype_archaic"
         ],
         "artifactSets": [
-          "pale_flame",
-          "gladiator_s_finale",
-          "bloodstained_chivalry"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "pale_flame"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "bloodstained_chivalry"
+              },
+              {
+                "type": "set",
+                "id": "pale_flame"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "18-atk"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -1043,10 +2438,46 @@ const characterBuilds = [
           "messenger"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "noblesse_oblige",
-          "thundering_fury",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -1073,9 +2504,40 @@ const characterBuilds = [
           "sapwood_blade"
         ],
         "artifactSets": [
-          "flower_of_paradise_lost",
-          "gilded_dreams",
-          "thundering_fury"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          }
         ]
       },
       {
@@ -1096,11 +2558,51 @@ const characterBuilds = [
           "dark_iron_sword"
         ],
         "artifactSets": [
-          "gilded_dreams",
-          "thundering_fury",
-          "thundersoother",
-          "thundering_fury",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       },
       {
@@ -1117,10 +2619,40 @@ const characterBuilds = [
           "iron_sting"
         ],
         "artifactSets": [
-          "tenacity_of_the_millelith",
-          "noblesse_oblige",
-          "instructor",
-          "ocean_hued_clam"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "instructor"
+              },
+              {
+                "type": "set",
+                "id": "the_exile"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          }
         ]
       }
     ]
@@ -1144,10 +2676,34 @@ const characterBuilds = [
           "forest_regalia"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "deepwood_memories",
-          "instructor",
-          "the_exile"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "the_exile"
+            }
+          }
         ]
       }
     ]
@@ -1175,10 +2731,47 @@ const characterBuilds = [
           "prototype_rancour"
         ],
         "artifactSets": [
-          "pale_flame",
-          "bloodstained_chivalry",
-          "retracing_bolide",
-          "bloodstained_chivalry"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "pale_flame"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "bloodstained_chivalry"
+              },
+              {
+                "type": "set",
+                "id": "pale_flame"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "18-atk"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "bloodstained_chivalry"
+            }
+          }
         ]
       },
       {
@@ -1199,8 +2792,39 @@ const characterBuilds = [
           "amenoma_kageuchi"
         ],
         "artifactSets": [
-          "thundering_fury",
-          "thundersoother"
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          }
         ]
       },
       {
@@ -1218,16 +2842,62 @@ const characterBuilds = [
           "harbinger_of_dawn",
           "summit_shaper",
           "toukabou_shigure",
-          "wolf_fang",
           "lion_s_roar",
           "the_black_sword",
           "iron_sting"
         ],
         "artifactSets": [
-          "thundering_fury",
-          "thundersoother",
-          "gilded_dreams",
-          "thundering_fury"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -1250,8 +2920,33 @@ const characterBuilds = [
           "kitain_cross_spear"
         ],
         "artifactSets": [
-          "flower_of_paradise_lost",
-          "gilded_dreams"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       },
       {
@@ -1267,7 +2962,6 @@ const characterBuilds = [
           "primordial_jade_winged_spear",
           "staff_of_the_scarlet_sands",
           "calamity_queller",
-          "the_catch",
           "skyward_spine",
           "vortex_vanquisher",
           "deathmatch",
@@ -1277,9 +2971,41 @@ const characterBuilds = [
           "prototype_starglitter"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       }
     ]
@@ -1309,11 +3035,51 @@ const characterBuilds = [
           "mappa_mare"
         ],
         "artifactSets": [
-          "golden_troupe",
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate",
-          "thundersoother",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       },
       {
@@ -1336,12 +3102,66 @@ const characterBuilds = [
           "mappa_mare"
         ],
         "artifactSets": [
-          "gilded_dreams",
-          "emblem_of_severed_fate",
-          "golden_troupe",
-          "thundering_fury",
-          "thundersoother",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       }
     ]
@@ -1365,7 +3185,6 @@ const characterBuilds = [
           "deathmatch",
           "lumidouce_elegy",
           "staff_of_homa",
-          "white_tassel",
           "missive_windspear",
           "kitain_cross_spear",
           "dragon_s_bane",
@@ -1373,12 +3192,58 @@ const characterBuilds = [
           "favonius_lance"
         ],
         "artifactSets": [
-          "thundering_fury",
-          "gilded_dreams",
-          "flower_of_paradise_lost",
-          "thundering_fury",
-          "gladiator_s_finale",
-          "marechaussee_hunter"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          }
         ]
       },
       {
@@ -1390,7 +3255,6 @@ const characterBuilds = [
         "weapons": [
           "staff_of_the_scarlet_sands",
           "primordial_jade_winged_spear",
-          "white_tassel",
           "ballad_of_the_fjords",
           "staff_of_homa",
           "lumidouce_elegy",
@@ -1400,11 +3264,55 @@ const characterBuilds = [
           "favonius_lance"
         ],
         "artifactSets": [
-          "thundering_fury",
-          "gladiator_s_finale",
-          "gilded_dreams",
-          "emblem_of_severed_fate",
-          "thundersoother"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "thundering_fury"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          }
         ]
       }
     ]
@@ -1433,9 +3341,27 @@ const characterBuilds = [
           "the_black_sword"
         ],
         "artifactSets": [
-          "fragment_of_harmonic_whimsy",
-          "gladiator_s_finale",
-          "thundering_fury"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "fragment_of_harmonic_whimsy"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          }
         ]
       }
     ]
@@ -1459,7 +3385,6 @@ const characterBuilds = [
           "light_of_foliar_incision",
           "absolution",
           "skyward_blade",
-          "wolf_fang",
           "summit_shaper",
           "favonius_sword",
           "fleuve_cendre_ferryman",
@@ -1473,11 +3398,51 @@ const characterBuilds = [
           "lion_s_roar"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "noblesse_oblige",
-          "nymph_s_dream",
-          "emblem_of_severed_fate",
-          "blizzard_strayer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "nymph_s_dream"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          }
         ]
       }
     ]
@@ -1501,9 +3466,34 @@ const characterBuilds = [
           "favonius_codex"
         ],
         "artifactSets": [
-          "ocean_hued_clam",
-          "maiden_beloved",
-          "instructor"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "20-hp"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          }
         ]
       },
       {
@@ -1518,9 +3508,40 @@ const characterBuilds = [
           "magic_guide"
         ],
         "artifactSets": [
-          "flower_of_paradise_lost",
-          "gilded_dreams",
-          "ocean_hued_clam"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          }
         ]
       }
     ]
@@ -1548,8 +3569,30 @@ const characterBuilds = [
           "black_tassel"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -1575,20 +3618,54 @@ const characterBuilds = [
           "amos_bow",
           "prototype_crescent",
           "the_viridescent_hunt",
-          "king_s_squire",
           "mouun_s_moon",
-          "hamayumi",
           "fading_twilight",
           "blackcliff_warbow",
           "the_stringless",
-          "elegy_for_the_end",
-          "rust"
+          "elegy_for_the_end"
         ],
         "artifactSets": [
-          "nymph_s_dream",
-          "heart_of_depth",
-          "noblesse_oblige",
-          "shimenawa_s_reminiscence"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "nymph_s_dream"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "heart_of_depth"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "18-atk"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          }
         ]
       }
     ]
@@ -1615,10 +3692,44 @@ const characterBuilds = [
           "mappa_mare"
         ],
         "artifactSets": [
-          "heart_of_depth",
-          "noblesse_oblige",
-          "noblesse_oblige",
-          "wanderer_s_troupe"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "heart_of_depth"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "wanderer_s_troupe"
+            }
+          }
         ]
       },
       {
@@ -1636,9 +3747,41 @@ const characterBuilds = [
           "mappa_mare"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "noblesse_oblige",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       },
       {
@@ -1655,9 +3798,40 @@ const characterBuilds = [
           "wine_and_song"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "instructor",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "20-er"
+              },
+              {
+                "type": "group",
+                "id": "20-er"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -1681,9 +3855,34 @@ const characterBuilds = [
           "sacrificial_fragments"
         ],
         "artifactSets": [
-          "tenacity_of_the_millelith",
-          "ocean_hued_clam",
-          "maiden_beloved"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "20-hp"
+            }
+          }
         ]
       },
       {
@@ -1699,9 +3898,34 @@ const characterBuilds = [
           "thrilling_tales_of_dragon_slayers"
         ],
         "artifactSets": [
-          "ocean_hued_clam",
-          "heart_of_depth",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "heart_of_depth"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "20-hp"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       },
       {
@@ -1717,9 +3941,40 @@ const characterBuilds = [
           "fruit_of_fulfillment"
         ],
         "artifactSets": [
-          "flower_of_paradise_lost",
-          "gilded_dreams",
-          "ocean_hued_clam"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          }
         ]
       }
     ]
@@ -1747,18 +4002,60 @@ const characterBuilds = [
           "summit_shaper",
           "finale_of_the_deep",
           "kagotsurube_isshin",
-          "lion_s_roar",
           "harbinger_of_dawn",
           "the_flute",
           "sword_of_narzissenkreuz"
         ],
         "artifactSets": [
-          "heart_of_depth",
-          "gladiator_s_finale",
-          "nymph_s_dream",
-          "blizzard_strayer",
-          "thundering_fury",
-          "echoes_of_an_offering"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "heart_of_depth"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "nymph_s_dream"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "18-atk"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "echoes_of_an_offering"
+            }
+          }
         ]
       }
     ]
@@ -1782,8 +4079,30 @@ const characterBuilds = [
           "sacrificial_bow"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              }
+            ]
+          }
         ]
       },
       {
@@ -1795,8 +4114,6 @@ const characterBuilds = [
         "weapons": [
           "aqua_simulacra",
           "silvershower_heartstrings",
-          "mouun_s_moon",
-          "the_stringless",
           "slingshot",
           "hunter_s_path",
           "polar_star",
@@ -1806,8 +4123,30 @@ const characterBuilds = [
           "recurve_bow"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -1838,8 +4177,43 @@ const characterBuilds = [
           "primordial_jade_cutter"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "deepwood_memories"
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "20-hp"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              }
+            ]
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          }
         ]
       }
     ]
@@ -1867,11 +4241,48 @@ const characterBuilds = [
           "lost_prayer_to_the_sacred_winds"
         ],
         "artifactSets": [
-          "marechaussee_hunter",
-          "heart_of_depth",
-          "retracing_bolide",
-          "wanderer_s_troupe",
-          "nymph_s_dream"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "heart_of_depth"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "20-hp"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "wanderer_s_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "nymph_s_dream"
+            }
+          }
         ]
       }
     ]
@@ -1905,9 +4316,37 @@ const characterBuilds = [
           "harbinger_of_dawn"
         ],
         "artifactSets": [
-          "golden_troupe",
-          "tenacity_of_the_millelith",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -1931,9 +4370,33 @@ const characterBuilds = [
           "elegy_for_the_end"
         ],
         "artifactSets": [
-          "ocean_hued_clam",
-          "song_of_days_past",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "song_of_days_past"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "vourukasha_s_glow"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -1942,12 +4405,12 @@ const characterBuilds = [
     "nameId": "mualani",
     "element": "hydro",
     "weapon": "catalyst",
-    "notes": "VAPORIZE DPS\nIn a smiliar fashion to Kirara, who runs into enemies to stack her shield in Urgent Neko Parcel state, Mualani can use her Elemental Skill to ride Sharky Surfboard and mark enemies that she runs into. While on Sharky Surfboard, Normal Attacking can cause her to perform Sharky Bites, which can fire additional missiles if she attacks a marked enemy. Sharky Bites are considered Normal Attack damage.\n\nRegarding Weapon Choices:\nSacrificial Jade: When paired with Obsidian Codex or Marechaussee Hunter, Crit Rate substats are no longer desireable.\n\nRegarding Artifact Sets:\nMarechaussee Hunter: Only to be used when paired with Furina.",
+    "notes": "VAPORIZE DPS\nIn a smiliar fashion to Kirara, who runs into enemies to stack her shield in Urgent Neko Parcel state, Mualani can use her Elemental Skill to ride Sharky Surfboard and mark enemies that she runs into. While on Sharky Surfboard, Normal Attacking can cause her to perform Sharky Bites, which can fire additional missiles if she attacks a marked enemy. Sharky Bites are considered Normal Attack damage.\n\nRegarding Weapon Choices:\nSacrificial Jade: When paired with Obsidian Codex or Marechaussee Hunter, Crit Rate substats are no longer desireable.\nThe Widsith: On average, this weapon at R5 performs similarly to Ring of Yaxche [R5]. It's worth noting that due to buff downtime and the possibility of getting the ATK buff, this weapon is worse for consistent performance and can end up worse. However, if you are willing to reset for good Widsith buffs (DMG% or EM), it can outperform. \n\nRegarding Artifact Mainstats:\nStrong Elemental Mastery buffs, or an EM weapon, can devalue EM mainstats. HP circlet is primarily an option for Crit DMG weapons as well. \n\nRegarding Artifact Sets:\nMarechaussee Hunter: Only to be used when paired with Furina. Worse than Obsidian Codex (4).",
     "builds": [
       {
         "name": "VAPORIZE DPS\n✩",
-        "artifactMainStats": "Sands - HP%/Elemental Mastery\nGoblet - Hydro DMG\nCirclet - Crit Rate/DMG",
-        "artifactSubStats": "1. Crit Rate/DMG\n2. Elemental Mastery\n3. HP%\n4. Flat HP",
+        "artifactMainStats": "Sands - HP%/Elemental Mastery\nGoblet - Hydro DMG\nCirclet - Crit Rate/Crit DMG/HP%/Elemental Mastery*\n\nCheck notes",
+        "artifactSubStats": "1. Crit Rate/DMG\n2. Elemental Mastery ~= HP%\n3. Flat HP",
         "talentPriority": "1. Skill\n2. Burst",
         "abilityTips": "",
         "weapons": [
@@ -1958,10 +4421,44 @@ const characterBuilds = [
           "ring_of_yaxche"
         ],
         "artifactSets": [
-          "obsidian_codex",
-          "heart_of_depth",
-          "marechaussee_hunter",
-          "marechaussee_hunter"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "obsidian_codex"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "heart_of_depth"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "marechaussee_hunter"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          }
         ]
       }
     ]
@@ -1987,13 +4484,65 @@ const characterBuilds = [
           "recurve_bow"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "scroll_of_the_hero_of_cinder_city",
-          "emblem_of_severed_fate",
-          "maiden_beloved",
-          "ocean_hued_clam",
-          "instructor",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "scroll_of_the_hero_of_cinder_city"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       }
     ]
@@ -2026,12 +4575,72 @@ const characterBuilds = [
           "favonius_greatsword"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "emblem_of_severed_fate",
-          "blizzard_strayer",
-          "scroll_of_the_hero_of_cinder_city",
-          "gilded_dreams",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "scroll_of_the_hero_of_cinder_city"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2062,11 +4671,53 @@ const characterBuilds = [
           "favonius_sword"
         ],
         "artifactSets": [
-          "blizzard_strayer",
-          "blizzard_strayer",
-          "emblem_of_severed_fate",
-          "blizzard_strayer",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       },
       {
@@ -2088,17 +4739,79 @@ const characterBuilds = [
           "kagotsurube_isshin",
           "aquila_favonia",
           "iron_sting",
-          "rust",
+          "the_alley_flash",
           "favonius_sword"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "lavawalker",
-          "blizzard_strayer",
-          "gilded_dreams",
-          "blizzard_strayer",
-          "noblesse_oblige",
-          "instructor"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          }
         ]
       }
     ]
@@ -2126,18 +4839,45 @@ const characterBuilds = [
           "wavebreaker_s_fin",
           "missive_windspear",
           "deathmatch",
-          "blackcliff_pole",
-          "the_catch",
           "engulfing_lightning",
           "skyward_spine",
-          "lithic_spear",
           "kitain_cross_spear"
         ],
         "artifactSets": [
-          "gilded_dreams",
-          "lavawalker",
-          "emblem_of_severed_fate",
-          "blizzard_strayer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          }
         ]
       },
       {
@@ -2152,18 +4892,39 @@ const characterBuilds = [
           "vortex_vanquisher",
           "primordial_jade_winged_spear",
           "lumidouce_elegy",
-          "blackcliff_pole",
           "skyward_spine",
           "engulfing_lightning",
-          "lithic_spear",
           "staff_of_the_scarlet_sands",
-          "the_catch",
           "deathmatch"
         ],
         "artifactSets": [
-          "blizzard_strayer",
-          "noblesse_oblige",
-          "blizzard_strayer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          }
         ]
       },
       {
@@ -2180,12 +4941,23 @@ const characterBuilds = [
           "primordial_jade_winged_spear",
           "engulfing_lightning",
           "skyward_spine",
-          "the_catch",
           "prototype_starglitter"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "instructor"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          }
         ]
       }
     ]
@@ -2211,10 +4983,40 @@ const characterBuilds = [
           "skyrider_sword"
         ],
         "artifactSets": [
-          "tenacity_of_the_millelith",
-          "scroll_of_the_hero_of_cinder_city",
-          "tenacity_of_the_millelith",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "scroll_of_the_hero_of_cinder_city"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "vourukasha_s_glow"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       },
       {
@@ -2235,11 +5037,51 @@ const characterBuilds = [
           "favonius_sword"
         ],
         "artifactSets": [
-          "tenacity_of_the_millelith",
-          "blizzard_strayer",
-          "tenacity_of_the_millelith",
-          "noblesse_oblige",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "vourukasha_s_glow"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          }
         ]
       }
     ]
@@ -2261,16 +5103,51 @@ const characterBuilds = [
           "dialogues_of_the_desert_sages",
           "engulfing_lightning",
           "prototype_starglitter",
-          "the_catch",
           "rightful_reward",
           "black_tassel"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "ocean_hued_clam",
-          "maiden_beloved",
-          "emblem_of_severed_fate",
-          "the_exile"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "the_exile"
+            }
+          }
         ]
       }
     ]
@@ -2290,7 +5167,6 @@ const characterBuilds = [
         "weapons": [
           "skyward_pride",
           "song_of_broken_pines",
-          "verdict",
           "wolf_s_gravestone",
           "beacon_of_the_reed_sea",
           "redhorn_stonethresher",
@@ -2301,11 +5177,53 @@ const characterBuilds = [
           "snow_tombed_starsilver"
         ],
         "artifactSets": [
-          "pale_flame",
-          "emblem_of_severed_fate",
-          "golden_troupe",
-          "golden_troupe",
-          "gladiator_s_finale"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "pale_flame"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "pale_flame"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          }
         ]
       },
       {
@@ -2315,7 +5233,6 @@ const characterBuilds = [
         "talentPriority": "1. Skill\n2. Normal Attack\n~= Burst",
         "abilityTips": "Rotation:\nE E Q 4[E E (N1 or N2)]",
         "weapons": [
-          "verdict",
           "wolf_s_gravestone",
           "skyward_pride",
           "beacon_of_the_reed_sea",
@@ -2328,9 +5245,37 @@ const characterBuilds = [
           "prototype_archaic"
         ],
         "artifactSets": [
-          "blizzard_strayer",
-          "blizzard_strayer",
-          "golden_troupe"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          }
         ]
       }
     ]
@@ -2355,12 +5300,54 @@ const characterBuilds = [
           "wine_and_song"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "tenacity_of_the_millelith",
-          "ocean_hued_clam",
-          "emblem_of_severed_fate",
-          "maiden_beloved",
-          "blizzard_strayer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          }
         ]
       }
     ]
@@ -2388,11 +5375,48 @@ const characterBuilds = [
           "skyrider_sword"
         ],
         "artifactSets": [
-          "tenacity_of_the_millelith",
-          "ocean_hued_clam",
-          "maiden_beloved",
-          "noblesse_oblige",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "18-atk"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          }
         ]
       }
     ]
@@ -2417,17 +5441,62 @@ const characterBuilds = [
           "polar_star",
           "skyward_harp",
           "thundering_pulse",
-          "hamayumi",
           "scion_of_the_blazing_sun",
           "prototype_crescent"
         ],
         "artifactSets": [
-          "shimenawa_s_reminiscence",
-          "wanderer_s_troupe",
-          "lavawalker",
-          "retracing_bolide",
-          "gilded_dreams",
-          "blizzard_strayer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "wanderer_s_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       },
       {
@@ -2448,8 +5517,30 @@ const characterBuilds = [
           "hunter_s_path"
         ],
         "artifactSets": [
-          "blizzard_strayer",
-          "blizzard_strayer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       },
       {
@@ -2472,11 +5563,61 @@ const characterBuilds = [
           "elegy_for_the_end"
         ],
         "artifactSets": [
-          "blizzard_strayer",
-          "blizzard_strayer",
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       }
     ]
@@ -2498,7 +5639,6 @@ const characterBuilds = [
           "wolf_s_gravestone",
           "beacon_of_the_reed_sea",
           "skyward_pride",
-          "verdict",
           "the_unforged",
           "redhorn_stonethresher",
           "serpent_spine",
@@ -2506,16 +5646,68 @@ const characterBuilds = [
           "luxurious_sea_lord",
           "akuoumaru",
           "tidal_shadow",
-          "lithic_blade",
           "prototype_archaic",
           "snow_tombed_starsilver",
           "skyrider_greatsword"
         ],
         "artifactSets": [
-          "pale_flame",
-          "bloodstained_chivalry",
-          "bloodstained_chivalry",
-          "gladiator_s_finale"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "pale_flame"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "bloodstained_chivalry"
+              },
+              {
+                "type": "set",
+                "id": "pale_flame"
+              }
+            ]
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "bloodstained_chivalry"
+              },
+              {
+                "type": "set",
+                "id": "pale_flame"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2548,9 +5740,52 @@ const characterBuilds = [
           "harbinger_of_dawn"
         ],
         "artifactSets": [
-          "blizzard_strayer",
-          "blizzard_strayer",
-          "blizzard_strayer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2576,15 +5811,68 @@ const characterBuilds = [
           "alley_hunter",
           "prototype_crescent",
           "predator",
-          "sacrificial_bow",
-          "slingshot"
+          "sacrificial_bow"
         ],
         "artifactSets": [
-          "blizzard_strayer",
-          "blizzard_strayer",
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       }
     ]
@@ -2608,15 +5896,36 @@ const characterBuilds = [
           "skyward_spine",
           "favonius_lance",
           "primordial_jade_winged_spear",
-          "lithic_spear",
           "staff_of_homa",
           "wavebreaker_s_fin",
           "missive_windspear",
           "prototype_starglitter"
         ],
         "artifactSets": [
-          "noblesse_oblige",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2646,11 +5955,51 @@ const characterBuilds = [
           "flowing_purity"
         ],
         "artifactSets": [
-          "marechaussee_hunter",
-          "shimenawa_s_reminiscence",
-          "gilded_dreams",
-          "echoes_of_an_offering",
-          "blizzard_strayer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "echoes_of_an_offering"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       },
       {
@@ -2672,10 +6021,44 @@ const characterBuilds = [
           "flowing_purity"
         ],
         "artifactSets": [
-          "marechaussee_hunter",
-          "blizzard_strayer",
-          "shimenawa_s_reminiscence",
-          "marechaussee_hunter"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "blizzard_strayer"
+              },
+              {
+                "type": "set",
+                "id": "marechaussee_hunter"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2702,8 +6085,33 @@ const characterBuilds = [
           "favonius_codex"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "instructor"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2733,10 +6141,34 @@ const characterBuilds = [
           "bloodtainted_greatsword"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "noblesse_oblige",
-          "emblem_of_severed_fate",
-          "ocean_hued_clam"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          }
         ]
       }
     ]
@@ -2771,11 +6203,51 @@ const characterBuilds = [
           "prototype_amber"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "golden_troupe",
-          "golden_troupe",
-          "desert_pavilion_chronicle",
-          "golden_troupe"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "desert_pavilion_chronicle"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       },
       {
@@ -2795,8 +6267,20 @@ const characterBuilds = [
           "prototype_amber"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       }
     ]
@@ -2821,13 +6305,55 @@ const characterBuilds = [
           "sacrificial_bow"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "noblesse_oblige",
-          "scroll_of_the_hero_of_cinder_city",
-          "emblem_of_severed_fate",
-          "golden_troupe",
-          "tenacity_of_the_millelith",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "scroll_of_the_hero_of_cinder_city"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          }
         ]
       }
     ]
@@ -2853,10 +6379,40 @@ const characterBuilds = [
           "freedom_sworn"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "emblem_of_severed_fate",
-          "noblesse_oblige",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2889,11 +6445,51 @@ const characterBuilds = [
           "lion_s_roar"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "noblesse_oblige",
-          "ocean_hued_clam",
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          }
         ]
       },
       {
@@ -2911,8 +6507,33 @@ const characterBuilds = [
           "dark_iron_sword"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "gilded_dreams"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -2932,21 +6553,56 @@ const characterBuilds = [
         "weapons": [
           "elegy_for_the_end",
           "the_stringless",
-          "cloudforged",
           "windblume_ode",
           "polar_star",
           "favonius_warbow",
-          "raven_bow",
           "fading_twilight",
           "alley_hunter",
           "mouun_s_moon",
           "song_of_stillness"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "noblesse_oblige",
-          "gilded_dreams",
-          "instructor"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          }
         ]
       },
       {
@@ -2961,7 +6617,6 @@ const characterBuilds = [
           "the_stringless",
           "aqua_simulacra",
           "hunter_s_path",
-          "cloudforged",
           "skyward_harp",
           "alley_hunter",
           "mouun_s_moon",
@@ -2971,10 +6626,48 @@ const characterBuilds = [
           "favonius_warbow"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "noblesse_oblige",
-          "emblem_of_severed_fate",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "viridescent_venerer"
+              },
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3000,21 +6693,49 @@ const characterBuilds = [
           "staff_of_the_scarlet_sands",
           "crimson_moon_s_semblance",
           "deathmatch",
-          "lithic_spear",
           "skyward_spine",
           "engulfing_lightning",
           "missive_windspear",
           "prospector_s_drill",
-          "blackcliff_pole",
           "wavebreaker_s_fin",
           "favonius_lance",
           "white_tassel"
         ],
         "artifactSets": [
-          "vermillion_hereafter",
-          "marechaussee_hunter",
-          "desert_pavilion_chronicle",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "vermillion_hereafter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "desert_pavilion_chronicle"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3045,9 +6766,27 @@ const characterBuilds = [
           "skyrider_sword"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "instructor",
-          "thundering_fury"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundering_fury"
+            }
+          }
         ]
       }
     ]
@@ -3070,7 +6809,6 @@ const characterBuilds = [
           "skyward_atlas",
           "lost_prayer_to_the_sacred_winds",
           "the_widsith",
-          "dodoco_tales",
           "kagura_s_verity",
           "tome_of_the_eternal_flow",
           "solar_pearl",
@@ -3081,12 +6819,61 @@ const characterBuilds = [
           "frostbearer"
         ],
         "artifactSets": [
-          "desert_pavilion_chronicle",
-          "shimenawa_s_reminiscence",
-          "echoes_of_an_offering",
-          "blizzard_strayer",
-          "lavawalker",
-          "viridescent_venerer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "desert_pavilion_chronicle"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "echoes_of_an_offering"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          }
         ]
       },
       {
@@ -3104,7 +6891,6 @@ const characterBuilds = [
           "skyward_atlas",
           "memory_of_dust",
           "solar_pearl",
-          "dodoco_tales",
           "ballad_of_the_boundless_blue",
           "blackcliff_agate",
           "eye_of_perception",
@@ -3112,12 +6898,61 @@ const characterBuilds = [
           "frostbearer"
         ],
         "artifactSets": [
-          "desert_pavilion_chronicle",
-          "shimenawa_s_reminiscence",
-          "echoes_of_an_offering",
-          "blizzard_strayer",
-          "lavawalker",
-          "viridescent_venerer"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "desert_pavilion_chronicle"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "shimenawa_s_reminiscence"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "echoes_of_an_offering"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "blizzard_strayer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          }
         ]
       }
     ]
@@ -3144,10 +6979,47 @@ const characterBuilds = [
           "prototype_amber"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "noblesse_oblige",
-          "song_of_days_past",
-          "scroll_of_the_hero_of_cinder_city"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "song_of_days_past"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "scroll_of_the_hero_of_cinder_city"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       },
       {
@@ -3172,10 +7044,47 @@ const characterBuilds = [
           "prototype_amber"
         ],
         "artifactSets": [
-          "viridescent_venerer",
-          "noblesse_oblige",
-          "song_of_days_past",
-          "scroll_of_the_hero_of_cinder_city"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "viridescent_venerer"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "song_of_days_past"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "scroll_of_the_hero_of_cinder_city"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3207,13 +7116,69 @@ const characterBuilds = [
           "hakushin_ring"
         ],
         "artifactSets": [
-          "nighttime_whispers_in_the_echoing_woods",
-          "emblem_of_severed_fate",
-          "husk_of_opulent_dreams",
-          "thundersoother",
-          "lavawalker",
-          "archaic_petra",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "nighttime_whispers_in_the_echoing_woods"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "archaic_petra"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "thundersoother"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "lavawalker"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "archaic_petra"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          }
         ]
       }
     ]
@@ -3237,10 +7202,34 @@ const characterBuilds = [
           "whiteblind"
         ],
         "artifactSets": [
-          "marechaussee_hunter",
-          "husk_of_opulent_dreams",
-          "retracing_bolide",
-          "gladiator_s_finale"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          }
         ]
       },
       {
@@ -3250,11 +7239,16 @@ const characterBuilds = [
         "talentPriority": "1. Skill*\n2. Normal Attack = Burst\n\n*Dependence on Skill's talent level depends on your total DEF and whether Furina is in the team or not",
         "abilityTips": "",
         "weapons": [
-          "favonius_greatsword",
-          "verdict"
+          "favonius_greatsword"
         ],
         "artifactSets": [
-          "archaic_petra"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "archaic_petra"
+            }
+          }
         ]
       }
     ]
@@ -3277,9 +7271,27 @@ const characterBuilds = [
           "elegy_for_the_end"
         ],
         "artifactSets": [
-          "the_exile",
-          "noblesse_oblige",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "the_exile"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          }
         ]
       }
     ]
@@ -3304,9 +7316,33 @@ const characterBuilds = [
           "kitain_cross_spear"
         ],
         "artifactSets": [
-          "husk_of_opulent_dreams",
-          "emblem_of_severed_fate",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "set",
+                "id": "husk_of_opulent_dreams"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       }
     ]
@@ -3335,10 +7371,47 @@ const characterBuilds = [
           "white_tassel"
         ],
         "artifactSets": [
-          "pale_flame",
-          "bloodstained_chivalry",
-          "gladiator_s_finale",
-          "retracing_bolide"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "pale_flame"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "bloodstained_chivalry"
+              },
+              {
+                "type": "set",
+                "id": "pale_flame"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gladiator_s_finale"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "group",
+              "id": "18-atk"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          }
         ]
       },
       {
@@ -3352,12 +7425,54 @@ const characterBuilds = [
           "favonius_lance"
         ],
         "artifactSets": [
-          "archaic_petra",
-          "scroll_of_the_hero_of_cinder_city",
-          "deepwood_memories",
-          "instructor",
-          "tenacity_of_the_millelith",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "archaic_petra"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "scroll_of_the_hero_of_cinder_city"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "vourukasha_s_glow"
+              }
+            ]
+          }
         ]
       },
       {
@@ -3373,19 +7488,46 @@ const characterBuilds = [
           "skyward_spine",
           "vortex_vanquisher",
           "calamity_queller",
-          "the_catch",
           "deathmatch",
           "engulfing_lightning",
-          "lithic_spear",
-          "blackcliff_pole",
           "missive_windspear",
           "favonius_lance"
         ],
         "artifactSets": [
-          "emblem_of_severed_fate",
-          "noblesse_oblige",
-          "noblesse_oblige",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "noblesse_oblige"
+              },
+              {
+                "type": "set",
+                "id": "archaic_petra"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          }
         ]
       }
     ]
@@ -3410,16 +7552,61 @@ const characterBuilds = [
           "light_of_foliar_incision",
           "haran_geppaku_futsu",
           "mistsplitter_reforged",
-          "wolf_fang",
           "freedom_sworn"
         ],
         "artifactSets": [
-          "husk_of_opulent_dreams",
-          "golden_troupe",
-          "husk_of_opulent_dreams",
-          "archaic_petra",
-          "tenacity_of_the_millelith",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "archaic_petra"
+              },
+              {
+                "type": "set",
+                "id": "husk_of_opulent_dreams"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "archaic_petra"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       },
       {
@@ -3432,19 +7619,64 @@ const characterBuilds = [
           "uraku_misugiri",
           "primordial_jade_cutter",
           "cinnabar_spindle",
-          "wolf_fang",
           "light_of_foliar_incision",
           "mistsplitter_reforged",
           "haran_geppaku_futsu",
           "harbinger_of_dawn"
         ],
         "artifactSets": [
-          "husk_of_opulent_dreams",
-          "golden_troupe",
-          "husk_of_opulent_dreams",
-          "archaic_petra",
-          "tenacity_of_the_millelith",
-          "noblesse_oblige"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "archaic_petra"
+              },
+              {
+                "type": "set",
+                "id": "husk_of_opulent_dreams"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "archaic_petra"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          }
         ]
       }
     ]
@@ -3468,10 +7700,44 @@ const characterBuilds = [
           "whiteblind"
         ],
         "artifactSets": [
-          "husk_of_opulent_dreams",
-          "desert_pavilion_chronicle",
-          "retracing_bolide",
-          "emblem_of_severed_fate"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "desert_pavilion_chronicle"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "retracing_bolide"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "archaic_petra"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "set",
+                "id": "husk_of_opulent_dreams"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3489,7 +7755,6 @@ const characterBuilds = [
         "talentPriority": "1. Skill\n2. Burst\n~= Normal Attack",
         "abilityTips": "Full Combo:\nE N3D N2 E N3D N2\n\nThe final N2 is omitted if units like Fischl or Xiangling are used during Bennett's Burst before Navia.",
         "weapons": [
-          "verdict",
           "serpent_spine",
           "beacon_of_the_reed_sea",
           "redhorn_stonethresher",
@@ -3502,10 +7767,50 @@ const characterBuilds = [
           "katsuragikiri_nagamasa"
         ],
         "artifactSets": [
-          "nighttime_whispers_in_the_echoing_woods",
-          "golden_troupe",
-          "emblem_of_severed_fate",
-          "marechaussee_hunter"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "nighttime_whispers_in_the_echoing_woods"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "archaic_petra"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "marechaussee_hunter"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3534,9 +7839,37 @@ const characterBuilds = [
           "wolf_fang"
         ],
         "artifactSets": [
-          "golden_troupe",
-          "husk_of_opulent_dreams",
-          "husk_of_opulent_dreams"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "husk_of_opulent_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "archaic_petra"
+              },
+              {
+                "type": "set",
+                "id": "husk_of_opulent_dreams"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3560,12 +7893,48 @@ const characterBuilds = [
           "favonius_warbow"
         ],
         "artifactSets": [
-          "deepwood_memories",
-          "noblesse_oblige",
-          "tenacity_of_the_millelith",
-          "instructor",
-          "gilded_dreams",
-          "the_exile"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "the_exile"
+            }
+          }
         ]
       }
     ]
@@ -3591,14 +7960,81 @@ const characterBuilds = [
           "kitain_cross_spear"
         ],
         "artifactSets": [
-          "deepwood_memories",
-          "tenacity_of_the_millelith",
-          "instructor",
-          "ocean_hued_clam",
-          "maiden_beloved",
-          "emblem_of_severed_fate",
-          "flower_of_paradise_lost",
-          "gilded_dreams"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "maiden_beloved"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "group",
+                "id": "20-hp"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3628,10 +8064,34 @@ const characterBuilds = [
           "rainslasher"
         ],
         "artifactSets": [
-          "deepwood_memories",
-          "flower_of_paradise_lost",
-          "instructor",
-          "gilded_dreams"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          }
         ]
       }
     ]
@@ -3657,11 +8117,47 @@ const characterBuilds = [
           "sacrificial_sword"
         ],
         "artifactSets": [
-          "instructor",
-          "deepwood_memories",
-          "noblesse_oblige",
-          "tenacity_of_the_millelith",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "vourukasha_s_glow"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3690,18 +8186,57 @@ const characterBuilds = [
           "fading_twilight",
           "scion_of_the_blazing_sun",
           "the_viridescent_hunt",
-          "slingshot",
           "range_gauge",
           "windblume_ode",
           "song_of_stillness",
           "prototype_crescent"
         ],
         "artifactSets": [
-          "wanderer_s_troupe",
-          "gilded_dreams",
-          "emblem_of_severed_fate",
-          "deepwood_memories",
-          "deepwood_memories"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "wanderer_s_troupe"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "emblem_of_severed_fate"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "deepwood_memories"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          }
         ]
       }
     ]
@@ -3726,7 +8261,7 @@ const characterBuilds = [
           "the_widsith",
           "sacrificial_jade",
           "skyward_atlas",
-          "rust",
+          "lost_prayer_to_the_sacred_winds",
           "memory_of_dust",
           "solar_pearl",
           "favonius_codex",
@@ -3737,12 +8272,58 @@ const characterBuilds = [
           "prototype_amber"
         ],
         "artifactSets": [
-          "deepwood_memories",
-          "gilded_dreams",
-          "golden_troupe",
-          "deepwood_memories",
-          "tenacity_of_the_millelith",
-          "flower_of_paradise_lost"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "deepwood_memories"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "tenacity_of_the_millelith"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "flower_of_paradise_lost"
+            }
+          }
         ]
       }
     ]
@@ -3777,9 +8358,37 @@ const characterBuilds = [
           "skyward_blade"
         ],
         "artifactSets": [
-          "gilded_dreams",
-          "emblem_of_severed_fate",
-          "deepwood_memories"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "gilded_dreams"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "set",
+                "id": "deepwood_memories"
+              },
+              {
+                "type": "group",
+                "id": "80-em"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          }
         ]
       }
     ]
@@ -3805,11 +8414,51 @@ const characterBuilds = [
           "a_thousand_floating_dreams"
         ],
         "artifactSets": [
-          "deepwood_memories",
-          "ocean_hued_clam",
-          "instructor",
-          "noblesse_oblige",
-          "tenacity_of_the_millelith"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "ocean_hued_clam"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "tenacity_of_the_millelith"
+              },
+              {
+                "type": "set",
+                "id": "emblem_of_severed_fate"
+              },
+              {
+                "type": "set",
+                "id": "vourukasha_s_glow"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3843,10 +8492,44 @@ const characterBuilds = [
           "kitain_cross_spear"
         ],
         "artifactSets": [
-          "unfinished_reverie",
-          "deepwood_memories",
-          "golden_troupe",
-          "deepwood_memories"
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "unfinished_reverie"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "choose-2",
+            "options": [
+              {
+                "type": "set",
+                "id": "deepwood_memories"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              },
+              {
+                "type": "group",
+                "id": "18-atk"
+              }
+            ]
+          }
         ]
       }
     ]
@@ -3856,7 +8539,26 @@ const characterBuilds = [
   element: Element;
   weapon: WeaponType;
   notes: string;
-  builds: { name: string; weapons: WeaponId[], artifactSets: ArtifactId[], artifactMainStats: string; artifactSubStats: string; talentPriority: string; abilityTips: string; }[];
+  builds: {
+    name: string;
+    weapons: WeaponId[];
+    artifactSets: (
+      { type: "single", option: ArtifactSetChoice }
+      | {
+        type: "choose-2",
+        options: ArtifactSetChoice[]
+      }
+      | {
+        type: "double",
+        options: [ArtifactSetChoice, ArtifactSetChoice]
+      }
+    )[];
+    artifactMainStats: string;
+    artifactSubStats: string;
+    talentPriority: string;
+    abilityTips: string;
+  }[];
 }[];
+export type ArtifactSetChoice = { type: "set", id: ArtifactId } | { type: "group", id: ArtifactGroupId };
 export default characterBuilds;
 export type CharacterBuild = typeof characterBuilds[number];
