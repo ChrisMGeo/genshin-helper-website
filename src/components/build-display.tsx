@@ -64,7 +64,7 @@ const BuildDisplay = ({
                 <></>
               )}
             </Fragment>
-          ))}
+          })}
         </Stack>
       </Grid>
     </Grid>
