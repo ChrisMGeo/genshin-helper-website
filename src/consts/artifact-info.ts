@@ -1915,3 +1915,18 @@ export const getTranslatedArtifactInfo = () => {
 }
 export type TranslatedArtifactInfo = ReturnType<typeof getTranslatedArtifactInfo>[number];
 export type ArtifactId = ArtifactInfo["nameId"];
+
+export const artifactGroups = [
+  { nameId: "18-atk", name: "18% ATK", sets: ["brave_heart", "echoes_of_an_offering", "fragment_of_harmonic_whimsy", "gladiator_s_finale", "shimenawa_s_reminiscence", "nighttime_whispers_in_the_echoing_woods", "resolution_of_sojourner", "unfinished_reverie", "vermillion_hereafter"] },
+  { nameId: "30-def", name: "30% DEF", sets: ["defender_s_will", "husk_of_opulent_dreams"] },
+  { nameId: "20-hp", name: "20% HP", sets: ["vourukasha_s_glow", "tenacity_of_the_millelith"] },
+  { nameId: "20-er", name: "20% Energy Recharge", sets: ["emblem_of_severed_fate", "scholar", "the_exile"] },
+  { nameId: "80-em", name: "80 EM", sets: ["instructor", "wanderer_s_troupe", "flower_of_paradise_lost", "gilded_dreams"] },
+] as const satisfies readonly {
+  readonly nameId: string;
+  readonly name: string;
+  readonly sets: readonly ArtifactId[];
+}[];
+
+export type ArtifactGroupId = typeof artifactGroups[number]["nameId"];
+export type ArtifactGroup = typeof artifactGroups[number];
