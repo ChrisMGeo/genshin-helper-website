@@ -11,8 +11,8 @@ import CardLight from "./card-light";
 import { Fragment } from "react";
 import { bgGradient } from "../consts/rarity-colors";
 import { CharacterBuild } from "../consts/character-builds";
-import { translatedWeaponInfo, TranslatedWeaponInfo } from "../consts/weapon-info";
-import { TranslatedArtifactInfo, translatedArtifactInfo } from "../consts/artifact-info";
+import { getTranslatedWeaponInfo, TranslatedWeaponInfo } from "../consts/weapon-info";
+import { artifactGroups, getTranslatedArtifactInfo } from "../consts/artifact-info";
 import UnityRichTextComponent from "./unity-rich-text";
 import { useTranslation } from "react-i18next";
 
@@ -22,8 +22,8 @@ interface BuildDisplayProps {
 const BuildDisplay = ({
   build: { weapons, artifactSets }
 }: BuildDisplayProps) => {
-  const allWeaponInfo = translatedWeaponInfo();
-  const allArtifactInfo = translatedArtifactInfo();
+  const allWeaponInfo = getTranslatedWeaponInfo();
+  const allArtifactInfo = getTranslatedArtifactInfo();
   const { t } = useTranslation();
   return (
     <Grid container spacing={2}>

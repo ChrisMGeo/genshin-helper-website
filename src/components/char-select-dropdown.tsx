@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Element } from "../consts";
 import ThumbSide from "./thumb-side";
 import { useNavigate } from "react-router-dom";
-import { translatedCharacterInfo } from "../consts/character-info";
+import { getTranslatedCharacterInfo } from "../consts/character-info";
 
 interface CharSelectDropdownProps {
   characterKey: string;
@@ -60,7 +60,7 @@ const CharSelectDropdown = ({
         onClose={() => handleClose()}
         MenuListProps={{ "aria-labelledby": "character-select-button" }}
       >
-        {translatedCharacterInfo().map((char) => (
+        {getTranslatedCharacterInfo().map((char) => (
           <MenuItem
             key={`${char.id}`}
             onClick={() => handleClose(char.nameId)}

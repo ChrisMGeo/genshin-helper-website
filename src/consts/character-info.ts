@@ -5770,7 +5770,7 @@ const characterInfo = [
 ] as const;
 export type CharacterInfo = typeof characterInfo[number];
 export default characterInfo;
-export const translatedCharacterInfo = (
+export const getTranslatedCharacterInfo = (
 ) => {
   const { t } = useTranslation();
   return characterInfo.map((info) => {
@@ -5802,7 +5802,7 @@ export const translatedCharacterInfo = (
   });
 }
 
-export type TranslatedCharacterInfo = ReturnType<typeof translatedCharacterInfo>[number];
+export type TranslatedCharacterInfo = ReturnType<typeof getTranslatedCharacterInfo>[number];
 export type CharacterId = CharacterInfo['nameId'];
 
 /*

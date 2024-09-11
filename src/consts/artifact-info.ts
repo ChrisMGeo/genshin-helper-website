@@ -1889,7 +1889,7 @@ const artifactInfo = [
 ] as const;
 export default artifactInfo;
 export type ArtifactInfo = typeof artifactInfo[number];
-export const translatedArtifactInfo = () => {
+export const getTranslatedArtifactInfo = () => {
   const { t } = useTranslation();
   return artifactInfo.map(artifact => {
     const { nameHash, setBonuses, pieces, ...rest } = artifact;
@@ -1913,5 +1913,5 @@ export const translatedArtifactInfo = () => {
     }
   })
 }
-export type TranslatedArtifactInfo = ReturnType<typeof translatedArtifactInfo>[number];
+export type TranslatedArtifactInfo = ReturnType<typeof getTranslatedArtifactInfo>[number];
 export type ArtifactId = ArtifactInfo["nameId"];

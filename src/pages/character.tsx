@@ -25,7 +25,7 @@ import CharSelectDropdown from "../components/char-select-dropdown";
 import { theme } from "../theme";
 import StickyCard from "../components/sticky-card";
 import BuildDisplay from "../components/build-display";
-import { translatedCharacterInfo } from "../consts/character-info";
+import { getTranslatedCharacterInfo } from "../consts/character-info";
 import CardLight from "../components/card-light";
 import UnityRichTextComponent from "../components/unity-rich-text";
 import characterBuilds from "../consts/character-builds";
@@ -65,7 +65,7 @@ const PageCharacter = () => {
   const onClose = useCallback(() => navigate("/"), [navigate]);
 
   const { characterKey } = useParams<{ characterKey?: string }>();
-  const invalidKey = !translatedCharacterInfo().some(charInfo => charInfo.nameId == characterKey);
+  const invalidKey = !getTranslatedCharacterInfo().some(charInfo => charInfo.nameId == characterKey);
   if (invalidKey) return <Navigate to="/" />;
   return (
     <Box my={1} display="flex" flexDirection="column" gap={1}>
@@ -98,7 +98,7 @@ const CharacterDisplayCard = ({
   //   useLocalStorage<TravelerElement>("travelerElement", "anemo");
   const isTraveler = characterKey === "traveler";
 
-  const characterInfo = translatedCharacterInfo().find((char) =>
+  const characterInfo = getTranslatedCharacterInfo().find((char) =>
     // isTraveler ? char.nameId === travelerId : 
     char.nameId === characterKey
   )!;

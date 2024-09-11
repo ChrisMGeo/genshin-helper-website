@@ -5594,7 +5594,7 @@ const weaponInfo = [
 
 export type WeaponInfo = typeof weaponInfo[number];
 export default weaponInfo;
-export const translatedWeaponInfo = () => {
+export const getTranslatedWeaponInfo = () => {
   const { t } = useTranslation();
   return weaponInfo.map((weapon) => {
     const { nameHash, descHash, refinementInfo, ...rest } = weapon;
@@ -5610,5 +5610,5 @@ export const translatedWeaponInfo = () => {
   });
 }
 
-export type TranslatedWeaponInfo = ReturnType<typeof translatedWeaponInfo>[number];
+export type TranslatedWeaponInfo = ReturnType<typeof getTranslatedWeaponInfo>[number];
 export type WeaponId = WeaponInfo["nameId"];
