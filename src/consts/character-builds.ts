@@ -207,7 +207,7 @@ const characterBuilds = [
     "nameId": "xiangling",
     "element": "pyro",
     "weapon": "polearm",
-    "notes": "OFF-FIELD DPS\nRegarding Weapon Choices: THIS LIST ASSUMES THAT XIANGLING IS RUN WITH BOTH BENNETT AND A SECONDARY BUFFER (i.e. Kazuha/Sucrose)\nWavebreaker's Fin: At [R5], this weapon is equal to or outperforms Staff of Homa, depending on your total team burst cost.\nDragon's Bane: At [R5], this weapon outperforms Primordial Jade Winged-Spear.\nKitain Cross Spear: This weapon's passive reduces the ER threshold of Xiangling greatly. This allows you to distribute ER rolls into otherwise offensive substats and due to this, an [R5] Kitain Cross Spear can outperform Primordial Jade Winged-Spear. Due to lowering ER thresholds so much, the Crimson Witch of Flames (4) artifact set will outperform Emblem of Severed Fate (4).\nLithic Spear: At [R5], and with 2 stacks, this weapon performs equal to Primordial Jade Winged-Spear.\nFavonius Lance: The utility provided from a highly refined Favonius Lance can make it a weapon of choice in a team comp where Xiangling is not triggering the reaction and is instead used as an aura. (i.e. Reverse Melt teams)\nBallad of the Fjords: At [R5] this becomes a very strong weapon in reaction teams, being competitive with Staff of Homa and best in slot for Overvape (Overload + Vaporize) teams. \n\nRegarding Weapons and Artifacts with EM stat:\nDragon's Bane / Kitain Cross Spear / EM substats: In team comps where you can trigger both Vaporize and Overload at the same time (i.e. Raiden National), Elemental Mastery gets more value, pushing these weapons and artifacts ahead in damage.\n\nRegarding Artifact Sets:\nCrimson Witch of Flames (4): This set can be competitive with Emblem of Severed Fate (4) on team comps where Xiangling triggers Overloads in addition to Vaporize (i.e. Raiden National).\nThe Exile (2) Scholar (2): This set can be used as a very low investment support build to enable Reverse Melt team comps where Xiangling is not triggering the reaction and is instead used as an aura and needs a lot of Energy Recharge. Note that it is not recommended to stay on this build as Xiangling can still contribute respectable damage with offensive stats.\n",
+    "notes": "OFF-FIELD DPS\nRegarding Weapon Choices: THIS LIST ASSUMES THAT XIANGLING IS RUN WITH BOTH BENNETT AND A SECONDARY BUFFER (i.e. Kazuha/Sucrose)\nWavebreaker's Fin: At [R5], this weapon is equal to or outperforms Staff of Homa, depending on your total team burst cost.\nDragon's Bane: At [R5], this weapon outperforms Primordial Jade Winged-Spear.\nKitain Cross Spear: This weapon's passive reduces the ER threshold of Xiangling greatly. This allows you to distribute ER rolls into otherwise offensive substats and due to this, an [R5] Kitain Cross Spear can outperform Primordial Jade Winged-Spear. Due to lowering ER thresholds so much, the Crimson Witch of Flames (4) artifact set will outperform Emblem of Severed Fate (4).\nLithic Spear: At [R5], and with 2 stacks, this weapon performs equal to Primordial Jade Winged-Spear.\nFavonius Lance: The utility provided from a highly refined Favonius Lance can make it a weapon of choice in a team comp where Xiangling is not triggering the reaction and is instead used as an aura. (i.e. Reverse Melt teams)\nBallad of the Fjords: At [R5] this becomes a very strong weapon in reaction teams, being competitive with Staff of Homa and best in slot for Overvape (Overload + Vaporize) teams. \n\nRegarding Weapons and Artifacts with EM stat:\nDragon's Bane / Kitain Cross Spear / EM substats: In team comps where you can trigger both Vaporize and Overload at the same time (i.e. Raiden National), Elemental Mastery gets more value, pushing these weapons and artifacts ahead in damage.\n\nRegarding Artifact Sets:\nCrimson Witch of Flames (4): This set can be competitive with Emblem of Severed Fate (4) on team comps where Xiangling triggers Overloads in addition to Vaporize (i.e. Raiden National).\nThe Exile (2) Scholar (2): This set can be used as a very low investment support build to enable Reverse Melt team comps where Xiangling is not triggering the reaction and is instead used as an aura and needs a lot of Energy Recharge. Note that it is not recommended to stay on this build as Xiangling can still contribute respectable damage with offensive stats.\nDeepwood Memories (4): This set is a support option in teams with a relevant amount of Dendro damage (i.e. Kinich)\n",
     "builds": [
       {
         "name": "OFF-FIELD DPS ✩",
@@ -293,6 +293,13 @@ const characterBuilds = [
                 "id": "scholar"
               }
             ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
           }
         ]
       }
@@ -811,7 +818,7 @@ const characterBuilds = [
     "nameId": "thoma",
     "element": "pyro",
     "weapon": "polearm",
-    "notes": "BURGEON\nThis section focuses on using Thoma as a trigger for Burgeon. Thoma's slow rate of Pyro application paired with frequent Fiery Collapse triggers make him a great option for Burgeon. Additionally, he provides defensive utility in the form of shields. \n\nRegarding Weapon Choices:\nKitain Cross Spear: High refinement is recommended to further reduce Thoma's Energy Recharge requirements\nDragon's Bane: Becomes a more reasonable option when you have Thoma's [C4].\nFavonius Lance: If using this weapon, try to build some Crit Rate so Thoma can trigger the passive. \nRightful Reward: In teams where you are able to heal Thoma consistently (overhealing also counts), Rightful Reward can be a reasonable option due to the amount of energy generation. \n\nRegarding Artifact Mainstats:\nWhile building as much Elemental Mastery (with enough Energy Recharge) as possible is optimal for damage, you may use some HP% mainstats if you desire a stronger shield. This can be relevant if running teams without other forms of defensive utility outside of Thoma's shields, and it's worth keeping in mind that Burgeon deals self-damage. \n\nRegarding Talent Priority: \nThoma's talent levels do not contribute towards his Burgeon damage, so leveling them is optional in this respect. However, you may still wish to level them for stronger shielding. \n\nSUPPORT\nThis build focuses on maximising Thoma's potential as a shield support. \n\nRegarding Weapon Choices:\nFavonius Lance: This is generally Thoma's best weapon for a shield support build, make sure to build some Crit Rate if using it so that you can trigger the passive. \nRightful Reward: In teams where you would typically use Thoma as a shield support, it is difficult or even unfeasible to trigger this weapon passive. If you are able to trigger the passive consistently then it becomes a good option due to the HP% stat along with energy generation. \n\nRegarding Artifact sets:\nInstructor (4): This set ideally works best in heavily reaction focused teams like Hu Tao Vape where the Elemental Mastery is utilized well. But this comes at the cost of making Thoma even more difficult to build, since you have fewer potential substat rolls using 4 star artifacts, and therefore less of a chance of hitting his Energy Recharge and HP goals.",
+    "notes": "BURGEON\nThis section focuses on using Thoma as a trigger for Burgeon. Thoma's slow rate of Pyro application paired with frequent Fiery Collapse triggers make him a great option for Burgeon. Additionally, he provides defensive utility in the form of shields. \n\nRegarding Weapon Choices:\nKitain Cross Spear: High refinement is recommended to further reduce Thoma's Energy Recharge requirements\nDragon's Bane: Becomes a more reasonable option when you have Thoma's [C4].\nFavonius Lance: If using this weapon, try to build some Crit Rate so Thoma can trigger the passive. \nRightful Reward: In teams where you are able to heal Thoma consistently (overhealing also counts), Rightful Reward can be a reasonable option due to the amount of energy generation. \n\nRegarding Artifact Mainstats:\nWhile building as much Elemental Mastery (with enough Energy Recharge) as possible is optimal for damage, you may use some HP% mainstats if you desire a stronger shield. This can be relevant if running teams without other forms of defensive utility outside of Thoma's shields, and it's worth keeping in mind that Burgeon deals self-damage. \n\nRegarding Talent Priority: \nThoma's talent levels do not contribute towards his Burgeon damage, so leveling them is optional in this respect. However, you may still wish to level them for stronger shielding. \n\nSUPPORT\nThis build focuses on maximising Thoma's potential as a shield support. \n\nRegarding Weapon Choices:\nFavonius Lance: This is generally Thoma's best weapon for a shield support build, make sure to build some Crit Rate if using it so that you can trigger the passive. \nRightful Reward: In teams where you would typically use Thoma as a shield support, it is difficult or even unfeasible to trigger this weapon passive. If you are able to trigger the passive consistently then it becomes a good option due to the HP% stat along with energy generation. \n\nRegarding Artifact sets:\nInstructor (4): This set ideally works best in heavily reaction focused teams like Hu Tao Vape where the Elemental Mastery is utilized well. But this comes at the cost of making Thoma even more difficult to build, since you have fewer potential substat rolls using 4 star artifacts, and therefore less of a chance of hitting his Energy Recharge and HP goals.\nDeepwood Memories (4): This set is a support option in teams with a relevant amount of Dendro damage (i.e. Kinich)\r\n",
     "builds": [
       {
         "name": "BURGEON\n✩",
@@ -913,6 +920,13 @@ const characterBuilds = [
             "option": {
               "type": "set",
               "id": "instructor"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
             }
           }
         ]
@@ -3321,7 +3335,7 @@ const characterBuilds = [
     "nameId": "clorinde",
     "element": "electro",
     "weapon": "sword",
-    "notes": "DPS\nClorinde is an Electro DPS who primarily deals damage with her Elemental Skill, which puts her into the Night Vigil state. Attacks during this state grant her a Bond of Life, and she can clear her Bond of Life by using her Elemental Skill again while in the Night Vigil state. It should be noted that while in the Night Vigil state, outside healing sources give Clorinde a Bond of Life instead of healing her. Clorinde's Elemental Burst also grants her a Bond of Life that increases based on her talent level.\n\nRegarding Weapon Choices:\nHaran Geppaku Futsu, Primoridal Jade Cutter: Be careful when using these weapons as it is easy to overcap on Crit Rate due to Clorinde's A4 talent giving her a free 20% Crit Rate.\nMistsplitter Reforged: Maximizing Stacks requires Clorinde to use her Elemental Burst before her Elemental Skill.\nFreedom-Sworn: This weapon loses significant value outside of Dendro-based teams.\nThe Black Sword: At [R5], this weapon will perform similarly to Primordial Jade Cutter.  \n\nRegarding Artifact Sets:\nThundering Fury (4): This set pulls ahead of Fragment of Harmonic Whimsy if Clorinde is played in Quickbloom with Furina, and is competitive with Fragment of Harmonic Whimsy in Aggravate.\n\nRegarding Main Stat Choices:\nSands: In Quickbloom, EM sands performs similarly to ATK% sands.\n\nRegarding Substats:\nElemental Mastery: In Quickbloom scenarios, EM has a similar priority to ATK%, and has a lower priority in Aggravate. It should not be built outside of Dendro-based teams.\nEnergy Recharge: Having ER rolls can allow Clorinde to be able to Burst every rotation, which is useful, however, ER should not be prioritized.\n\nRegarding Talent Priority:\nIt is recommended to bring Clorinde's Elemental Burst talent to at least Level 7 to take full advantage of her A4 talent. This also allows for the Burst rotations as seen in the Ability Tips section.",
+    "notes": "DPS\nClorinde is an Electro DPS who primarily deals damage with her Elemental Skill, which puts her into the Night Vigil state. Attacks during this state grant her a Bond of Life, and she can clear her Bond of Life by using her Elemental Skill again while in the Night Vigil state. It should be noted that while in the Night Vigil state, outside healing sources give Clorinde a Bond of Life instead of healing her. Clorinde's Elemental Burst also grants her a Bond of Life that increases based on her talent level.\n\nRegarding Weapon Choices:\nHaran Geppaku Futsu, Primordial Jade Cutter: Be careful when using these weapons as it is easy to overcap on Crit Rate due to Clorinde's A4 talent giving her a free 20% Crit Rate.\nMistsplitter Reforged: Maximizing Stacks requires Clorinde to use her Elemental Burst before her Elemental Skill.\nFreedom-Sworn: This weapon loses significant value outside of Dendro-based teams.\nThe Black Sword: At [R5], this weapon will perform similarly to Primordial Jade Cutter.  \n\nRegarding Artifact Sets:\nThundering Fury (4): This set pulls ahead of Fragment of Harmonic Whimsy if Clorinde is played in Quickbloom with Furina, and is competitive with Fragment of Harmonic Whimsy in Aggravate.\n\nRegarding Main Stat Choices:\nSands: In Quickbloom, EM sands performs similarly to ATK% sands.\n\nRegarding Substats:\nElemental Mastery: In Quickbloom scenarios, EM has a similar priority to ATK%, and has a lower priority in Aggravate. It should not be built outside of Dendro-based teams.\nEnergy Recharge: Having ER rolls can allow Clorinde to be able to Burst every rotation, which is useful, however, ER should not be prioritized.\n\nRegarding Talent Priority:\nIt is recommended to bring Clorinde's Elemental Burst talent to at least Level 7 to take full advantage of her A4 talent. This also allows for the Burst rotations as seen in the Ability Tips section.",
     "builds": [
       {
         "name": " DPS\n ✩",
@@ -4222,11 +4236,11 @@ const characterBuilds = [
     "nameId": "neuvillette",
     "element": "hydro",
     "weapon": "catalyst",
-    "notes": "DPS\nDPS Neuvillette centers around using his Charged Attacks to deal damage.\n\nRegarding Weapon Choices:\nWeapon options similar to Prototype Amber can be used better by other characters, so it's not recommended to pull or upgrade these weapons just for Neuvillette.\n\nRegarding Artifact Main Stats:\nGoblet and Circlet: HP% Mainstats gain more value when you have DMG% buffs. \nNot recommended to run more than 2 HP% mainstats at once",
+    "notes": "DPS\nDPS Neuvillette centers around using his Charged Attacks to deal damage.\n\nRegarding Weapon Choices:\nWeapon options similar to Prototype Amber can be used better by other characters, so it's not recommended to pull or upgrade these weapons just for Neuvillette.",
     "builds": [
       {
         "name": "DPS \n✩",
-        "artifactMainStats": "Sands - HP%\nGoblet - Hydro DMG / HP%*\nCirclet - Crit Rate / Crit DMG / HP%*",
+        "artifactMainStats": "Sands - HP%\nGoblet - Hydro DMG / HP%\nCirclet - Crit Rate / Crit DMG / HP%",
         "artifactSubStats": "1. Energy Recharge*\n2. Crit Rate / Crit DMG\n~= HP%\n3. Flat HP\n\n* Energy Recharge should be prioritised until requirements are met.",
         "talentPriority": "1. Normal Attack\n2. Burst\n~= Skill\n",
         "abilityTips": "",
@@ -8529,6 +8543,78 @@ const characterBuilds = [
                 "id": "18-atk"
               }
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nameId": "kinich",
+    "element": "dendro",
+    "weapon": "claymore",
+    "notes": "DPS\nKinich is a Dendro DPS who relies on tethering himself to enemies with his grappling hook and firing Loop Shots to generate Nightsoul Points in order to use the Scalespiker Cannon. Both the Loop Shots and the Scalespiker Cannon are considered Elemental Skill DMG. With his A1 Talent, his skill puts enemies in the Desolation State, which, when they are affected by Burning or Burgeon, generates even more Nightsoul Points for Kinich. Summoning Ajaw to the field will extend his Nightsoul Blessing state briefly. See the Ability Tips section for details on his Nightsoul Point generation.\n\nRegarding Weapon Choices:\nRankings assume Kinich is used with Bennett.\nSerpent Spine: At [R5], this weapon performs better than Beacon of the Reed Sea.\nWolf's Gravestone: This option is mainly just a statstick for Kinich as many of his teammates, barring Xiangling, Emilie, or Xingqiu, don't benefit much from the ATK% buff from the passive.\n\nRegarding Artifact Sets:\nDeepwood Memories (4): This set has more value on Kinich if he is the only member of the team who can use it. If such is the case, it ranks similar to Unfinished Reverie (4).\nMarechaussee Hunter (4): Only to be used when paired with Furina, or when played in Burgeon. Performs similarly to Unfinished Reverie (4).\n\n",
+    "builds": [
+      {
+        "name": "DPS\n ✩",
+        "artifactMainStats": "Sands - ATK%\nGoblet - Dendro DMG\nCirclet - Crit Rate / DMG",
+        "artifactSubStats": "1. Crit Rate / DMG\n2. ATK%\n3. Energy Recharge",
+        "talentPriority": "1. Skill\n2. Burst",
+        "abilityTips": "During Nightsoul Blessing:\n\nGenerates 2 Nightsoul Points every second, firing a Loop Shot generates 3 Nightsoul Points, entering a Blind Spot generates 4 Nightsoul Points, and an opponent in Desolation State affected by Burning or Burgeon generates 7 Nightsoul Points.\n\nKinich has a max of 20 Nightsoul Points. He enters Nightsoul Blessing with 0 points.\n\nWhen paired with Xiangling, spin counter clockwise so her Pyronado can hit opponents more frequently.",
+        "weapons": [
+          "fang_of_the_mountain_king",
+          "beacon_of_the_reed_sea",
+          "serpent_spine",
+          "wolf_s_gravestone",
+          "redhorn_stonethresher"
+        ],
+        "artifactSets": [
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "obsidian_codex"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "unfinished_reverie"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "golden_troupe"
+            }
+          },
+          {
+            "type": "double",
+            "options": [
+              {
+                "type": "set",
+                "id": "deepwood_memories"
+              },
+              {
+                "type": "set",
+                "id": "golden_troupe"
+              }
+            ]
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "deepwood_memories"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "marechaussee_hunter"
+            }
           }
         ]
       }
