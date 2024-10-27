@@ -2425,31 +2425,31 @@ const characterBuilds = [
     "nameId": "kujou_sara",
     "element": "electro",
     "weapon": "bow",
-    "notes": "SUPPORT AND DAMAGE\nSara is a quickswap support who is able to buff your active characters via its Crowfeather mechanics. When Sara uses her Elemental Skill, her next Charged Shot will leave a Crowfeather on the target location and after a short while, the Crowfeather explodes and the active character in its AoE will benefit from Sara's ATK buff, which scales with her Base ATK. \n\nAt [C2], you can skip the Charged Shot as it immediately drops a Crowfeather, and save it for later on if you wanna swap back to her to extend her buffs. You can also use Elemental Skill followed by Elemental Burst so that she benefits from the Crowfeather dropped by her Elemental Skill, then swap to other character so that character can benefit from Sara's ATK buff. It's worth mentioning that Sara's Crit DMG buff at [C6] doesn't snapshot and it also doesn't show on the stats page, so don't freak out when you don't see it there.\n\nRegarding Weapon Choices: Weapons here are ranked based on their Base ATK to maximize Sara's ATK buff.\nPolar Star: This is the best weapon for her personal damage, at the cost of having weaker buffing capabilities compared to Skyward Harp.\nSkyward Harp: This is the best all-rounder weapon. Combining both high personal damage, with the second best buffing capabilities of any weapon.\nMouun's Moon: At [R5] this weapon performs similarly to Hunter's Path in personal damage while also giving you a stronger buff.\nElegy for the End: The cooldown on this weapon's passive aligns perfectly with Sara's Elemental Burst cooldown. This weapon has lower base ATK if compared with Skyward Harp, but this weapon can be considered over Skyward Harp due to the teamwide ATK% and EM buff it provides. It's worth keeping in mind that Sara can experience issues triggering the Elegy passive consistently, against small hitbox single-target scenarios.\nSacrificial Bow: The combination of high base ATK and a Energy Recharge substat makes this one of her best (4✩) weapon options in teams where she needs a Energy Recharge weapon to meet energy requirements and battery another Electro unit at the same time.\n\nRegarding Artifact Sets:\nNoblesse Oblige (4): Universal support set that is able to buff your party member's ATK by 20%, use this set on Sara if there's nobody else in the party who's equipping one.\n",
+    "notes": "SUPPORT AND DAMAGE\nSara is a quickswap support who is able to buff your active character via her Crowfeather mechanic while dealing a decent amount of personal damage. When Sara uses her Elemental Skill, her next Charged Shot will leave a Crowfeather at the target location which explodes after a short while, granting the active character in its AoE an attack buff based on Sara's Base ATK. Active characters within her Burst's AoE will also receive the same buff or have its duration refreshed. \nIf building Sara for personal damage, it is recommended to let her receive the buff provided by her Skill to enhance her Burst, while letting the next active character be buffed by her Burst.\n\nAt [C2], you can skip the Charged Shot as it immediately drops a Crowfeather, and save it for later on if you wanna swap back to her to extend her buffs. The Crit Damage buff provided by Sara's [C6] cannot be snapshot and is not shown in the attribute page.\n\nRegarding Weapon Choices: Weapons here are ranked based on Team DPS to account for Sara's Buff and Personal Damage. \nSkyward Harp: This weapon combines the highest base attack for Sara's buff with good stats for her personal damage, making it the best overall pick.\nPolar Star: This weapon trades some buff strength for more personal damage. Can pull ahead of Skyward Harp if a quick E CA N1 Q rotation is performed to maximize its passive.\nElegy for the End: While providing a strong buff for the team and a large amount of Energy Recharge, Sara can have issues with reliably activating the passive in Single Target scenarios against small or mobile enemies.\nMouun's Moon: At [R5], this weapon performs similar to or better than Thundering Pulse, depending on your team's total burst cost.\nAlley Hunter: Sara's quickswap playstyle lets her take advantage of this weapon's passive well. Performs similar to Amos' Bow at [R5].\nFavonius Warbow: While being bad for both Sara's buff and personal damage, this weapon can be a good pick if the team struggles with high Energy Recharge requirements.\n\nRegarding Artifact Sets:\nNoblesse Oblige (4): A good pick for Sara if there is no other possible holder on the team, or if it allows for another buffing set to be added to the team.",
     "builds": [
       {
         "name": "SUPPORT AND DAMAGE\n✩",
         "artifactMainStats": "Sands - Energy Recharge / ATK%\nGoblet - Electro DMG\nCirclet - Crit Rate / DMG ",
-        "artifactSubStats": "1. Energy Recharge*\n2. Crit Rate / DMG\n3. ATK%\n4. Flat ATK\n\n*Prioritize Energy Recharge first until you can burst off cooldown",
+        "artifactSubStats": "1. Energy Recharge*\n2. Crit Rate / DMG\n3. ATK%\n4. Flat ATK\n\n*Prioritize Energy Recharge first until requirements are met",
         "talentPriority": "1. Skill\n2. Burst",
-        "abilityTips": "For her Elemental Skill to generate particles, you need to perform a Charged Shot to place a Crowfeather after casting her Elemental Skill. If the Crowfeather explosion hits an enemy, it generates 3 particles.\n\nCrowfeathers generated from Sara's [C2] do NOT generate particles.",
+        "abilityTips": "For her Elemental Skill to generate particles, you need to perform a Charged Shot to place a Crowfeather after casting her Elemental Skill. If the Crowfeather explosion hits an enemy, it generates 3 particles.\n\nCrowfeathers dropped through Sara's [C2] do NOT generate particles.",
         "weapons": [
-          "polar_star",
           "skyward_harp",
-          "hunter_s_path",
+          "polar_star",
+          "elegy_for_the_end",
+          "the_first_great_magic",
           "aqua_simulacra",
+          "hunter_s_path",
           "thundering_pulse",
           "amos_bow",
-          "mouun_s_moon",
-          "elegy_for_the_end",
-          "alley_hunter",
           "fading_twilight",
+          "mouun_s_moon",
+          "alley_hunter",
           "the_viridescent_hunt",
-          "blackcliff_warbow",
+          "scion_of_the_blazing_sun",
           "sacrificial_bow",
-          "prototype_crescent",
-          "favonius_warbow",
-          "messenger"
+          "chain_breaker",
+          "favonius_warbow"
         ],
         "artifactSets": [
           {
@@ -2467,7 +2467,7 @@ const characterBuilds = [
             }
           },
           {
-            "type": "double",
+            "type": "choose-2",
             "options": [
               {
                 "type": "set",
@@ -2476,15 +2476,10 @@ const characterBuilds = [
               {
                 "type": "set",
                 "id": "noblesse_oblige"
-              }
-            ]
-          },
-          {
-            "type": "double",
-            "options": [
+              },
               {
                 "type": "set",
-                "id": "noblesse_oblige"
+                "id": "emblem_of_severed_fate"
               },
               {
                 "type": "group",
@@ -4109,11 +4104,11 @@ const characterBuilds = [
               },
               {
                 "type": "set",
-                "id": "tenacity_of_the_millelith"
+                "id": "emblem_of_severed_fate"
               },
               {
-                "type": "set",
-                "id": "emblem_of_severed_fate"
+                "type": "group",
+                "id": "20-hp"
               }
             ]
           }
@@ -4153,11 +4148,11 @@ const characterBuilds = [
               },
               {
                 "type": "set",
-                "id": "tenacity_of_the_millelith"
+                "id": "emblem_of_severed_fate"
               },
               {
-                "type": "set",
-                "id": "emblem_of_severed_fate"
+                "type": "group",
+                "id": "20-hp"
               }
             ]
           }
@@ -7365,7 +7360,7 @@ const characterBuilds = [
     "nameId": "zhongli",
     "element": "geo",
     "weapon": "polearm",
-    "notes": "PHYSICAL DPS\nOptimal Physical Rotation:\nNormal Attack until Spear Kick -> Dodge/Jump Cancel -> Repeat\n\nSHIELD SUPPORT\nThis kind of playstyle is very straightforward; stack as much HP as possible. Prioritize HP scaling polearms such as Black Tassel and artifact sets such as Tenacity of the Millelith (4) to capitalize on Zhongli's Shield. Most of the time, especially on a HP-focused Zhongli, casting Elemental Burst is a DPS loss due to the cast time, which is why you'd only want to cast Elemental Burst for the Crowd Control it offers, and not for damage.\n\nNote that if paired with Xingqiu and/or Beidou, the damage reduction from orbitals from Xingqiu's Elemental Skill and Elemental Burst and/or Beidou's Elemental Burst can be utilized on Zhongli's shield, making it basically unbreakable.\n\nRegarding Artifact Main Stats and Substats Priority:\nCrit Rate should only be considered when Zhongli is equpping Favonius Lance to reliably proc the passive.\n\nRegarding Weapon Choices:\nFavonius Lance: Use this weapon over Black Tassel if you value the team energy (Note that you need to build some amount of Crit Rate if you are running Favonius Lance to trigger the passive)\n\nRegarding Artifact sets:\nArchaic Petra (4): Can be more useful than Tenacity of the Millelith (4) in teams that dont scale as well with ATK buffs or already have another Tenacity of the Millelith holder. Though it can be an awkward set to utlize well without extending rotation times, since the Holder of the set (Zhongli in this case) has to pickup the shard for the buff to take effect.\nTenacity of the Millelith (4): This set is best in slot for Shield HP, but it's usually inconsistent against Bosses and needs good Construct placement, due to it's inconsistency, it's better to use other buffing sets that are mentioned if they work for the team.\nDeepwood Memories (4): This set works best in Dendro reaction focused teams (Bloom/Burgeon/Hyperbloom/Spread) that prefer having Deepwood Memories on Zhongli so that they can run more damage focused sets such as Gilded Dreams / Flower of Paradise Lost instead for the highest overall damage gain. That said it means keeping the enemies near your pillar's to have good uptime on the Dendro resistance shred effect, which can be difficult with no grouping abilities in a team.\nInstructor (4): This set is usually only used in a few heavily reaction focused teams, such as Ganyu Melt or Hu Tao Vape, where you're maximising your damage in exchange for a weaker shield. Though Zhongli's shield is still usually more than strong enough even with fewer substat rolls to strengthen it.\n\nBURST SUPPORT\nZhongli can be utilized as a Geo Burst damage dealer due to his short Elemental Burst cooldown (12s) and low energy cost (40 Energy). His Elemental Skill Hold Cast (Shield) scales with HP and at Ascension 4, you would unlock a talent that allows your Elemental Burst to scale with 33% of Zhongli's Max HP, making him a great source of Shield and damage. Though in certain teams without either very high investment into his damage or enough time in the rotation to burst without extending rotation times his burst can be a DPS loss.\n\nRegarding Weapon Choices:\nFavonius Lance: If the team values the particles from this weapon, then it can be better than all the other options mentioned for overall team damage (Note that you need to build some amount of Crit Rate if you are running Favonius Lance to trigger the passive)\n\nRegarding Artifact Main Stats:\nATK sands provides more damage than HP sands, but it does have lesser Shield HP. If you want more Shield HP, you can consider running a HP sands.\n\nRegarding Artifact Sets:\nNoblesse Oblige (2) Archaic Petra (2): On lower ER requirements where Zhongli doesn't need to worry about his energy needs, this set pulls ahead of Emblem of Severed Fate (4).\nNoblesse Oblige (4): This set provides Zhongli more utility when casting his Elemental Burst, you can use this set on Zhongli if there is nobody else on the team who's equipping this set.\nTenacity of the Millelith (4): Just like Noblesse Oblige (4), this set provides Zhongli with more utility if his Elemental Skill hits an enemy. This set also provides Zhongli with stronger shields.",
+    "notes": "PHYSICAL DPS\nOptimal Physical Rotation:\nNormal Attack until Spear Kick -> Dodge/Jump Cancel -> Repeat\n\nSHIELD SUPPORT\nThis kind of playstyle is very straightforward; stack as much HP as possible. Prioritize HP scaling polearms such as Black Tassel and artifact sets such as Tenacity of the Millelith (4) to capitalize on Zhongli's Shield. Most of the time, especially on a HP-focused Zhongli, casting Elemental Burst is a DPS loss due to the cast time, which is why you'd only want to cast Elemental Burst for the Crowd Control it offers, and not for damage.\n\nNote that if paired with Xingqiu and/or Beidou, the damage reduction from orbitals from Xingqiu's Elemental Skill and Elemental Burst and/or Beidou's Elemental Burst can be utilized on Zhongli's shield, making it basically unbreakable.\n\nRegarding Artifact Main Stats and Substats Priority:\nCrit Rate should only be considered when Zhongli is equpping Favonius Lance to reliably proc the passive.\n\nRegarding Weapon Choices:\nFavonius Lance: Use this weapon over Black Tassel if you value the team energy (Note that you need to build some amount of Crit Rate if you are running Favonius Lance to trigger the passive)\n\nRegarding Artifact sets:\nArchaic Petra (4): Can be more useful than Tenacity of the Millelith (4) in teams that dont scale as well with ATK buffs or already have another Tenacity of the Millelith holder. Though it can be an awkward set to utlize well without extending rotation times, since the Holder of the set (Zhongli in this case) has to pickup the shard for the buff to take effect.\nScroll of the Hero of Cinder City (4): Preffered over Archaic Petra if there are multiple Crystallize-compatible Elements or Geo characters that want DMG% bonus.\nTenacity of the Millelith (4): This set is best in slot for Shield HP, but it's usually inconsistent against Bosses and needs good Construct placement, due to it's inconsistency, it's better to use other buffing sets that are mentioned if they work for the team.\nDeepwood Memories (4): This set works best in Dendro reaction focused teams (Bloom/Burgeon/Hyperbloom/Spread) that prefer having Deepwood Memories on Zhongli so that they can run more damage focused sets such as Gilded Dreams / Flower of Paradise Lost instead for the highest overall damage gain. That said it means keeping the enemies near your pillar's to have good uptime on the Dendro resistance shred effect, which can be difficult with no grouping abilities in a team.\nInstructor (4): This set is usually only used in a few heavily reaction focused teams, such as Ganyu Melt or Hu Tao Vape, where you're maximising your damage in exchange for a weaker shield. Though Zhongli's shield is still usually more than strong enough even with fewer substat rolls to strengthen it.\n\nBURST SUPPORT\nZhongli can be utilized as a Geo Burst damage dealer due to his short Elemental Burst cooldown (12s) and low energy cost (40 Energy). His Elemental Skill Hold Cast (Shield) scales with HP and at Ascension 4, you would unlock a talent that allows your Elemental Burst to scale with 33% of Zhongli's Max HP, making him a great source of Shield and damage. Though in certain teams without either very high investment into his damage or enough time in the rotation to burst without extending rotation times his burst can be a DPS loss.\n\nRegarding Weapon Choices:\nFavonius Lance: If the team values the particles from this weapon, then it can be better than all the other options mentioned for overall team damage (Note that you need to build some amount of Crit Rate if you are running Favonius Lance to trigger the passive)\n\nRegarding Artifact Main Stats:\nATK sands provides more damage than HP sands, but it does have lesser Shield HP. If you want more Shield HP, you can consider running a HP sands.\n\nRegarding Artifact Sets:\nNoblesse Oblige (2) Archaic Petra (2): On lower ER requirements where Zhongli doesn't need to worry about his energy needs, this set pulls ahead of Emblem of Severed Fate (4).\nNoblesse Oblige (4): This set provides Zhongli more utility when casting his Elemental Burst, you can use this set on Zhongli if there is nobody else on the team who's equipping this set.\nTenacity of the Millelith (4): Just like Noblesse Oblige (4), this set provides Zhongli with more utility if his Elemental Skill hits an enemy. This set also provides Zhongli with stronger shields.",
     "builds": [
       {
         "name": "PHYSICAL DPS",
@@ -7550,23 +7545,23 @@ const characterBuilds = [
     "nameId": "albedo",
     "element": "geo",
     "weapon": "sword",
-    "notes": "OFF-FIELD DPS\nAlbedo is a character that can summon a Geo Construct from his Elemental Skill which deals damage on a 2 second interval whenever enemies in the field are damaged. His Elemental Burst provides 125 EM to the party, which is good on teams that rely on amplification reactions, such as Vaporize. It is worth noting that since his stat priority is focused on DEF (Elemental Skill scaling), you might want to skip casting Elemental Burst if your team doesn't benefit from the 125 EM buff. Another option is to build him with ATK-DEF Hybrid, which ends up with lower Skill damage but higher Burst damage.\n\nSKILL ONLY\nRegarding Weapon Choices:\nHarbinger of Dawn: Albedo's Elemental Skill scales with Defense, which is why the Base ATK from the weapon doesn't matter that much. Harbinger of Dawn offers a lot of Crit stats which is why it is one of the strongest weapons for him despite being a 3 star weapon. The downside of this weapon is that you'd need to keep Albedo's HP at 90% or higher to benefit from the passive, so it might be annoying to use against certain enemies which has a HP lowering debuff, even when off-field, such as Corrosion.\nMistsplitter Reforged: Realistically you are only able to get 2 stacks of this weapon's passive and this requires setup. Generally just use Harbinger of Dawn instead and give your Mistsplitter Reforged to another sword DPS character.\nFreedom-Sworn: Equipping this weapon will decrease Albedo's own damage significantly but he is one of the better Freedom-Sworn holders since he can trigger the passive quite easily to buff your other party members.\nWolf-Fang: Weapon rankings use [R1]. At [R5], it performs better than Harbinger of Dawn due to it being unconditional. It's worth noting the Crit Rate passive of Wolf-Fang does not stack off-field, you can perform Skill>N1>Swap character instead of just Skill>Swap character, for two stacks instead of one, but the difference isn't significant. \n\nSKILL + BURST\nRegarding Weapon Choices:\nHarbinger of Dawn: Albedo's Elemental Skill scales with Defense, which is why the Base ATK from the weapon doesn't matter that much. Harbinger of Dawn offers a lot of Crit stats which is why it is one of the strongest weapons for him despite being a 3 star weapon. The downside of this weapon is that you'd need to keep Albedo's HP at 90% or higher to benefit from the passive, so it might be annoying to use against certain enemies which has a HP lowering debuff, even when off-field, such as Corrosion.\nMistsplitter Reforged: Realistically you are only able to get 2 stacks of this weapon's passive and this requires setup. Generally just use Harbinger of Dawn instead and give your Mistsplitter Reforged to another sword DPS character.\nFreedom-Sworn: Equipping this weapon will decrease Albedo's own damage significantly but he is one of the better Freedom-Sworn holders since he can trigger the passive quite easily to buff your other party members.\nWolf-Fang: Weapon rankings use [R1]. At [R5], it performs better than Primordial Jade Cutter. It's worth noting the Crit Rate passive of Wolf-Fang does not stack off-field, you can perform Burst>Skill>N1>Swap character instead of just Burst>Skill>Swap character, for more stacks, but the difference isn't significant. \n\nOFF-FIELD DPS\nRegarding Artifact Sets:\nHusk of Opulent Dreams (4): Due to Albedo's skill snapshotting upon cast, you need to either wait ~12 seconds before starting a domain/fight to reach max stacks or recast his skill to benefit from the DEF and Geo DMG bonus provided by the 4 piece set effect.\nGolden Troupe (4): With Cinnabar Spindle, this set performs similarly to Husk of Opulent Dreams (4), and slightly better than Husk with the addition of Gorou and another Geo teammate assuming Spindle still. With Harbinger of Dawn however, this set performs worse than Husk of Opulent Dreams (4). It performs worse if Albedo uses his Burst.\nTenacity of the Millelith (4): This set is used for the 4 piece set effect which has good uptime on Albedo. Worth noting that this set decreases your Elemental Skill damage by a lot if compared to the other offensive sets.\nNoblesse Oblige (4): If you don't have another character in your party that has this set, you can use this set on Albedo. You might want to get some Energy Recharge substats to maintain your Elemental Burst uptime for this. It is also worth noting that this set decreases your Elemental Skill damage by a lot if compared to the other offensive sets.\nArchaic Petra (4): This set is a niche option for Albedo. It is lower personal damage than several other set options, but can be a reasonable option in some teams for buffing other characters. Do note that the 4pc bonus requires you to pick the shard up on Albedo. \n\nRegarding Artifact Substats Priority:\nATK% and Energy Recharge substats are only valuable on a Hybrid Albedo that casts his Elemental Burst.",
+    "notes": "OFF-FIELD DPS\nAlbedo is a character that can summon a Geo Construct from his Elemental Skill which deals damage on a 2 second interval whenever enemies in the field are damaged. His Elemental Burst provides 125 EM to the party, which is good on teams that rely on amplification reactions, such as Vaporize. It is worth noting that since his stat priority is focused on DEF (Elemental Skill scaling), you might want to skip casting Elemental Burst if your team doesn't benefit from the 125 EM buff. Another option is to build him with ATK-DEF Hybrid, which ends up with lower Skill damage but higher Burst damage.\n\nOFF-FIELD DPS\nRegarding Weapon Choices:\nPeak Patrol Song: Although it's damage is about equal to Cinnabar Spindle, the massive buffs it provides to the team generally makes it his best weapon. Make sure you Normal Attack twice before using his Skill with this weapon.\nHarbinger of Dawn: Albedo's Elemental Skill scales with Defense, which is why the Base ATK from the weapon doesn't matter that much. Harbinger of Dawn offers a lot of Crit stats which is why it is one of the strongest weapons for him despite being a 3 star weapon. The downside of this weapon is that you'd need to keep Albedo's HP at 90% or higher to benefit from the passive, so it might be annoying to use against certain enemies which has a HP lowering debuff, even when off-field, such as Corrosion.\nMistsplitter Reforged: Realistically you are only able to get 2 stacks of this weapon's passive and this requires setup. Generally just use Harbinger of Dawn instead and give your Mistsplitter Reforged to another sword DPS character.\nFreedom-Sworn: Equipping this weapon will decrease Albedo's own damage significantly but he is one of the better Freedom-Sworn holders since he can trigger the passive quite easily to buff your other party members.\nWolf-Fang: Weapon rankings use [R1]. At [R5], it performs better than Harbinger of Dawn due to it being unconditional. It's worth noting the Crit Rate passive of Wolf-Fang does not stack off-field, you can perform Skill>N1>Swap character instead of just Skill>Swap character, for two stacks instead of one, but the difference isn't significant. \n\nRegarding Artifact Sets:\nHusk of Opulent Dreams (4): Due to Albedo's skill snapshotting upon cast, you need to either wait ~12 seconds before starting a domain/fight to reach max stacks or recast his skill to benefit from the DEF and Geo DMG bonus provided by the 4 piece set effect.\nGolden Troupe (4): With Peak Patrol Song and Cinnabar Spindle, this set performs similarly to Husk of Opulent Dreams (4), and slightly better than Husk with the addition of Gorou and another Geo teammate assuming Spindle still. With Harbinger of Dawn however, this set performs worse than Husk of Opulent Dreams (4). It performs worse if Albedo uses his Burst.\nTenacity of the Millelith (4): This set is used for the 4 piece set effect which has good uptime on Albedo. Worth noting that this set decreases your Elemental Skill damage by a lot if compared to the other offensive sets.\nArchaic Petra (4): This set is a niche option for Albedo. It is lower personal damage than several other set options, but can be a reasonable option in some teams for buffing other characters. Do note that the 4pc bonus requires you to pick the shard up on Albedo. \n\nRegarding Mainstat Priority:\nGoblet: DEF% Goblet can be preferred if running Golden Troupe or Peak Patrol Song.\n\nRegarding Artifact Substats Priority:\nATK% and Energy Recharge substats are only valuable on a Hybrid Albedo that casts his Elemental Burst.",
     "builds": [
       {
         "name": "SKILL ONLY\nOFF-FIELD DPS ✩",
-        "artifactMainStats": "Sands - DEF%\nGoblet - Geo DMG \nCirclet - Crit Rate / DMG / DEF%",
+        "artifactMainStats": "Sands - DEF%\nGoblet - Geo DMG / DEF*\nCirclet - Crit Rate / DMG / DEF%",
         "artifactSubStats": "1. Crit Rate / DMG\n2. DEF%\n3. ATK%*\n4. Energy Recharge*",
         "talentPriority": "1. Skill\n2. Burst*\n\n*Albedo's Burst is not used in some teams, namely Geo teams such as Itto, Albedo, Gorou, Flexible. In such cases, you do not need to level it.\n",
         "abilityTips": "Albedo's Elemental Skill particle generation is completely RNG like Zhongli, but with better odds.",
         "weapons": [
+          "peak_patrol_song",
           "uraku_misugiri",
           "cinnabar_spindle",
           "harbinger_of_dawn",
           "primordial_jade_cutter",
           "light_of_foliar_incision",
           "haran_geppaku_futsu",
-          "mistsplitter_reforged",
-          "freedom_sworn"
+          "mistsplitter_reforged"
         ],
         "artifactSets": [
           {
@@ -7613,23 +7608,17 @@ const characterBuilds = [
               "type": "set",
               "id": "tenacity_of_the_millelith"
             }
-          },
-          {
-            "type": "single",
-            "option": {
-              "type": "set",
-              "id": "noblesse_oblige"
-            }
           }
         ]
       },
       {
         "name": "SKILL + BURST\nOFF-FIELD DPS\n✩",
-        "artifactMainStats": "Sands - DEF%\nGoblet - Geo DMG \nCirclet - Crit Rate / DMG / DEF%",
+        "artifactMainStats": "Sands - DEF%\nGoblet - Geo DMG / DEF*\nCirclet - Crit Rate / DMG / DEF%",
         "artifactSubStats": "1. Crit Rate / DMG\n2. DEF%\n3. ATK%*\n4. Energy Recharge*",
         "talentPriority": "1. Skill\n2. Burst*\n\n*Albedo's Burst is not used in some teams, namely Geo teams such as Itto, Albedo, Gorou, Flexible. In such cases, you do not need to level it.\n",
         "abilityTips": "",
         "weapons": [
+          "peak_patrol_song",
           "uraku_misugiri",
           "primordial_jade_cutter",
           "cinnabar_spindle",
@@ -7682,13 +7671,6 @@ const characterBuilds = [
             "option": {
               "type": "set",
               "id": "tenacity_of_the_millelith"
-            }
-          },
-          {
-            "type": "single",
-            "option": {
-              "type": "set",
-              "id": "noblesse_oblige"
             }
           }
         ]
@@ -7883,6 +7865,51 @@ const characterBuilds = [
                 "id": "golden_troupe"
               }
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "nameId": "xilonen",
+    "element": "geo",
+    "weapon": "sword",
+    "notes": "SUPPORT\nXilonen's main job is to decrease Elemental Resistances of opponents using her Samplers. This, paired alongside the ability to hold Scroll of the Hero of Cinder City (4), makes her a great asset to many teams.\n\nRegarding Weapon Choices: Weapon options below Favonius Sword do not really affect Xilonen's performance as a Support.\nPeak Patrol Song: The buff from this weapon caps out once Xilonen reaches 3,200 DEF.\nFreedom-Sworn: This option is competitive with Peak Patrol Song if the team can utilize both of its buffs. To proc it consistently, you either need to burst every rotation, or add a delay between the initial skill hit and normal attacking. It is not needed to level this weapon for Xilonen.\nFlute of Ezpitzal: Refinements for this weapon are insignificant on Xilonen.\n\nRegarding Artifacts:\nIf no other member of the team can hold it, Scroll of the Hero of Cinder City (4) should be the top priority for Xilonen. The other options are there in the event someone else has Scroll occupied. If you do not need Xilonen's healing ability and are not using Peak Patrol Song, her artifact stats do not matter.\n\nRegarding Talents:\nIf you do not need Xilonen's healing, her Burst can be ignored.",
+    "builds": [
+      {
+        "name": "SUPPORT\n✩\n",
+        "artifactMainStats": "Sands - DEF% / Energy Recharge\nGoblet - DEF%\nCirclet - DEF% / Healing Bonus / Crit Rate*\n\n*Crit Rate only if using Favonius Sword",
+        "artifactSubStats": "1. Energy Recharge*\n2. DEF%\n3. Flat DEF\n4. Crit Rate**\n\n*Prioritize ER until requirements are met\n\n**Crit Rate only if using Favonius Sword",
+        "talentPriority": "1. Skill\n2. Burst*",
+        "abilityTips": "Xilonen's Burst will heal the active character at intervals if 2 or more of her Samplers had their elemental types changed. Otherwise, she will deal additional instances of Geo DMG.\n\n\nE > 2N to activate the Samplers.",
+        "weapons": [
+          "peak_patrol_song",
+          "freedom_sworn",
+          "favonius_sword",
+          "flute_of_ezpitzal",
+          "skyrider_sword"
+        ],
+        "artifactSets": [
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "scroll_of_the_hero_of_cinder_city"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "archaic_petra"
+            }
+          },
+          {
+            "type": "single",
+            "option": {
+              "type": "set",
+              "id": "noblesse_oblige"
+            }
           }
         ]
       }
@@ -8552,7 +8579,7 @@ const characterBuilds = [
     "nameId": "kinich",
     "element": "dendro",
     "weapon": "claymore",
-    "notes": "DPS\nKinich is a Dendro DPS who relies on tethering himself to enemies with his grappling hook and firing Loop Shots to generate Nightsoul Points in order to use the Scalespiker Cannon. Both the Loop Shots and the Scalespiker Cannon are considered Elemental Skill DMG. With his A1 Talent, his skill puts enemies in the Desolation State, which, when they are affected by Burning or Burgeon, generates even more Nightsoul Points for Kinich. Summoning Ajaw to the field will extend his Nightsoul Blessing state briefly. See the Ability Tips section for details on his Nightsoul Point generation.\n\nRegarding Weapon Choices:\nRankings assume Kinich is used with Bennett.\nSerpent Spine: At [R5], this weapon performs better than Beacon of the Reed Sea.\nWolf's Gravestone: This option is mainly just a statstick for Kinich as many of his teammates, barring Xiangling, Emilie, or Xingqiu, don't benefit much from the ATK% buff from the passive.\n\nRegarding Artifact Sets:\nDeepwood Memories (4): This set has more value on Kinich if he is the only member of the team who can use it. If such is the case, it ranks similar to Unfinished Reverie (4).\nMarechaussee Hunter (4): Only to be used when paired with Furina, or when played in Burgeon. Performs similarly to Unfinished Reverie (4).\n\n",
+    "notes": "DPS\nKinich is a Dendro DPS who relies on tethering himself to enemies with his grappling hook and firing Loop Shots to generate Nightsoul Points in order to use the Scalespiker Cannon. Both the Loop Shots and the Scalespiker Cannon are considered Elemental Skill DMG. With his A1 Talent, his skill puts enemies in the Desolation State, which, when they are affected by Burning or Burgeon, generates even more Nightsoul Points for Kinich. Summoning Ajaw to the field will extend his Nightsoul Blessing state briefly. See the Ability Tips section for details on his Nightsoul Point generation.\n\nRegarding Weapon Choices:\nRankings assume Kinich is used with Bennett.\nSerpent Spine: Performs much worse without a shielder. At [R5], this weapon performs better than Beacon of the Reed Sea.\nEarth Shaker: Earth Shaker is an inconsistent weapon choice in teams only consisting of Dendro and Pyro characters. Since only the activation of Burning counts toward the passive, meaning that the passive activation can only trigger once per enemy.\nWolf's Gravestone: This option is mainly just a statstick for Kinich as many of his teammates, barring Xiangling, Emilie, or Xingqiu, don't benefit much from the ATK% buff from the passive.\n\nRegarding Artifact Sets:\nDeepwood Memories (4): This set has more value on Kinich if he is the only member of the team who can use it. If such is the case, it ranks similar to Unfinished Reverie (4).\nMarechaussee Hunter (4): Only to be used when paired with Furina, or when played in Burgeon. Performs similarly to Unfinished Reverie (4).\n\n",
     "builds": [
       {
         "name": "DPS\n ✩",
