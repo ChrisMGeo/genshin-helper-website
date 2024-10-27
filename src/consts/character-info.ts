@@ -2,534 +2,72 @@ import { useTranslation } from "react-i18next";
 
 const characterInfo = [
   {
-    "id": 10000033,
-    "weaponType": "bow",
-    "titleHash": 3875370554,
-    "detailHash": 3593799522,
-    "constellationHash": 3423950162,
-    "rarity": 5,
-    "vision": "hydro",
-    "nameId": "tartaglia",
-    "nameHash": 3847143266,
-    "descHash": 1915755417,
-    "constellations": [
-      {
-        "nameHash": 1777276769,
-        "descHash": 926660471
-      },
-      {
-        "nameHash": 3821979753,
-        "descHash": 3189611455
-      },
-      {
-        "nameHash": 1562607913,
-        "descHash": 1409214983
-      },
-      {
-        "nameHash": 3252659577,
-        "descHash": 2705925063
-      },
-      {
-        "nameHash": 1429851537,
-        "descHash": 2922457007
-      },
-      {
-        "nameHash": 1479737849,
-        "descHash": 792778623
-      }
-    ],
-    "energySkill": {
-      "nameHash": 2804759909,
-      "descHash": 3448962704
-    },
-    "skills": [
-      {
-        "nameHash": 2900039733,
-        "descHash": 3006751504
-      },
-      {
-        "nameHash": 863456805,
-        "descHash": 4166160984
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3534614517,
-        "descHash": 2913186835
-      },
-      {
-        "nameHash": 662584285,
-        "descHash": 2794165467
-      },
-      {
-        "nameHash": 3474329165,
-        "descHash": 3671922915
-      }
-    ]
-  },
-  {
-    "id": 10000039,
-    "weaponType": "bow",
-    "titleHash": 955121114,
-    "detailHash": 3267731642,
-    "constellationHash": 2062356506,
-    "rarity": 4,
-    "vision": "cryo",
-    "nameId": "diona",
-    "nameHash": 1468367538,
-    "descHash": 3149724857,
-    "constellations": [
-      {
-        "nameHash": 2653503505,
-        "descHash": 1358209303
-      },
-      {
-        "nameHash": 3233494081,
-        "descHash": 2723142055
-      },
-      {
-        "nameHash": 1153113417,
-        "descHash": 266501231
-      },
-      {
-        "nameHash": 389925129,
-        "descHash": 1880884495
-      },
-      {
-        "nameHash": 2582391273,
-        "descHash": 859024503
-      },
-      {
-        "nameHash": 3637405321,
-        "descHash": 1673554303
-      }
-    ],
-    "energySkill": {
-      "nameHash": 948563965,
-      "descHash": 56887240
-    },
-    "skills": [
-      {
-        "nameHash": 3860542709,
-        "descHash": 55456664
-      },
-      {
-        "nameHash": 3942666181,
-        "descHash": 3246576584
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3742754573,
-        "descHash": 3924394963
-      },
-      {
-        "nameHash": 184677189,
-        "descHash": 907839219
-      },
-      {
-        "nameHash": 2478336245,
-        "descHash": 2768580979
-      }
-    ]
-  },
-  {
-    "id": 10000029,
-    "weaponType": "catalyst",
-    "titleHash": 1897358210,
-    "detailHash": 1801721474,
-    "constellationHash": 2230999650,
-    "rarity": 5,
-    "vision": "pyro",
-    "nameId": "klee",
-    "nameHash": 3339083250,
-    "descHash": 2313554193,
-    "constellations": [
-      {
-        "nameHash": 600240137,
-        "descHash": 4004824647
-      },
-      {
-        "nameHash": 328772169,
-        "descHash": 4201661495
-      },
-      {
-        "nameHash": 1369435161,
-        "descHash": 2182377015
-      },
-      {
-        "nameHash": 1327047857,
-        "descHash": 3999371183
-      },
-      {
-        "nameHash": 3317796233,
-        "descHash": 4010119167
-      },
-      {
-        "nameHash": 1554210529,
-        "descHash": 1281989519
-      }
-    ],
-    "energySkill": {
-      "nameHash": 1371192733,
-      "descHash": 3680863856
-    },
-    "skills": [
-      {
-        "nameHash": 161160581,
-        "descHash": 468291488
-      },
-      {
-        "nameHash": 3723743117,
-        "descHash": 713417336
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 1539278821,
-        "descHash": 633641795
-      },
-      {
-        "nameHash": 330795749,
-        "descHash": 3585141899
-      },
-      {
-        "nameHash": 3590967205,
-        "descHash": 710544459
-      }
-    ]
-  },
-  {
-    "id": 10000022,
-    "weaponType": "bow",
-    "titleHash": 1225242490,
-    "detailHash": 3527710554,
-    "constellationHash": 2226738162,
-    "rarity": 5,
-    "vision": "anemo",
-    "nameId": "venti",
-    "nameHash": 2466140362,
-    "descHash": 4137166409,
-    "constellations": [
-      {
-        "nameHash": 2201097153,
-        "descHash": 665988159
-      },
-      {
-        "nameHash": 509053297,
-        "descHash": 577887399
-      },
-      {
-        "nameHash": 1436400889,
-        "descHash": 1214899311
-      },
-      {
-        "nameHash": 2667025441,
-        "descHash": 3475049103
-      },
-      {
-        "nameHash": 3652037273,
-        "descHash": 3697781887
-      },
-      {
-        "nameHash": 544150889,
-        "descHash": 1651730135
-      }
-    ],
-    "energySkill": {
-      "nameHash": 1181756941,
-      "descHash": 2599674792
-    },
-    "skills": [
-      {
-        "nameHash": 4043029317,
-        "descHash": 4144150840
-      },
-      {
-        "nameHash": 2470093149,
-        "descHash": 2480880816
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 1562102965,
-        "descHash": 3352373235
-      },
-      {
-        "nameHash": 2149736101,
-        "descHash": 697661523
-      },
-      {
-        "nameHash": 1704267989,
-        "descHash": 1111860827
-      }
-    ]
-  },
-  {
-    "id": 10000042,
+    "id": 10000002,
     "weaponType": "sword",
-    "titleHash": 3308312162,
-    "detailHash": 2307865106,
-    "constellationHash": 3587152074,
-    "rarity": 5,
-    "vision": "electro",
-    "nameId": "keqing",
-    "nameHash": 1864015138,
-    "descHash": 2249961857,
-    "constellations": [
-      {
-        "nameHash": 3733936569,
-        "descHash": 2584168503
-      },
-      {
-        "nameHash": 1003272937,
-        "descHash": 2875204959
-      },
-      {
-        "nameHash": 1005679025,
-        "descHash": 1530917495
-      },
-      {
-        "nameHash": 2598965033,
-        "descHash": 2256041831
-      },
-      {
-        "nameHash": 1939891865,
-        "descHash": 1494899271
-      },
-      {
-        "nameHash": 547902305,
-        "descHash": 1142266335
-      }
-    ],
-    "energySkill": {
-      "nameHash": 535180037,
-      "descHash": 3277139448
-    },
-    "skills": [
-      {
-        "nameHash": 1732155229,
-        "descHash": 3229237400
-      },
-      {
-        "nameHash": 2146753981,
-        "descHash": 990496552
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3756056829,
-        "descHash": 269863707
-      },
-      {
-        "nameHash": 389797077,
-        "descHash": 3833281507
-      },
-      {
-        "nameHash": 3655777485,
-        "descHash": 4104953003
-      }
-    ]
-  },
-  {
-    "id": 10000041,
-    "weaponType": "catalyst",
-    "titleHash": 2216682674,
-    "detailHash": 2099446386,
-    "constellationHash": 677289434,
-    "rarity": 5,
-    "vision": "hydro",
-    "nameId": "mona",
-    "nameHash": 1113306282,
-    "descHash": 506249649,
-    "constellations": [
-      {
-        "nameHash": 3262519193,
-        "descHash": 452602631
-      },
-      {
-        "nameHash": 3030801713,
-        "descHash": 2775748423
-      },
-      {
-        "nameHash": 3782923609,
-        "descHash": 4292322247
-      },
-      {
-        "nameHash": 488631345,
-        "descHash": 4223850175
-      },
-      {
-        "nameHash": 496658001,
-        "descHash": 167333135
-      },
-      {
-        "nameHash": 300946497,
-        "descHash": 2932631807
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3616116589,
-      "descHash": 3902311160
-    },
-    "skills": [
-      {
-        "nameHash": 2512572181,
-        "descHash": 239283280
-      },
-      {
-        "nameHash": 1125648053,
-        "descHash": 3421937592
-      },
-      {
-        "nameHash": 1057341493,
-        "descHash": 3378550992
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2516099965,
-        "descHash": 1706572851
-      },
-      {
-        "nameHash": 1413844365,
-        "descHash": 3379482011
-      },
-      {
-        "nameHash": 3413416829,
-        "descHash": 1213329395
-      }
-    ]
-  },
-  {
-    "id": 10000035,
-    "weaponType": "sword",
-    "titleHash": 2560957650,
-    "detailHash": 987428418,
-    "constellationHash": 1580087082,
+    "titleHash": 3614785250,
+    "detailHash": 4223738138,
+    "constellationHash": 2735576330,
     "rarity": 5,
     "vision": "cryo",
-    "nameId": "qiqi",
-    "nameHash": 168956722,
-    "descHash": 3128332321,
+    "nameId": "kamisato_ayaka",
+    "nameHash": 1006042610,
+    "descHash": 3703438153,
     "constellations": [
       {
-        "nameHash": 3894833521,
-        "descHash": 1696126103
+        "nameHash": 3364696049,
+        "descHash": 194851991
       },
       {
-        "nameHash": 388179873,
-        "descHash": 606329007
+        "nameHash": 562006217,
+        "descHash": 846522047
       },
       {
-        "nameHash": 1454042537,
-        "descHash": 2773207751
+        "nameHash": 1186654377,
+        "descHash": 2194749263
       },
       {
-        "nameHash": 3785958321,
-        "descHash": 1811613895
+        "nameHash": 2463454169,
+        "descHash": 2503540655
       },
       {
-        "nameHash": 243639329,
-        "descHash": 655434095
+        "nameHash": 51561297,
+        "descHash": 2689473807
       },
       {
-        "nameHash": 1456237985,
-        "descHash": 1392516727
+        "nameHash": 2587184913,
+        "descHash": 1834326191
       }
     ],
     "energySkill": {
-      "nameHash": 2926659693,
-      "descHash": 3521541160
+      "nameHash": 81399925,
+      "descHash": 3746604880
     },
     "skills": [
       {
-        "nameHash": 1361102277,
-        "descHash": 989342840
+        "nameHash": 813430205,
+        "descHash": 3246000152
       },
       {
-        "nameHash": 2328467573,
-        "descHash": 293117848
+        "nameHash": 682887613,
+        "descHash": 4048563120
+      },
+      {
+        "nameHash": 2687935733,
+        "descHash": 1819205104
       }
     ],
     "passives": [
       {
-        "nameHash": 3698199485,
-        "descHash": 1229898787
+        "nameHash": 894491949,
+        "descHash": 2636480403
       },
       {
-        "nameHash": 3159951405,
-        "descHash": 1235554483
+        "nameHash": 93137789,
+        "descHash": 3965126451
       },
       {
-        "nameHash": 4097525341,
-        "descHash": 1381757851
-      }
-    ]
-  },
-  {
-    "id": 10000016,
-    "weaponType": "claymore",
-    "titleHash": 2612198306,
-    "detailHash": 4246347802,
-    "constellationHash": 2314116250,
-    "rarity": 5,
-    "vision": "pyro",
-    "nameId": "diluc",
-    "nameHash": 3608180322,
-    "descHash": 2413312897,
-    "constellations": [
-      {
-        "nameHash": 1050836105,
-        "descHash": 4178291015
-      },
-      {
-        "nameHash": 610672953,
-        "descHash": 3591206935
-      },
-      {
-        "nameHash": 4084228505,
-        "descHash": 4123556519
-      },
-      {
-        "nameHash": 1732979729,
-        "descHash": 3027261279
-      },
-      {
-        "nameHash": 2293832361,
-        "descHash": 1232419951
-      },
-      {
-        "nameHash": 4215692089,
-        "descHash": 2507810183
-      }
-    ],
-    "energySkill": {
-      "nameHash": 2772119557,
-      "descHash": 2932734984
-    },
-    "skills": [
-      {
-        "nameHash": 2878874285,
-        "descHash": 2306677240
-      },
-      {
-        "nameHash": 2979035429,
-        "descHash": 1648914688
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2844158725,
-        "descHash": 1808773251
-      },
-      {
-        "nameHash": 2904319165,
-        "descHash": 2686849171
-      },
-      {
-        "nameHash": 4168878421,
-        "descHash": 1726568035
+        "nameHash": 447551629,
+        "descHash": 779979035
       }
     ]
   },
@@ -600,662 +138,68 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000043,
+    "id": 10000006,
     "weaponType": "catalyst",
-    "titleHash": 682411194,
-    "detailHash": 4125000058,
-    "constellationHash": 4244741386,
-    "rarity": 4,
-    "vision": "anemo",
-    "nameId": "sucrose",
-    "nameHash": 1053433018,
-    "descHash": 4249311673,
-    "constellations": [
-      {
-        "nameHash": 1387979801,
-        "descHash": 659439671
-      },
-      {
-        "nameHash": 412718689,
-        "descHash": 393014655
-      },
-      {
-        "nameHash": 3504453161,
-        "descHash": 3346841599
-      },
-      {
-        "nameHash": 2203237409,
-        "descHash": 1019396935
-      },
-      {
-        "nameHash": 1605290329,
-        "descHash": 901461951
-      },
-      {
-        "nameHash": 344305449,
-        "descHash": 4078577031
-      }
-    ],
-    "energySkill": {
-      "nameHash": 234765309,
-      "descHash": 2314820896
-    },
-    "skills": [
-      {
-        "nameHash": 3941337549,
-        "descHash": 897873448
-      },
-      {
-        "nameHash": 159360653,
-        "descHash": 3348243704
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2797937013,
-        "descHash": 1686676419
-      },
-      {
-        "nameHash": 3490252853,
-        "descHash": 4161226819
-      },
-      {
-        "nameHash": 197407101,
-        "descHash": 2984501507
-      }
-    ]
-  },
-  {
-    "id": 10000036,
-    "weaponType": "claymore",
-    "titleHash": 2804590466,
-    "detailHash": 3590770538,
-    "constellationHash": 4203973938,
-    "rarity": 4,
-    "vision": "cryo",
-    "nameId": "chongyun",
-    "nameHash": 2876340530,
-    "descHash": 572700337,
-    "constellations": [
-      {
-        "nameHash": 1859111849,
-        "descHash": 3874733319
-      },
-      {
-        "nameHash": 1016771721,
-        "descHash": 1537894911
-      },
-      {
-        "nameHash": 294514897,
-        "descHash": 1615074199
-      },
-      {
-        "nameHash": 1282888193,
-        "descHash": 461481359
-      },
-      {
-        "nameHash": 1493556457,
-        "descHash": 3819808039
-      },
-      {
-        "nameHash": 3391919345,
-        "descHash": 121953951
-      }
-    ],
-    "energySkill": {
-      "nameHash": 514253413,
-      "descHash": 3537624992
-    },
-    "skills": [
-      {
-        "nameHash": 1917853333,
-        "descHash": 588212448
-      },
-      {
-        "nameHash": 1241562797,
-        "descHash": 543360552
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 1471902469,
-        "descHash": 2917701275
-      },
-      {
-        "nameHash": 2188306525,
-        "descHash": 1400289131
-      },
-      {
-        "nameHash": 1722331629,
-        "descHash": 225068227
-      }
-    ]
-  },
-  {
-    "id": 10000034,
-    "weaponType": "claymore",
-    "titleHash": 2339950258,
-    "detailHash": 2464288834,
-    "constellationHash": 808906466,
-    "rarity": 4,
-    "vision": "geo",
-    "nameId": "noelle",
-    "nameHash": 1921418842,
-    "descHash": 1136975897,
-    "constellations": [
-      {
-        "nameHash": 3743570273,
-        "descHash": 2305612271
-      },
-      {
-        "nameHash": 680992073,
-        "descHash": 2663640239
-      },
-      {
-        "nameHash": 4141797449,
-        "descHash": 2912207711
-      },
-      {
-        "nameHash": 50520097,
-        "descHash": 4101456727
-      },
-      {
-        "nameHash": 976069081,
-        "descHash": 2820351255
-      },
-      {
-        "nameHash": 79084353,
-        "descHash": 2091165375
-      }
-    ],
-    "energySkill": {
-      "nameHash": 1615963973,
-      "descHash": 313107928
-    },
-    "skills": [
-      {
-        "nameHash": 1521716213,
-        "descHash": 3131531104
-      },
-      {
-        "nameHash": 737506901,
-        "descHash": 204798264
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 4119686205,
-        "descHash": 59436107
-      },
-      {
-        "nameHash": 10500405,
-        "descHash": 3560753459
-      },
-      {
-        "nameHash": 1771533717,
-        "descHash": 4099575347
-      }
-    ]
-  },
-  {
-    "id": 10000032,
-    "weaponType": "sword",
-    "titleHash": 1078060234,
-    "detailHash": 1030159626,
-    "constellationHash": 2225075946,
-    "rarity": 4,
-    "vision": "pyro",
-    "nameId": "bennett",
-    "nameHash": 968893378,
-    "descHash": 3696214329,
-    "constellations": [
-      {
-        "nameHash": 804447537,
-        "descHash": 2073825087
-      },
-      {
-        "nameHash": 2431201553,
-        "descHash": 471991591
-      },
-      {
-        "nameHash": 698148913,
-        "descHash": 1713009919
-      },
-      {
-        "nameHash": 3306938097,
-        "descHash": 3601575975
-      },
-      {
-        "nameHash": 2443947665,
-        "descHash": 2838302743
-      },
-      {
-        "nameHash": 3326774305,
-        "descHash": 596615087
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3528607669,
-      "descHash": 2911356856
-    },
-    "skills": [
-      {
-        "nameHash": 422353221,
-        "descHash": 280312952
-      },
-      {
-        "nameHash": 1809314813,
-        "descHash": 2368393840
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 1863603757,
-        "descHash": 684037875
-      },
-      {
-        "nameHash": 1897523725,
-        "descHash": 2550793755
-      },
-      {
-        "nameHash": 1766090197,
-        "descHash": 1620966331
-      }
-    ]
-  },
-  {
-    "id": 10000031,
-    "weaponType": "bow",
-    "titleHash": 353285794,
-    "detailHash": 1139039362,
-    "constellationHash": 2198842266,
+    "titleHash": 3138609954,
+    "detailHash": 3571277394,
+    "constellationHash": 34090282,
     "rarity": 4,
     "vision": "electro",
-    "nameId": "fischl",
-    "nameHash": 3277782506,
-    "descHash": 1695621873,
+    "nameId": "lisa",
+    "nameHash": 3344622722,
+    "descHash": 1387136209,
     "constellations": [
       {
-        "nameHash": 5726609,
-        "descHash": 379923407
+        "nameHash": 12874089,
+        "descHash": 1939598815
       },
       {
-        "nameHash": 899523649,
-        "descHash": 3682583391
+        "nameHash": 1523216321,
+        "descHash": 607155167
       },
       {
-        "nameHash": 1999125225,
-        "descHash": 1088869759
+        "nameHash": 3707731441,
+        "descHash": 3643569183
       },
       {
-        "nameHash": 469910073,
-        "descHash": 733548871
+        "nameHash": 1540277121,
+        "descHash": 4061309583
       },
       {
-        "nameHash": 3322353681,
-        "descHash": 2975315583
+        "nameHash": 2256541273,
+        "descHash": 1025564511
       },
       {
-        "nameHash": 2314026161,
-        "descHash": 3112929279
+        "nameHash": 2935728161,
+        "descHash": 2237370327
       }
     ],
     "energySkill": {
-      "nameHash": 1386345573,
-      "descHash": 3443626520
+      "nameHash": 3387608453,
+      "descHash": 2561961032
     },
     "skills": [
       {
-        "nameHash": 3733168437,
-        "descHash": 3636661160
+        "nameHash": 2499144501,
+        "descHash": 3362612400
       },
       {
-        "nameHash": 2390005205,
-        "descHash": 4282764920
+        "nameHash": 3342928733,
+        "descHash": 2036101496
       }
     ],
     "passives": [
       {
-        "nameHash": 3295781565,
-        "descHash": 1468026939
+        "nameHash": 3611282821,
+        "descHash": 1118493307
       },
       {
-        "nameHash": 1677689517,
-        "descHash": 921704627
+        "nameHash": 1069142525,
+        "descHash": 3499444667
       },
       {
-        "nameHash": 993478661,
-        "descHash": 2825787947
-      }
-    ]
-  },
-  {
-    "id": 10000027,
-    "weaponType": "catalyst",
-    "titleHash": 1976081594,
-    "detailHash": 1658614834,
-    "constellationHash": 20629626,
-    "rarity": 4,
-    "vision": "geo",
-    "nameId": "ningguang",
-    "nameHash": 4127888970,
-    "descHash": 2174640361,
-    "constellations": [
-      {
-        "nameHash": 2798083633,
-        "descHash": 3095075175
-      },
-      {
-        "nameHash": 3383823929,
-        "descHash": 215899111
-      },
-      {
-        "nameHash": 2150334649,
-        "descHash": 3390871
-      },
-      {
-        "nameHash": 900430793,
-        "descHash": 3712986823
-      },
-      {
-        "nameHash": 276636521,
-        "descHash": 1513475887
-      },
-      {
-        "nameHash": 637125593,
-        "descHash": 1654510391
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3719617877,
-      "descHash": 4121543128
-    },
-    "skills": [
-      {
-        "nameHash": 2745030989,
-        "descHash": 3500884936
-      },
-      {
-        "nameHash": 2863733197,
-        "descHash": 226285648
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2007496293,
-        "descHash": 936555731
-      },
-      {
-        "nameHash": 2498988029,
-        "descHash": 3667556291
-      },
-      {
-        "nameHash": 3990426357,
-        "descHash": 3051868187
-      }
-    ]
-  },
-  {
-    "id": 10000025,
-    "weaponType": "sword",
-    "titleHash": 4067465850,
-    "detailHash": 2731162298,
-    "constellationHash": 2497169002,
-    "rarity": 4,
-    "vision": "hydro",
-    "nameId": "xingqiu",
-    "nameHash": 4197635682,
-    "descHash": 3660176857,
-    "constellations": [
-      {
-        "nameHash": 792197377,
-        "descHash": 3521725647
-      },
-      {
-        "nameHash": 4158193737,
-        "descHash": 1801328303
-      },
-      {
-        "nameHash": 3515928625,
-        "descHash": 2322919439
-      },
-      {
-        "nameHash": 3998346513,
-        "descHash": 2523868735
-      },
-      {
-        "nameHash": 2024007257,
-        "descHash": 3421075471
-      },
-      {
-        "nameHash": 4055521313,
-        "descHash": 2227218487
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3014291477,
-      "descHash": 551308952
-    },
-    "skills": [
-      {
-        "nameHash": 3909984477,
-        "descHash": 503479248
-      },
-      {
-        "nameHash": 4213665965,
-        "descHash": 200360760
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3839275837,
-        "descHash": 1227800275
-      },
-      {
-        "nameHash": 1606021549,
-        "descHash": 4284314139
-      },
-      {
-        "nameHash": 3481723485,
-        "descHash": 3755741851
-      }
-    ]
-  },
-  {
-    "id": 10000024,
-    "weaponType": "claymore",
-    "titleHash": 1152777210,
-    "detailHash": 3138225274,
-    "constellationHash": 3853657898,
-    "rarity": 4,
-    "vision": "electro",
-    "nameId": "beidou",
-    "nameHash": 2646367730,
-    "descHash": 2910785993,
-    "constellations": [
-      {
-        "nameHash": 1598246073,
-        "descHash": 2899101639
-      },
-      {
-        "nameHash": 2620399769,
-        "descHash": 2277441935
-      },
-      {
-        "nameHash": 2741836993,
-        "descHash": 4053128919
-      },
-      {
-        "nameHash": 1523101409,
-        "descHash": 1024043391
-      },
-      {
-        "nameHash": 2181637521,
-        "descHash": 938587127
-      },
-      {
-        "nameHash": 688452449,
-        "descHash": 1391917287
-      }
-    ],
-    "energySkill": {
-      "nameHash": 2874294485,
-      "descHash": 1233611720
-    },
-    "skills": [
-      {
-        "nameHash": 3770302877,
-        "descHash": 723463672
-      },
-      {
-        "nameHash": 3028116765,
-        "descHash": 3101314424
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 4133627029,
-        "descHash": 2212073723
-      },
-      {
-        "nameHash": 634340965,
-        "descHash": 3738470891
-      },
-      {
-        "nameHash": 2541261109,
-        "descHash": 792917115
-      }
-    ]
-  },
-  {
-    "id": 10000023,
-    "weaponType": "polearm",
-    "titleHash": 2467527666,
-    "detailHash": 3294048674,
-    "constellationHash": 1451760122,
-    "rarity": 4,
-    "vision": "pyro",
-    "nameId": "xiangling",
-    "nameHash": 1130996346,
-    "descHash": 2058084377,
-    "constellations": [
-      {
-        "nameHash": 1194445449,
-        "descHash": 3866122911
-      },
-      {
-        "nameHash": 1745094577,
-        "descHash": 515394687
-      },
-      {
-        "nameHash": 2414003921,
-        "descHash": 1194236287
-      },
-      {
-        "nameHash": 2365969361,
-        "descHash": 2051519231
-      },
-      {
-        "nameHash": 4257441793,
-        "descHash": 4011282063
-      },
-      {
-        "nameHash": 2739862033,
-        "descHash": 366896479
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3051726149,
-      "descHash": 1407584528
-    },
-    "skills": [
-      {
-        "nameHash": 2921789333,
-        "descHash": 2304447960
-      },
-      {
-        "nameHash": 1925269741,
-        "descHash": 3652072736
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 338716653,
-        "descHash": 3659479899
-      },
-      {
-        "nameHash": 3631919501,
-        "descHash": 4053428835
-      },
-      {
-        "nameHash": 4101043149,
-        "descHash": 3985819811
-      }
-    ]
-  },
-  {
-    "id": 10000020,
-    "weaponType": "claymore",
-    "titleHash": 2753191042,
-    "detailHash": 2084554490,
-    "constellationHash": 4052447146,
-    "rarity": 4,
-    "vision": "electro",
-    "nameId": "razor",
-    "nameHash": 4160147242,
-    "descHash": 3901895113,
-    "constellations": [
-      {
-        "nameHash": 456119193,
-        "descHash": 3596694423
-      },
-      {
-        "nameHash": 3370625609,
-        "descHash": 791295375
-      },
-      {
-        "nameHash": 3366391689,
-        "descHash": 2668228831
-      },
-      {
-        "nameHash": 770839401,
-        "descHash": 3886927615
-      },
-      {
-        "nameHash": 1781683177,
-        "descHash": 2350685383
-      },
-      {
-        "nameHash": 4050704465,
-        "descHash": 2977840775
-      }
-    ],
-    "energySkill": {
-      "nameHash": 1752405213,
-      "descHash": 4038491440
-    },
-    "skills": [
-      {
-        "nameHash": 3392494725,
-        "descHash": 398360984
-      },
-      {
-        "nameHash": 2720517437,
-        "descHash": 183207800
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2218832005,
-        "descHash": 2005122803
-      },
-      {
-        "nameHash": 1235274093,
-        "descHash": 583080003
-      },
-      {
-        "nameHash": 43323709,
-        "descHash": 3924700747
+        "nameHash": 200498901,
+        "descHash": 3877764179
       }
     ]
   },
@@ -1326,72 +270,6 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000006,
-    "weaponType": "catalyst",
-    "titleHash": 3138609954,
-    "detailHash": 3571277394,
-    "constellationHash": 34090282,
-    "rarity": 4,
-    "vision": "electro",
-    "nameId": "lisa",
-    "nameHash": 3344622722,
-    "descHash": 1387136209,
-    "constellations": [
-      {
-        "nameHash": 12874089,
-        "descHash": 1939598815
-      },
-      {
-        "nameHash": 1523216321,
-        "descHash": 607155167
-      },
-      {
-        "nameHash": 3707731441,
-        "descHash": 3643569183
-      },
-      {
-        "nameHash": 1540277121,
-        "descHash": 4061309583
-      },
-      {
-        "nameHash": 2256541273,
-        "descHash": 1025564511
-      },
-      {
-        "nameHash": 2935728161,
-        "descHash": 2237370327
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3387608453,
-      "descHash": 2561961032
-    },
-    "skills": [
-      {
-        "nameHash": 2499144501,
-        "descHash": 3362612400
-      },
-      {
-        "nameHash": 3342928733,
-        "descHash": 2036101496
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3611282821,
-        "descHash": 1118493307
-      },
-      {
-        "nameHash": 1069142525,
-        "descHash": 3499444667
-      },
-      {
-        "nameHash": 200498901,
-        "descHash": 3877764179
-      }
-    ]
-  },
-  {
     "id": 10000015,
     "weaponType": "sword",
     "titleHash": 1785544946,
@@ -1454,6 +332,138 @@ const characterInfo = [
       {
         "nameHash": 433695005,
         "descHash": 1546033427
+      }
+    ]
+  },
+  {
+    "id": 10000016,
+    "weaponType": "claymore",
+    "titleHash": 2612198306,
+    "detailHash": 4246347802,
+    "constellationHash": 2314116250,
+    "rarity": 5,
+    "vision": "pyro",
+    "nameId": "diluc",
+    "nameHash": 3608180322,
+    "descHash": 2413312897,
+    "constellations": [
+      {
+        "nameHash": 1050836105,
+        "descHash": 4178291015
+      },
+      {
+        "nameHash": 610672953,
+        "descHash": 3591206935
+      },
+      {
+        "nameHash": 4084228505,
+        "descHash": 4123556519
+      },
+      {
+        "nameHash": 1732979729,
+        "descHash": 3027261279
+      },
+      {
+        "nameHash": 2293832361,
+        "descHash": 1232419951
+      },
+      {
+        "nameHash": 4215692089,
+        "descHash": 2507810183
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2772119557,
+      "descHash": 2932734984
+    },
+    "skills": [
+      {
+        "nameHash": 2878874285,
+        "descHash": 2306677240
+      },
+      {
+        "nameHash": 2979035429,
+        "descHash": 1648914688
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 2844158725,
+        "descHash": 1808773251
+      },
+      {
+        "nameHash": 2904319165,
+        "descHash": 2686849171
+      },
+      {
+        "nameHash": 4168878421,
+        "descHash": 1726568035
+      }
+    ]
+  },
+  {
+    "id": 10000020,
+    "weaponType": "claymore",
+    "titleHash": 2753191042,
+    "detailHash": 2084554490,
+    "constellationHash": 4052447146,
+    "rarity": 4,
+    "vision": "electro",
+    "nameId": "razor",
+    "nameHash": 4160147242,
+    "descHash": 3901895113,
+    "constellations": [
+      {
+        "nameHash": 456119193,
+        "descHash": 3596694423
+      },
+      {
+        "nameHash": 3370625609,
+        "descHash": 791295375
+      },
+      {
+        "nameHash": 3366391689,
+        "descHash": 2668228831
+      },
+      {
+        "nameHash": 770839401,
+        "descHash": 3886927615
+      },
+      {
+        "nameHash": 1781683177,
+        "descHash": 2350685383
+      },
+      {
+        "nameHash": 4050704465,
+        "descHash": 2977840775
+      }
+    ],
+    "energySkill": {
+      "nameHash": 1752405213,
+      "descHash": 4038491440
+    },
+    "skills": [
+      {
+        "nameHash": 3392494725,
+        "descHash": 398360984
+      },
+      {
+        "nameHash": 2720517437,
+        "descHash": 183207800
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 2218832005,
+        "descHash": 2005122803
+      },
+      {
+        "nameHash": 1235274093,
+        "descHash": 583080003
+      },
+      {
+        "nameHash": 43323709,
+        "descHash": 3924700747
       }
     ]
   },
@@ -1524,6 +534,468 @@ const characterInfo = [
     ]
   },
   {
+    "id": 10000022,
+    "weaponType": "bow",
+    "titleHash": 1225242490,
+    "detailHash": 3527710554,
+    "constellationHash": 2226738162,
+    "rarity": 5,
+    "vision": "anemo",
+    "nameId": "venti",
+    "nameHash": 2466140362,
+    "descHash": 4137166409,
+    "constellations": [
+      {
+        "nameHash": 2201097153,
+        "descHash": 665988159
+      },
+      {
+        "nameHash": 509053297,
+        "descHash": 577887399
+      },
+      {
+        "nameHash": 1436400889,
+        "descHash": 1214899311
+      },
+      {
+        "nameHash": 2667025441,
+        "descHash": 3475049103
+      },
+      {
+        "nameHash": 3652037273,
+        "descHash": 3697781887
+      },
+      {
+        "nameHash": 544150889,
+        "descHash": 1651730135
+      }
+    ],
+    "energySkill": {
+      "nameHash": 1181756941,
+      "descHash": 2599674792
+    },
+    "skills": [
+      {
+        "nameHash": 4043029317,
+        "descHash": 4144150840
+      },
+      {
+        "nameHash": 2470093149,
+        "descHash": 2480880816
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 1562102965,
+        "descHash": 3352373235
+      },
+      {
+        "nameHash": 2149736101,
+        "descHash": 697661523
+      },
+      {
+        "nameHash": 1704267989,
+        "descHash": 1111860827
+      }
+    ]
+  },
+  {
+    "id": 10000023,
+    "weaponType": "polearm",
+    "titleHash": 2467527666,
+    "detailHash": 3294048674,
+    "constellationHash": 1451760122,
+    "rarity": 4,
+    "vision": "pyro",
+    "nameId": "xiangling",
+    "nameHash": 1130996346,
+    "descHash": 2058084377,
+    "constellations": [
+      {
+        "nameHash": 1194445449,
+        "descHash": 3866122911
+      },
+      {
+        "nameHash": 1745094577,
+        "descHash": 515394687
+      },
+      {
+        "nameHash": 2414003921,
+        "descHash": 1194236287
+      },
+      {
+        "nameHash": 2365969361,
+        "descHash": 2051519231
+      },
+      {
+        "nameHash": 4257441793,
+        "descHash": 4011282063
+      },
+      {
+        "nameHash": 2739862033,
+        "descHash": 366896479
+      }
+    ],
+    "energySkill": {
+      "nameHash": 3051726149,
+      "descHash": 1407584528
+    },
+    "skills": [
+      {
+        "nameHash": 2921789333,
+        "descHash": 2304447960
+      },
+      {
+        "nameHash": 1925269741,
+        "descHash": 3652072736
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 338716653,
+        "descHash": 3659479899
+      },
+      {
+        "nameHash": 3631919501,
+        "descHash": 4053428835
+      },
+      {
+        "nameHash": 4101043149,
+        "descHash": 3985819811
+      }
+    ]
+  },
+  {
+    "id": 10000024,
+    "weaponType": "claymore",
+    "titleHash": 1152777210,
+    "detailHash": 3138225274,
+    "constellationHash": 3853657898,
+    "rarity": 4,
+    "vision": "electro",
+    "nameId": "beidou",
+    "nameHash": 2646367730,
+    "descHash": 2910785993,
+    "constellations": [
+      {
+        "nameHash": 1598246073,
+        "descHash": 2899101639
+      },
+      {
+        "nameHash": 2620399769,
+        "descHash": 2277441935
+      },
+      {
+        "nameHash": 2741836993,
+        "descHash": 4053128919
+      },
+      {
+        "nameHash": 1523101409,
+        "descHash": 1024043391
+      },
+      {
+        "nameHash": 2181637521,
+        "descHash": 938587127
+      },
+      {
+        "nameHash": 688452449,
+        "descHash": 1391917287
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2874294485,
+      "descHash": 1233611720
+    },
+    "skills": [
+      {
+        "nameHash": 3770302877,
+        "descHash": 723463672
+      },
+      {
+        "nameHash": 3028116765,
+        "descHash": 3101314424
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 4133627029,
+        "descHash": 2212073723
+      },
+      {
+        "nameHash": 634340965,
+        "descHash": 3738470891
+      },
+      {
+        "nameHash": 2541261109,
+        "descHash": 792917115
+      }
+    ]
+  },
+  {
+    "id": 10000025,
+    "weaponType": "sword",
+    "titleHash": 4067465850,
+    "detailHash": 2731162298,
+    "constellationHash": 2497169002,
+    "rarity": 4,
+    "vision": "hydro",
+    "nameId": "xingqiu",
+    "nameHash": 4197635682,
+    "descHash": 3660176857,
+    "constellations": [
+      {
+        "nameHash": 792197377,
+        "descHash": 3521725647
+      },
+      {
+        "nameHash": 4158193737,
+        "descHash": 1801328303
+      },
+      {
+        "nameHash": 3515928625,
+        "descHash": 2322919439
+      },
+      {
+        "nameHash": 3998346513,
+        "descHash": 2523868735
+      },
+      {
+        "nameHash": 2024007257,
+        "descHash": 3421075471
+      },
+      {
+        "nameHash": 4055521313,
+        "descHash": 2227218487
+      }
+    ],
+    "energySkill": {
+      "nameHash": 3014291477,
+      "descHash": 551308952
+    },
+    "skills": [
+      {
+        "nameHash": 3909984477,
+        "descHash": 503479248
+      },
+      {
+        "nameHash": 4213665965,
+        "descHash": 200360760
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3839275837,
+        "descHash": 1227800275
+      },
+      {
+        "nameHash": 1606021549,
+        "descHash": 4284314139
+      },
+      {
+        "nameHash": 3481723485,
+        "descHash": 3755741851
+      }
+    ]
+  },
+  {
+    "id": 10000026,
+    "weaponType": "polearm",
+    "titleHash": 2182504186,
+    "detailHash": 1863419602,
+    "constellationHash": 3401180666,
+    "rarity": 5,
+    "vision": "anemo",
+    "nameId": "xiao",
+    "nameHash": 1021947690,
+    "descHash": 2789047073,
+    "constellations": [
+      {
+        "nameHash": 3656758641,
+        "descHash": 2211607487
+      },
+      {
+        "nameHash": 1959296641,
+        "descHash": 2430102759
+      },
+      {
+        "nameHash": 2385509657,
+        "descHash": 627668303
+      },
+      {
+        "nameHash": 3724086753,
+        "descHash": 2599764583
+      },
+      {
+        "nameHash": 4032000625,
+        "descHash": 934068495
+      },
+      {
+        "nameHash": 998328113,
+        "descHash": 2528103471
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2396025797,
+      "descHash": 3694684504
+    },
+    "skills": [
+      {
+        "nameHash": 232048445,
+        "descHash": 81972888
+      },
+      {
+        "nameHash": 45357229,
+        "descHash": 1423350968
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 1374919229,
+        "descHash": 3596785467
+      },
+      {
+        "nameHash": 2600189189,
+        "descHash": 1170290667
+      },
+      {
+        "nameHash": 1046467645,
+        "descHash": 1894256979
+      }
+    ]
+  },
+  {
+    "id": 10000027,
+    "weaponType": "catalyst",
+    "titleHash": 1976081594,
+    "detailHash": 1658614834,
+    "constellationHash": 20629626,
+    "rarity": 4,
+    "vision": "geo",
+    "nameId": "ningguang",
+    "nameHash": 4127888970,
+    "descHash": 2174640361,
+    "constellations": [
+      {
+        "nameHash": 2798083633,
+        "descHash": 3095075175
+      },
+      {
+        "nameHash": 3383823929,
+        "descHash": 215899111
+      },
+      {
+        "nameHash": 2150334649,
+        "descHash": 3390871
+      },
+      {
+        "nameHash": 900430793,
+        "descHash": 3712986823
+      },
+      {
+        "nameHash": 276636521,
+        "descHash": 1513475887
+      },
+      {
+        "nameHash": 637125593,
+        "descHash": 1654510391
+      }
+    ],
+    "energySkill": {
+      "nameHash": 3719617877,
+      "descHash": 4121543128
+    },
+    "skills": [
+      {
+        "nameHash": 2745030989,
+        "descHash": 3500884936
+      },
+      {
+        "nameHash": 2863733197,
+        "descHash": 226285648
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 2007496293,
+        "descHash": 936555731
+      },
+      {
+        "nameHash": 2498988029,
+        "descHash": 3667556291
+      },
+      {
+        "nameHash": 3990426357,
+        "descHash": 3051868187
+      }
+    ]
+  },
+  {
+    "id": 10000029,
+    "weaponType": "catalyst",
+    "titleHash": 1897358210,
+    "detailHash": 1801721474,
+    "constellationHash": 2230999650,
+    "rarity": 5,
+    "vision": "pyro",
+    "nameId": "klee",
+    "nameHash": 3339083250,
+    "descHash": 2313554193,
+    "constellations": [
+      {
+        "nameHash": 600240137,
+        "descHash": 4004824647
+      },
+      {
+        "nameHash": 328772169,
+        "descHash": 4201661495
+      },
+      {
+        "nameHash": 1369435161,
+        "descHash": 2182377015
+      },
+      {
+        "nameHash": 1327047857,
+        "descHash": 3999371183
+      },
+      {
+        "nameHash": 3317796233,
+        "descHash": 4010119167
+      },
+      {
+        "nameHash": 1554210529,
+        "descHash": 1281989519
+      }
+    ],
+    "energySkill": {
+      "nameHash": 1371192733,
+      "descHash": 3680863856
+    },
+    "skills": [
+      {
+        "nameHash": 161160581,
+        "descHash": 468291488
+      },
+      {
+        "nameHash": 3723743117,
+        "descHash": 713417336
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 1539278821,
+        "descHash": 633641795
+      },
+      {
+        "nameHash": 330795749,
+        "descHash": 3585141899
+      },
+      {
+        "nameHash": 3590967205,
+        "descHash": 710544459
+      }
+    ]
+  },
+  {
     "id": 10000030,
     "weaponType": "polearm",
     "titleHash": 2789626970,
@@ -1590,68 +1062,398 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000044,
-    "weaponType": "claymore",
-    "titleHash": 2007781754,
-    "detailHash": 3355473986,
-    "constellationHash": 4126360330,
+    "id": 10000031,
+    "weaponType": "bow",
+    "titleHash": 353285794,
+    "detailHash": 1139039362,
+    "constellationHash": 2198842266,
     "rarity": 4,
-    "vision": "pyro",
-    "nameId": "xinyan",
-    "nameHash": 4273845410,
-    "descHash": 2430683361,
+    "vision": "electro",
+    "nameId": "fischl",
+    "nameHash": 3277782506,
+    "descHash": 1695621873,
     "constellations": [
       {
-        "nameHash": 3068951001,
-        "descHash": 3151757471
+        "nameHash": 5726609,
+        "descHash": 379923407
       },
       {
-        "nameHash": 2247567929,
-        "descHash": 4058915415
+        "nameHash": 899523649,
+        "descHash": 3682583391
       },
       {
-        "nameHash": 3545262929,
-        "descHash": 4067254263
+        "nameHash": 1999125225,
+        "descHash": 1088869759
       },
       {
-        "nameHash": 3472180281,
-        "descHash": 630340871
+        "nameHash": 469910073,
+        "descHash": 733548871
       },
       {
-        "nameHash": 3343552585,
-        "descHash": 1190369383
+        "nameHash": 3322353681,
+        "descHash": 2975315583
       },
       {
-        "nameHash": 2632855681,
-        "descHash": 1450102367
+        "nameHash": 2314026161,
+        "descHash": 3112929279
       }
     ],
     "energySkill": {
-      "nameHash": 405900781,
-      "descHash": 1175339880
+      "nameHash": 1386345573,
+      "descHash": 3443626520
     },
     "skills": [
       {
-        "nameHash": 327566445,
-        "descHash": 1969995312
+        "nameHash": 3733168437,
+        "descHash": 3636661160
       },
       {
-        "nameHash": 980327173,
-        "descHash": 3704294280
+        "nameHash": 2390005205,
+        "descHash": 4282764920
       }
     ],
     "passives": [
       {
-        "nameHash": 3137818373,
-        "descHash": 1844902995
+        "nameHash": 3295781565,
+        "descHash": 1468026939
       },
       {
-        "nameHash": 2516474765,
-        "descHash": 3964569155
+        "nameHash": 1677689517,
+        "descHash": 921704627
       },
       {
-        "nameHash": 2639347341,
-        "descHash": 1386621859
+        "nameHash": 993478661,
+        "descHash": 2825787947
+      }
+    ]
+  },
+  {
+    "id": 10000032,
+    "weaponType": "sword",
+    "titleHash": 1078060234,
+    "detailHash": 1030159626,
+    "constellationHash": 2225075946,
+    "rarity": 4,
+    "vision": "pyro",
+    "nameId": "bennett",
+    "nameHash": 968893378,
+    "descHash": 3696214329,
+    "constellations": [
+      {
+        "nameHash": 804447537,
+        "descHash": 2073825087
+      },
+      {
+        "nameHash": 2431201553,
+        "descHash": 471991591
+      },
+      {
+        "nameHash": 698148913,
+        "descHash": 1713009919
+      },
+      {
+        "nameHash": 3306938097,
+        "descHash": 3601575975
+      },
+      {
+        "nameHash": 2443947665,
+        "descHash": 2838302743
+      },
+      {
+        "nameHash": 3326774305,
+        "descHash": 596615087
+      }
+    ],
+    "energySkill": {
+      "nameHash": 3528607669,
+      "descHash": 2911356856
+    },
+    "skills": [
+      {
+        "nameHash": 422353221,
+        "descHash": 280312952
+      },
+      {
+        "nameHash": 1809314813,
+        "descHash": 2368393840
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 1863603757,
+        "descHash": 684037875
+      },
+      {
+        "nameHash": 1897523725,
+        "descHash": 2550793755
+      },
+      {
+        "nameHash": 1766090197,
+        "descHash": 1620966331
+      }
+    ]
+  },
+  {
+    "id": 10000033,
+    "weaponType": "bow",
+    "titleHash": 3875370554,
+    "detailHash": 3593799522,
+    "constellationHash": 3423950162,
+    "rarity": 5,
+    "vision": "hydro",
+    "nameId": "tartaglia",
+    "nameHash": 3847143266,
+    "descHash": 1915755417,
+    "constellations": [
+      {
+        "nameHash": 1777276769,
+        "descHash": 926660471
+      },
+      {
+        "nameHash": 3821979753,
+        "descHash": 3189611455
+      },
+      {
+        "nameHash": 1562607913,
+        "descHash": 1409214983
+      },
+      {
+        "nameHash": 3252659577,
+        "descHash": 2705925063
+      },
+      {
+        "nameHash": 1429851537,
+        "descHash": 2922457007
+      },
+      {
+        "nameHash": 1479737849,
+        "descHash": 792778623
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2804759909,
+      "descHash": 3448962704
+    },
+    "skills": [
+      {
+        "nameHash": 2900039733,
+        "descHash": 3006751504
+      },
+      {
+        "nameHash": 863456805,
+        "descHash": 4166160984
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3534614517,
+        "descHash": 2913186835
+      },
+      {
+        "nameHash": 662584285,
+        "descHash": 2794165467
+      },
+      {
+        "nameHash": 3474329165,
+        "descHash": 3671922915
+      }
+    ]
+  },
+  {
+    "id": 10000034,
+    "weaponType": "claymore",
+    "titleHash": 2339950258,
+    "detailHash": 2464288834,
+    "constellationHash": 808906466,
+    "rarity": 4,
+    "vision": "geo",
+    "nameId": "noelle",
+    "nameHash": 1921418842,
+    "descHash": 1136975897,
+    "constellations": [
+      {
+        "nameHash": 3743570273,
+        "descHash": 2305612271
+      },
+      {
+        "nameHash": 680992073,
+        "descHash": 2663640239
+      },
+      {
+        "nameHash": 4141797449,
+        "descHash": 2912207711
+      },
+      {
+        "nameHash": 50520097,
+        "descHash": 4101456727
+      },
+      {
+        "nameHash": 976069081,
+        "descHash": 2820351255
+      },
+      {
+        "nameHash": 79084353,
+        "descHash": 2091165375
+      }
+    ],
+    "energySkill": {
+      "nameHash": 1615963973,
+      "descHash": 313107928
+    },
+    "skills": [
+      {
+        "nameHash": 1521716213,
+        "descHash": 3131531104
+      },
+      {
+        "nameHash": 737506901,
+        "descHash": 204798264
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 4119686205,
+        "descHash": 59436107
+      },
+      {
+        "nameHash": 10500405,
+        "descHash": 3560753459
+      },
+      {
+        "nameHash": 1771533717,
+        "descHash": 4099575347
+      }
+    ]
+  },
+  {
+    "id": 10000035,
+    "weaponType": "sword",
+    "titleHash": 2560957650,
+    "detailHash": 987428418,
+    "constellationHash": 1580087082,
+    "rarity": 5,
+    "vision": "cryo",
+    "nameId": "qiqi",
+    "nameHash": 168956722,
+    "descHash": 3128332321,
+    "constellations": [
+      {
+        "nameHash": 3894833521,
+        "descHash": 1696126103
+      },
+      {
+        "nameHash": 388179873,
+        "descHash": 606329007
+      },
+      {
+        "nameHash": 1454042537,
+        "descHash": 2773207751
+      },
+      {
+        "nameHash": 3785958321,
+        "descHash": 1811613895
+      },
+      {
+        "nameHash": 243639329,
+        "descHash": 655434095
+      },
+      {
+        "nameHash": 1456237985,
+        "descHash": 1392516727
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2926659693,
+      "descHash": 3521541160
+    },
+    "skills": [
+      {
+        "nameHash": 1361102277,
+        "descHash": 989342840
+      },
+      {
+        "nameHash": 2328467573,
+        "descHash": 293117848
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3698199485,
+        "descHash": 1229898787
+      },
+      {
+        "nameHash": 3159951405,
+        "descHash": 1235554483
+      },
+      {
+        "nameHash": 4097525341,
+        "descHash": 1381757851
+      }
+    ]
+  },
+  {
+    "id": 10000036,
+    "weaponType": "claymore",
+    "titleHash": 2804590466,
+    "detailHash": 3590770538,
+    "constellationHash": 4203973938,
+    "rarity": 4,
+    "vision": "cryo",
+    "nameId": "chongyun",
+    "nameHash": 2876340530,
+    "descHash": 572700337,
+    "constellations": [
+      {
+        "nameHash": 1859111849,
+        "descHash": 3874733319
+      },
+      {
+        "nameHash": 1016771721,
+        "descHash": 1537894911
+      },
+      {
+        "nameHash": 294514897,
+        "descHash": 1615074199
+      },
+      {
+        "nameHash": 1282888193,
+        "descHash": 461481359
+      },
+      {
+        "nameHash": 1493556457,
+        "descHash": 3819808039
+      },
+      {
+        "nameHash": 3391919345,
+        "descHash": 121953951
+      }
+    ],
+    "energySkill": {
+      "nameHash": 514253413,
+      "descHash": 3537624992
+    },
+    "skills": [
+      {
+        "nameHash": 1917853333,
+        "descHash": 588212448
+      },
+      {
+        "nameHash": 1241562797,
+        "descHash": 543360552
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 1471902469,
+        "descHash": 2917701275
+      },
+      {
+        "nameHash": 2188306525,
+        "descHash": 1400289131
+      },
+      {
+        "nameHash": 1722331629,
+        "descHash": 225068227
       }
     ]
   },
@@ -1788,134 +1590,336 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000026,
-    "weaponType": "polearm",
-    "titleHash": 2182504186,
-    "detailHash": 1863419602,
-    "constellationHash": 3401180666,
-    "rarity": 5,
-    "vision": "anemo",
-    "nameId": "xiao",
-    "nameHash": 1021947690,
-    "descHash": 2789047073,
+    "id": 10000039,
+    "weaponType": "bow",
+    "titleHash": 955121114,
+    "detailHash": 3267731642,
+    "constellationHash": 2062356506,
+    "rarity": 4,
+    "vision": "cryo",
+    "nameId": "diona",
+    "nameHash": 1468367538,
+    "descHash": 3149724857,
     "constellations": [
       {
-        "nameHash": 3656758641,
-        "descHash": 2211607487
+        "nameHash": 2653503505,
+        "descHash": 1358209303
       },
       {
-        "nameHash": 1959296641,
-        "descHash": 2430102759
+        "nameHash": 3233494081,
+        "descHash": 2723142055
       },
       {
-        "nameHash": 2385509657,
-        "descHash": 627668303
+        "nameHash": 1153113417,
+        "descHash": 266501231
       },
       {
-        "nameHash": 3724086753,
-        "descHash": 2599764583
+        "nameHash": 389925129,
+        "descHash": 1880884495
       },
       {
-        "nameHash": 4032000625,
-        "descHash": 934068495
+        "nameHash": 2582391273,
+        "descHash": 859024503
       },
       {
-        "nameHash": 998328113,
-        "descHash": 2528103471
+        "nameHash": 3637405321,
+        "descHash": 1673554303
       }
     ],
     "energySkill": {
-      "nameHash": 2396025797,
-      "descHash": 3694684504
+      "nameHash": 948563965,
+      "descHash": 56887240
     },
     "skills": [
       {
-        "nameHash": 232048445,
-        "descHash": 81972888
+        "nameHash": 3860542709,
+        "descHash": 55456664
       },
       {
-        "nameHash": 45357229,
-        "descHash": 1423350968
+        "nameHash": 3942666181,
+        "descHash": 3246576584
       }
     ],
     "passives": [
       {
-        "nameHash": 1374919229,
-        "descHash": 3596785467
+        "nameHash": 3742754573,
+        "descHash": 3924394963
       },
       {
-        "nameHash": 2600189189,
-        "descHash": 1170290667
+        "nameHash": 184677189,
+        "descHash": 907839219
       },
       {
-        "nameHash": 1046467645,
-        "descHash": 1894256979
+        "nameHash": 2478336245,
+        "descHash": 2768580979
       }
     ]
   },
   {
-    "id": 10000046,
-    "weaponType": "polearm",
-    "titleHash": 662587002,
-    "detailHash": 2488599434,
-    "constellationHash": 3041688594,
+    "id": 10000041,
+    "weaponType": "catalyst",
+    "titleHash": 2216682674,
+    "detailHash": 2099446386,
+    "constellationHash": 677289434,
     "rarity": 5,
-    "vision": "pyro",
-    "nameId": "hu_tao",
-    "nameHash": 1940919994,
-    "descHash": 223073489,
+    "vision": "hydro",
+    "nameId": "mona",
+    "nameHash": 1113306282,
+    "descHash": 506249649,
     "constellations": [
       {
-        "nameHash": 2081199193,
-        "descHash": 67778231
+        "nameHash": 3262519193,
+        "descHash": 452602631
       },
       {
-        "nameHash": 1768747369,
-        "descHash": 3620258903
+        "nameHash": 3030801713,
+        "descHash": 2775748423
       },
       {
-        "nameHash": 3111083697,
-        "descHash": 3057870071
+        "nameHash": 3782923609,
+        "descHash": 4292322247
       },
       {
-        "nameHash": 4276933609,
-        "descHash": 3695286279
+        "nameHash": 488631345,
+        "descHash": 4223850175
       },
       {
-        "nameHash": 658527361,
-        "descHash": 2735458983
+        "nameHash": 496658001,
+        "descHash": 167333135
       },
       {
-        "nameHash": 2361886209,
-        "descHash": 3811817239
+        "nameHash": 300946497,
+        "descHash": 2932631807
       }
     ],
     "energySkill": {
-      "nameHash": 1115787101,
-      "descHash": 4072387376
+      "nameHash": 3616116589,
+      "descHash": 3902311160
     },
     "skills": [
       {
-        "nameHash": 2345944629,
-        "descHash": 2233988720
+        "nameHash": 2512572181,
+        "descHash": 239283280
       },
       {
-        "nameHash": 214248165,
-        "descHash": 3772368888
+        "nameHash": 1125648053,
+        "descHash": 3421937592
+      },
+      {
+        "nameHash": 1057341493,
+        "descHash": 3378550992
       }
     ],
     "passives": [
       {
-        "nameHash": 2050097581,
-        "descHash": 1251434283
+        "nameHash": 2516099965,
+        "descHash": 1706572851
       },
       {
-        "nameHash": 2294463397,
-        "descHash": 3730912435
+        "nameHash": 1413844365,
+        "descHash": 3379482011
       },
       {
-        "nameHash": 1749668397,
-        "descHash": 3062891747
+        "nameHash": 3413416829,
+        "descHash": 1213329395
+      }
+    ]
+  },
+  {
+    "id": 10000042,
+    "weaponType": "sword",
+    "titleHash": 3308312162,
+    "detailHash": 2307865106,
+    "constellationHash": 3587152074,
+    "rarity": 5,
+    "vision": "electro",
+    "nameId": "keqing",
+    "nameHash": 1864015138,
+    "descHash": 2249961857,
+    "constellations": [
+      {
+        "nameHash": 3733936569,
+        "descHash": 2584168503
+      },
+      {
+        "nameHash": 1003272937,
+        "descHash": 2875204959
+      },
+      {
+        "nameHash": 1005679025,
+        "descHash": 1530917495
+      },
+      {
+        "nameHash": 2598965033,
+        "descHash": 2256041831
+      },
+      {
+        "nameHash": 1939891865,
+        "descHash": 1494899271
+      },
+      {
+        "nameHash": 547902305,
+        "descHash": 1142266335
+      }
+    ],
+    "energySkill": {
+      "nameHash": 535180037,
+      "descHash": 3277139448
+    },
+    "skills": [
+      {
+        "nameHash": 1732155229,
+        "descHash": 3229237400
+      },
+      {
+        "nameHash": 2146753981,
+        "descHash": 990496552
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3756056829,
+        "descHash": 269863707
+      },
+      {
+        "nameHash": 389797077,
+        "descHash": 3833281507
+      },
+      {
+        "nameHash": 3655777485,
+        "descHash": 4104953003
+      }
+    ]
+  },
+  {
+    "id": 10000043,
+    "weaponType": "catalyst",
+    "titleHash": 682411194,
+    "detailHash": 4125000058,
+    "constellationHash": 4244741386,
+    "rarity": 4,
+    "vision": "anemo",
+    "nameId": "sucrose",
+    "nameHash": 1053433018,
+    "descHash": 4249311673,
+    "constellations": [
+      {
+        "nameHash": 1387979801,
+        "descHash": 659439671
+      },
+      {
+        "nameHash": 412718689,
+        "descHash": 393014655
+      },
+      {
+        "nameHash": 3504453161,
+        "descHash": 3346841599
+      },
+      {
+        "nameHash": 2203237409,
+        "descHash": 1019396935
+      },
+      {
+        "nameHash": 1605290329,
+        "descHash": 901461951
+      },
+      {
+        "nameHash": 344305449,
+        "descHash": 4078577031
+      }
+    ],
+    "energySkill": {
+      "nameHash": 234765309,
+      "descHash": 2314820896
+    },
+    "skills": [
+      {
+        "nameHash": 3941337549,
+        "descHash": 897873448
+      },
+      {
+        "nameHash": 159360653,
+        "descHash": 3348243704
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 2797937013,
+        "descHash": 1686676419
+      },
+      {
+        "nameHash": 3490252853,
+        "descHash": 4161226819
+      },
+      {
+        "nameHash": 197407101,
+        "descHash": 2984501507
+      }
+    ]
+  },
+  {
+    "id": 10000044,
+    "weaponType": "claymore",
+    "titleHash": 2007781754,
+    "detailHash": 3355473986,
+    "constellationHash": 4126360330,
+    "rarity": 4,
+    "vision": "pyro",
+    "nameId": "xinyan",
+    "nameHash": 4273845410,
+    "descHash": 2430683361,
+    "constellations": [
+      {
+        "nameHash": 3068951001,
+        "descHash": 3151757471
+      },
+      {
+        "nameHash": 2247567929,
+        "descHash": 4058915415
+      },
+      {
+        "nameHash": 3545262929,
+        "descHash": 4067254263
+      },
+      {
+        "nameHash": 3472180281,
+        "descHash": 630340871
+      },
+      {
+        "nameHash": 3343552585,
+        "descHash": 1190369383
+      },
+      {
+        "nameHash": 2632855681,
+        "descHash": 1450102367
+      }
+    ],
+    "energySkill": {
+      "nameHash": 405900781,
+      "descHash": 1175339880
+    },
+    "skills": [
+      {
+        "nameHash": 327566445,
+        "descHash": 1969995312
+      },
+      {
+        "nameHash": 980327173,
+        "descHash": 3704294280
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3137818373,
+        "descHash": 1844902995
+      },
+      {
+        "nameHash": 2516474765,
+        "descHash": 3964569155
+      },
+      {
+        "nameHash": 2639347341,
+        "descHash": 1386621859
       }
     ]
   },
@@ -1986,134 +1990,68 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000048,
-    "weaponType": "catalyst",
-    "titleHash": 1186691770,
-    "detailHash": 1570282706,
-    "constellationHash": 4078029322,
-    "rarity": 4,
-    "vision": "pyro",
-    "nameId": "yanfei",
-    "nameHash": 697277554,
-    "descHash": 1827440433,
-    "constellations": [
-      {
-        "nameHash": 690499809,
-        "descHash": 3765119039
-      },
-      {
-        "nameHash": 886053825,
-        "descHash": 821476695
-      },
-      {
-        "nameHash": 168010785,
-        "descHash": 246599983
-      },
-      {
-        "nameHash": 2878639121,
-        "descHash": 1661753439
-      },
-      {
-        "nameHash": 3698266505,
-        "descHash": 876690903
-      },
-      {
-        "nameHash": 3677492353,
-        "descHash": 2987376519
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3041237813,
-      "descHash": 867292376
-    },
-    "skills": [
-      {
-        "nameHash": 2553270533,
-        "descHash": 2964053104
-      },
-      {
-        "nameHash": 4230930285,
-        "descHash": 37336040
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3896657501,
-        "descHash": 3007454043
-      },
-      {
-        "nameHash": 3992511069,
-        "descHash": 3308737507
-      },
-      {
-        "nameHash": 1046409877,
-        "descHash": 3547895363
-      }
-    ]
-  },
-  {
-    "id": 10000051,
-    "weaponType": "claymore",
-    "titleHash": 3679187618,
-    "detailHash": 87994090,
-    "constellationHash": 2912362594,
+    "id": 10000046,
+    "weaponType": "polearm",
+    "titleHash": 662587002,
+    "detailHash": 2488599434,
+    "constellationHash": 3041688594,
     "rarity": 5,
-    "vision": "cryo",
-    "nameId": "eula",
-    "nameHash": 3717667418,
-    "descHash": 490802649,
+    "vision": "pyro",
+    "nameId": "hu_tao",
+    "nameHash": 1940919994,
+    "descHash": 223073489,
     "constellations": [
       {
-        "nameHash": 1401913601,
-        "descHash": 1142115463
+        "nameHash": 2081199193,
+        "descHash": 67778231
       },
       {
-        "nameHash": 4116602505,
-        "descHash": 2873233407
+        "nameHash": 1768747369,
+        "descHash": 3620258903
       },
       {
-        "nameHash": 4017023737,
-        "descHash": 3953679079
+        "nameHash": 3111083697,
+        "descHash": 3057870071
       },
       {
-        "nameHash": 260126841,
-        "descHash": 2211149663
+        "nameHash": 4276933609,
+        "descHash": 3695286279
       },
       {
-        "nameHash": 3295716345,
-        "descHash": 4202659807
+        "nameHash": 658527361,
+        "descHash": 2735458983
       },
       {
-        "nameHash": 1963500825,
-        "descHash": 658737255
+        "nameHash": 2361886209,
+        "descHash": 3811817239
       }
     ],
     "energySkill": {
-      "nameHash": 3521320029,
-      "descHash": 569748832
+      "nameHash": 1115787101,
+      "descHash": 4072387376
     },
     "skills": [
       {
-        "nameHash": 242311157,
-        "descHash": 1500184616
+        "nameHash": 2345944629,
+        "descHash": 2233988720
       },
       {
-        "nameHash": 741315613,
-        "descHash": 1769739528
+        "nameHash": 214248165,
+        "descHash": 3772368888
       }
     ],
     "passives": [
       {
-        "nameHash": 1425537069,
-        "descHash": 2607513067
+        "nameHash": 2050097581,
+        "descHash": 1251434283
       },
       {
-        "nameHash": 1966610773,
-        "descHash": 236148939
+        "nameHash": 2294463397,
+        "descHash": 3730912435
       },
       {
-        "nameHash": 4003186445,
-        "descHash": 2270889547
+        "nameHash": 1749668397,
+        "descHash": 3062891747
       }
     ]
   },
@@ -2184,138 +2122,68 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000002,
-    "weaponType": "sword",
-    "titleHash": 3614785250,
-    "detailHash": 4223738138,
-    "constellationHash": 2735576330,
-    "rarity": 5,
-    "vision": "cryo",
-    "nameId": "kamisato_ayaka",
-    "nameHash": 1006042610,
-    "descHash": 3703438153,
-    "constellations": [
-      {
-        "nameHash": 3364696049,
-        "descHash": 194851991
-      },
-      {
-        "nameHash": 562006217,
-        "descHash": 846522047
-      },
-      {
-        "nameHash": 1186654377,
-        "descHash": 2194749263
-      },
-      {
-        "nameHash": 2463454169,
-        "descHash": 2503540655
-      },
-      {
-        "nameHash": 51561297,
-        "descHash": 2689473807
-      },
-      {
-        "nameHash": 2587184913,
-        "descHash": 1834326191
-      }
-    ],
-    "energySkill": {
-      "nameHash": 81399925,
-      "descHash": 3746604880
-    },
-    "skills": [
-      {
-        "nameHash": 813430205,
-        "descHash": 3246000152
-      },
-      {
-        "nameHash": 682887613,
-        "descHash": 4048563120
-      },
-      {
-        "nameHash": 2687935733,
-        "descHash": 1819205104
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 894491949,
-        "descHash": 2636480403
-      },
-      {
-        "nameHash": 93137789,
-        "descHash": 3965126451
-      },
-      {
-        "nameHash": 447551629,
-        "descHash": 779979035
-      }
-    ]
-  },
-  {
-    "id": 10000053,
-    "weaponType": "claymore",
-    "titleHash": 1757728074,
-    "detailHash": 4079111402,
-    "constellationHash": 3872411226,
+    "id": 10000048,
+    "weaponType": "catalyst",
+    "titleHash": 1186691770,
+    "detailHash": 1570282706,
+    "constellationHash": 4078029322,
     "rarity": 4,
-    "vision": "anemo",
-    "nameId": "sayu",
-    "nameHash": 2388785242,
-    "descHash": 3029516969,
+    "vision": "pyro",
+    "nameId": "yanfei",
+    "nameHash": 697277554,
+    "descHash": 1827440433,
     "constellations": [
       {
-        "nameHash": 1959569841,
-        "descHash": 443786623
+        "nameHash": 690499809,
+        "descHash": 3765119039
       },
       {
-        "nameHash": 2759348737,
-        "descHash": 2039052767
+        "nameHash": 886053825,
+        "descHash": 821476695
       },
       {
-        "nameHash": 1035025377,
-        "descHash": 2151111671
+        "nameHash": 168010785,
+        "descHash": 246599983
       },
       {
-        "nameHash": 3582154129,
-        "descHash": 2015470223
+        "nameHash": 2878639121,
+        "descHash": 1661753439
       },
       {
-        "nameHash": 4066463977,
-        "descHash": 3761904935
+        "nameHash": 3698266505,
+        "descHash": 876690903
       },
       {
-        "nameHash": 3913839841,
-        "descHash": 3551240383
+        "nameHash": 3677492353,
+        "descHash": 2987376519
       }
     ],
     "energySkill": {
-      "nameHash": 3632447629,
-      "descHash": 2950233224
+      "nameHash": 3041237813,
+      "descHash": 867292376
     },
     "skills": [
       {
-        "nameHash": 1631640581,
-        "descHash": 1904361664
+        "nameHash": 2553270533,
+        "descHash": 2964053104
       },
       {
-        "nameHash": 866970125,
-        "descHash": 2361803880
+        "nameHash": 4230930285,
+        "descHash": 37336040
       }
     ],
     "passives": [
       {
-        "nameHash": 1284587621,
-        "descHash": 1766003643
+        "nameHash": 3896657501,
+        "descHash": 3007454043
       },
       {
-        "nameHash": 3662642061,
-        "descHash": 3244306483
+        "nameHash": 3992511069,
+        "descHash": 3308737507
       },
       {
-        "nameHash": 1990554101,
-        "descHash": 356439491
+        "nameHash": 1046409877,
+        "descHash": 3547895363
       }
     ]
   },
@@ -2386,134 +2254,134 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000062,
-    "weaponType": "bow",
-    "titleHash": 3657688538,
-    "detailHash": 2522784722,
-    "constellationHash": 1620998442,
+    "id": 10000050,
+    "weaponType": "polearm",
+    "titleHash": 2157757826,
+    "detailHash": 3621848770,
+    "constellationHash": 2749427906,
     "rarity": 4,
-    "vision": "cryo",
-    "nameId": "aloy",
-    "nameHash": 3689108098,
-    "descHash": 2468599457,
+    "vision": "pyro",
+    "nameId": "thoma",
+    "nameHash": 3555115602,
+    "descHash": 3062484009,
     "constellations": [
       {
-        "nameHash": 1426348289,
-        "descHash": 4200726279
+        "nameHash": 288006665,
+        "descHash": 3077252167
       },
       {
-        "nameHash": 3468411401,
-        "descHash": 1371842791
+        "nameHash": 4132403369,
+        "descHash": 1866802871
       },
       {
-        "nameHash": 2621661209,
-        "descHash": 873529775
+        "nameHash": 2578792073,
+        "descHash": 2167442199
       },
       {
-        "nameHash": 890048705,
-        "descHash": 2073552343
+        "nameHash": 1754888249,
+        "descHash": 976028519
       },
       {
-        "nameHash": 2013072401,
-        "descHash": 554591055
+        "nameHash": 3609710361,
+        "descHash": 1553651527
       },
       {
-        "nameHash": 3578739209,
-        "descHash": 1335613687
+        "nameHash": 297689921,
+        "descHash": 2142833663
       }
     ],
     "energySkill": {
-      "nameHash": 902219717,
-      "descHash": 3360208896
+      "nameHash": 3548079181,
+      "descHash": 3214600680
     },
     "skills": [
       {
-        "nameHash": 2994648485,
-        "descHash": 3151277984
+        "nameHash": 3651752365,
+        "descHash": 3009612584
       },
       {
-        "nameHash": 1871687965,
-        "descHash": 647988592
+        "nameHash": 3732507581,
+        "descHash": 432172712
       }
     ],
     "passives": [
       {
-        "nameHash": 523305877,
-        "descHash": 3940970907
+        "nameHash": 2361872037,
+        "descHash": 1069705163
       },
       {
-        "nameHash": 433318997,
-        "descHash": 4257487235
+        "nameHash": 4028465645,
+        "descHash": 4029622747
       },
       {
-        "nameHash": 3414124565,
-        "descHash": 3074893395
+        "nameHash": 1914527421,
+        "descHash": 2521602571
       }
     ]
   },
   {
-    "id": 10000056,
-    "weaponType": "bow",
-    "titleHash": 2295939930,
-    "detailHash": 3576556674,
-    "constellationHash": 912981282,
-    "rarity": 4,
-    "vision": "electro",
-    "nameId": "kujou_sara",
-    "nameHash": 1483922610,
-    "descHash": 148777793,
+    "id": 10000051,
+    "weaponType": "claymore",
+    "titleHash": 3679187618,
+    "detailHash": 87994090,
+    "constellationHash": 2912362594,
+    "rarity": 5,
+    "vision": "cryo",
+    "nameId": "eula",
+    "nameHash": 3717667418,
+    "descHash": 490802649,
     "constellations": [
       {
-        "nameHash": 2730852953,
-        "descHash": 2966673567
+        "nameHash": 1401913601,
+        "descHash": 1142115463
       },
       {
-        "nameHash": 828426713,
-        "descHash": 3371927015
+        "nameHash": 4116602505,
+        "descHash": 2873233407
       },
       {
-        "nameHash": 847916265,
-        "descHash": 1002234751
+        "nameHash": 4017023737,
+        "descHash": 3953679079
       },
       {
-        "nameHash": 4283074321,
-        "descHash": 3556395063
+        "nameHash": 260126841,
+        "descHash": 2211149663
       },
       {
-        "nameHash": 747301089,
-        "descHash": 3457909759
+        "nameHash": 3295716345,
+        "descHash": 4202659807
       },
       {
-        "nameHash": 165492609,
-        "descHash": 3985105143
+        "nameHash": 1963500825,
+        "descHash": 658737255
       }
     ],
     "energySkill": {
-      "nameHash": 2275338309,
-      "descHash": 1189895712
+      "nameHash": 3521320029,
+      "descHash": 569748832
     },
     "skills": [
       {
-        "nameHash": 1547762373,
-        "descHash": 4139104344
+        "nameHash": 242311157,
+        "descHash": 1500184616
       },
       {
-        "nameHash": 2752568269,
-        "descHash": 4167203120
+        "nameHash": 741315613,
+        "descHash": 1769739528
       }
     ],
     "passives": [
       {
-        "nameHash": 3514401477,
-        "descHash": 701827235
+        "nameHash": 1425537069,
+        "descHash": 2607513067
       },
       {
-        "nameHash": 2365582789,
-        "descHash": 138769971
+        "nameHash": 1966610773,
+        "descHash": 236148939
       },
       {
-        "nameHash": 3504701645,
-        "descHash": 3436263651
+        "nameHash": 4003186445,
+        "descHash": 2270889547
       }
     ]
   },
@@ -2580,6 +2448,72 @@ const characterInfo = [
       {
         "nameHash": 3357434469,
         "descHash": 2267129547
+      }
+    ]
+  },
+  {
+    "id": 10000053,
+    "weaponType": "claymore",
+    "titleHash": 1757728074,
+    "detailHash": 4079111402,
+    "constellationHash": 3872411226,
+    "rarity": 4,
+    "vision": "anemo",
+    "nameId": "sayu",
+    "nameHash": 2388785242,
+    "descHash": 3029516969,
+    "constellations": [
+      {
+        "nameHash": 1959569841,
+        "descHash": 443786623
+      },
+      {
+        "nameHash": 2759348737,
+        "descHash": 2039052767
+      },
+      {
+        "nameHash": 1035025377,
+        "descHash": 2151111671
+      },
+      {
+        "nameHash": 3582154129,
+        "descHash": 2015470223
+      },
+      {
+        "nameHash": 4066463977,
+        "descHash": 3761904935
+      },
+      {
+        "nameHash": 3913839841,
+        "descHash": 3551240383
+      }
+    ],
+    "energySkill": {
+      "nameHash": 3632447629,
+      "descHash": 2950233224
+    },
+    "skills": [
+      {
+        "nameHash": 1631640581,
+        "descHash": 1904361664
+      },
+      {
+        "nameHash": 866970125,
+        "descHash": 2361803880
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 1284587621,
+        "descHash": 1766003643
+      },
+      {
+        "nameHash": 3662642061,
+        "descHash": 3244306483
+      },
+      {
+        "nameHash": 1990554101,
+        "descHash": 356439491
       }
     ]
   },
@@ -2654,72 +2588,6 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000050,
-    "weaponType": "polearm",
-    "titleHash": 2157757826,
-    "detailHash": 3621848770,
-    "constellationHash": 2749427906,
-    "rarity": 4,
-    "vision": "pyro",
-    "nameId": "thoma",
-    "nameHash": 3555115602,
-    "descHash": 3062484009,
-    "constellations": [
-      {
-        "nameHash": 288006665,
-        "descHash": 3077252167
-      },
-      {
-        "nameHash": 4132403369,
-        "descHash": 1866802871
-      },
-      {
-        "nameHash": 2578792073,
-        "descHash": 2167442199
-      },
-      {
-        "nameHash": 1754888249,
-        "descHash": 976028519
-      },
-      {
-        "nameHash": 3609710361,
-        "descHash": 1553651527
-      },
-      {
-        "nameHash": 297689921,
-        "descHash": 2142833663
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3548079181,
-      "descHash": 3214600680
-    },
-    "skills": [
-      {
-        "nameHash": 3651752365,
-        "descHash": 3009612584
-      },
-      {
-        "nameHash": 3732507581,
-        "descHash": 432172712
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2361872037,
-        "descHash": 1069705163
-      },
-      {
-        "nameHash": 4028465645,
-        "descHash": 4029622747
-      },
-      {
-        "nameHash": 1914527421,
-        "descHash": 2521602571
-      }
-    ]
-  },
-  {
     "id": 10000055,
     "weaponType": "bow",
     "titleHash": 1890326034,
@@ -2782,6 +2650,72 @@ const characterInfo = [
       {
         "nameHash": 705002701,
         "descHash": 291298051
+      }
+    ]
+  },
+  {
+    "id": 10000056,
+    "weaponType": "bow",
+    "titleHash": 2295939930,
+    "detailHash": 3576556674,
+    "constellationHash": 912981282,
+    "rarity": 4,
+    "vision": "electro",
+    "nameId": "kujou_sara",
+    "nameHash": 1483922610,
+    "descHash": 148777793,
+    "constellations": [
+      {
+        "nameHash": 2730852953,
+        "descHash": 2966673567
+      },
+      {
+        "nameHash": 828426713,
+        "descHash": 3371927015
+      },
+      {
+        "nameHash": 847916265,
+        "descHash": 1002234751
+      },
+      {
+        "nameHash": 4283074321,
+        "descHash": 3556395063
+      },
+      {
+        "nameHash": 747301089,
+        "descHash": 3457909759
+      },
+      {
+        "nameHash": 165492609,
+        "descHash": 3985105143
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2275338309,
+      "descHash": 1189895712
+    },
+    "skills": [
+      {
+        "nameHash": 1547762373,
+        "descHash": 4139104344
+      },
+      {
+        "nameHash": 2752568269,
+        "descHash": 4167203120
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3514401477,
+        "descHash": 701827235
+      },
+      {
+        "nameHash": 2365582789,
+        "descHash": 138769971
+      },
+      {
+        "nameHash": 3504701645,
+        "descHash": 3436263651
       }
     ]
   },
@@ -2852,138 +2786,6 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000064,
-    "weaponType": "polearm",
-    "titleHash": 1737472474,
-    "detailHash": 2551483266,
-    "constellationHash": 3086360386,
-    "rarity": 4,
-    "vision": "geo",
-    "nameId": "yun_jin",
-    "nameHash": 655825874,
-    "descHash": 4037633993,
-    "constellations": [
-      {
-        "nameHash": 3266663729,
-        "descHash": 196548151
-      },
-      {
-        "nameHash": 3949157249,
-        "descHash": 1258924591
-      },
-      {
-        "nameHash": 3536888569,
-        "descHash": 26925591
-      },
-      {
-        "nameHash": 2785617601,
-        "descHash": 2804375063
-      },
-      {
-        "nameHash": 1985942201,
-        "descHash": 1265824527
-      },
-      {
-        "nameHash": 2696040833,
-        "descHash": 3355249799
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3248431565,
-      "descHash": 1997720160
-    },
-    "skills": [
-      {
-        "nameHash": 4286587805,
-        "descHash": 1810789288
-      },
-      {
-        "nameHash": 2178272253,
-        "descHash": 1567883432
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2061261821,
-        "descHash": 1764840187
-      },
-      {
-        "nameHash": 1468378453,
-        "descHash": 3288929659
-      },
-      {
-        "nameHash": 773398885,
-        "descHash": 1415116931
-      }
-    ]
-  },
-  {
-    "id": 10000063,
-    "weaponType": "polearm",
-    "titleHash": 1527983530,
-    "detailHash": 1428853842,
-    "constellationHash": 2040902610,
-    "rarity": 5,
-    "vision": "cryo",
-    "nameId": "shenhe",
-    "nameHash": 334242634,
-    "descHash": 373064729,
-    "constellations": [
-      {
-        "nameHash": 4149849577,
-        "descHash": 1344815239
-      },
-      {
-        "nameHash": 865989105,
-        "descHash": 626517111
-      },
-      {
-        "nameHash": 1441248001,
-        "descHash": 552199
-      },
-      {
-        "nameHash": 2316341393,
-        "descHash": 3717716927
-      },
-      {
-        "nameHash": 2221287353,
-        "descHash": 3627816983
-      },
-      {
-        "nameHash": 1596851281,
-        "descHash": 2857247287
-      }
-    ],
-    "energySkill": {
-      "nameHash": 207401861,
-      "descHash": 1476893920
-    },
-    "skills": [
-      {
-        "nameHash": 2933047013,
-        "descHash": 3127230504
-      },
-      {
-        "nameHash": 3028595085,
-        "descHash": 917615616
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3816902837,
-        "descHash": 1196405195
-      },
-      {
-        "nameHash": 3169168565,
-        "descHash": 2828541003
-      },
-      {
-        "nameHash": 1867531237,
-        "descHash": 3605696435
-      }
-    ]
-  },
-  {
     "id": 10000058,
     "weaponType": "catalyst",
     "titleHash": 1488134754,
@@ -3046,204 +2848,6 @@ const characterInfo = [
       {
         "nameHash": 294064029,
         "descHash": 1058193419
-      }
-    ]
-  },
-  {
-    "id": 10000066,
-    "weaponType": "sword",
-    "titleHash": 448523378,
-    "detailHash": 1492104922,
-    "constellationHash": 3121506370,
-    "rarity": 5,
-    "vision": "hydro",
-    "nameId": "kamisato_ayato",
-    "nameHash": 1588620330,
-    "descHash": 2887592185,
-    "constellations": [
-      {
-        "nameHash": 2715418569,
-        "descHash": 501879071
-      },
-      {
-        "nameHash": 4259062785,
-        "descHash": 3191408815
-      },
-      {
-        "nameHash": 2402833929,
-        "descHash": 893583671
-      },
-      {
-        "nameHash": 517644137,
-        "descHash": 1916995439
-      },
-      {
-        "nameHash": 993707681,
-        "descHash": 2541322175
-      },
-      {
-        "nameHash": 1168376425,
-        "descHash": 2267009151
-      }
-    ],
-    "energySkill": {
-      "nameHash": 2907386981,
-      "descHash": 993012864
-    },
-    "skills": [
-      {
-        "nameHash": 3116393605,
-        "descHash": 3145153016
-      },
-      {
-        "nameHash": 856237685,
-        "descHash": 64942672
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3736274925,
-        "descHash": 2546406659
-      },
-      {
-        "nameHash": 8289349,
-        "descHash": 1701064667
-      },
-      {
-        "nameHash": 1590740317,
-        "descHash": 720429075
-      }
-    ]
-  },
-  {
-    "id": 10000060,
-    "weaponType": "bow",
-    "titleHash": 144441626,
-    "detailHash": 2989616018,
-    "constellationHash": 1929498690,
-    "rarity": 5,
-    "vision": "hydro",
-    "nameId": "yelan",
-    "nameHash": 2848374378,
-    "descHash": 2689854257,
-    "constellations": [
-      {
-        "nameHash": 748294089,
-        "descHash": 3598001479
-      },
-      {
-        "nameHash": 1030894625,
-        "descHash": 1733458319
-      },
-      {
-        "nameHash": 2703450625,
-        "descHash": 887338575
-      },
-      {
-        "nameHash": 2029790617,
-        "descHash": 2426727055
-      },
-      {
-        "nameHash": 2362082321,
-        "descHash": 2488367639
-      },
-      {
-        "nameHash": 1272265729,
-        "descHash": 824672567
-      }
-    ],
-    "energySkill": {
-      "nameHash": 4098371861,
-      "descHash": 1896068072
-    },
-    "skills": [
-      {
-        "nameHash": 1713742645,
-        "descHash": 2537126376
-      },
-      {
-        "nameHash": 890827533,
-        "descHash": 1089734336
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2010349533,
-        "descHash": 3218137499
-      },
-      {
-        "nameHash": 1181356845,
-        "descHash": 1408090907
-      },
-      {
-        "nameHash": 4230029053,
-        "descHash": 3143097979
-      }
-    ]
-  },
-  {
-    "id": 10000065,
-    "weaponType": "sword",
-    "titleHash": 1098938354,
-    "detailHash": 1310009266,
-    "constellationHash": 1722980498,
-    "rarity": 4,
-    "vision": "electro",
-    "nameId": "kuki_shinobu",
-    "nameHash": 1940821986,
-    "descHash": 738455441,
-    "constellations": [
-      {
-        "nameHash": 3845919769,
-        "descHash": 248122007
-      },
-      {
-        "nameHash": 1476645953,
-        "descHash": 1650156031
-      },
-      {
-        "nameHash": 969784713,
-        "descHash": 1031038967
-      },
-      {
-        "nameHash": 1870557153,
-        "descHash": 1847218111
-      },
-      {
-        "nameHash": 2031120145,
-        "descHash": 70909911
-      },
-      {
-        "nameHash": 856483153,
-        "descHash": 3252448839
-      }
-    ],
-    "energySkill": {
-      "nameHash": 1690703909,
-      "descHash": 3065150096
-    },
-    "skills": [
-      {
-        "nameHash": 2013854373,
-        "descHash": 3593456928
-      },
-      {
-        "nameHash": 1345666909,
-        "descHash": 4080904480
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 98541941,
-        "descHash": 3324442635
-      },
-      {
-        "nameHash": 2905492469,
-        "descHash": 2362024107
-      },
-      {
-        "nameHash": 345260181,
-        "descHash": 1072782803
       }
     ]
   },
@@ -3314,6 +2918,468 @@ const characterInfo = [
     ]
   },
   {
+    "id": 10000060,
+    "weaponType": "bow",
+    "titleHash": 144441626,
+    "detailHash": 2989616018,
+    "constellationHash": 1929498690,
+    "rarity": 5,
+    "vision": "hydro",
+    "nameId": "yelan",
+    "nameHash": 2848374378,
+    "descHash": 2689854257,
+    "constellations": [
+      {
+        "nameHash": 748294089,
+        "descHash": 3598001479
+      },
+      {
+        "nameHash": 1030894625,
+        "descHash": 1733458319
+      },
+      {
+        "nameHash": 2703450625,
+        "descHash": 887338575
+      },
+      {
+        "nameHash": 2029790617,
+        "descHash": 2426727055
+      },
+      {
+        "nameHash": 2362082321,
+        "descHash": 2488367639
+      },
+      {
+        "nameHash": 1272265729,
+        "descHash": 824672567
+      }
+    ],
+    "energySkill": {
+      "nameHash": 4098371861,
+      "descHash": 1896068072
+    },
+    "skills": [
+      {
+        "nameHash": 1713742645,
+        "descHash": 2537126376
+      },
+      {
+        "nameHash": 890827533,
+        "descHash": 1089734336
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 2010349533,
+        "descHash": 3218137499
+      },
+      {
+        "nameHash": 1181356845,
+        "descHash": 1408090907
+      },
+      {
+        "nameHash": 4230029053,
+        "descHash": 3143097979
+      }
+    ]
+  },
+  {
+    "id": 10000061,
+    "weaponType": "sword",
+    "titleHash": 3294635634,
+    "detailHash": 882707162,
+    "constellationHash": 1610912066,
+    "rarity": 4,
+    "vision": "dendro",
+    "nameId": "kirara",
+    "nameHash": 1456643042,
+    "descHash": 3108007489,
+    "constellations": [
+      {
+        "nameHash": 3502158873,
+        "descHash": 1368346599
+      },
+      {
+        "nameHash": 3954516065,
+        "descHash": 2538080919
+      },
+      {
+        "nameHash": 3397892401,
+        "descHash": 3218345863
+      },
+      {
+        "nameHash": 3551684865,
+        "descHash": 2912087495
+      },
+      {
+        "nameHash": 34942769,
+        "descHash": 2975759831
+      },
+      {
+        "nameHash": 2439940993,
+        "descHash": 335597623
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2543392221,
+      "descHash": 2438885328
+    },
+    "skills": [
+      {
+        "nameHash": 2089915453,
+        "descHash": 288912712
+      },
+      {
+        "nameHash": 3512914781,
+        "descHash": 2238189056
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 4017209669,
+        "descHash": 4023198939
+      },
+      {
+        "nameHash": 2101970181,
+        "descHash": 2938529283
+      },
+      {
+        "nameHash": 3092482013,
+        "descHash": 1887945779
+      }
+    ]
+  },
+  {
+    "id": 10000062,
+    "weaponType": "bow",
+    "titleHash": 3657688538,
+    "detailHash": 2522784722,
+    "constellationHash": 1620998442,
+    "rarity": 4,
+    "vision": "cryo",
+    "nameId": "aloy",
+    "nameHash": 3689108098,
+    "descHash": 2468599457,
+    "constellations": [
+      {
+        "nameHash": 1426348289,
+        "descHash": 4200726279
+      },
+      {
+        "nameHash": 3468411401,
+        "descHash": 1371842791
+      },
+      {
+        "nameHash": 2621661209,
+        "descHash": 873529775
+      },
+      {
+        "nameHash": 890048705,
+        "descHash": 2073552343
+      },
+      {
+        "nameHash": 2013072401,
+        "descHash": 554591055
+      },
+      {
+        "nameHash": 3578739209,
+        "descHash": 1335613687
+      }
+    ],
+    "energySkill": {
+      "nameHash": 902219717,
+      "descHash": 3360208896
+    },
+    "skills": [
+      {
+        "nameHash": 2994648485,
+        "descHash": 3151277984
+      },
+      {
+        "nameHash": 1871687965,
+        "descHash": 647988592
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 523305877,
+        "descHash": 3940970907
+      },
+      {
+        "nameHash": 433318997,
+        "descHash": 4257487235
+      },
+      {
+        "nameHash": 3414124565,
+        "descHash": 3074893395
+      }
+    ]
+  },
+  {
+    "id": 10000063,
+    "weaponType": "polearm",
+    "titleHash": 1527983530,
+    "detailHash": 1428853842,
+    "constellationHash": 2040902610,
+    "rarity": 5,
+    "vision": "cryo",
+    "nameId": "shenhe",
+    "nameHash": 334242634,
+    "descHash": 373064729,
+    "constellations": [
+      {
+        "nameHash": 4149849577,
+        "descHash": 1344815239
+      },
+      {
+        "nameHash": 865989105,
+        "descHash": 626517111
+      },
+      {
+        "nameHash": 1441248001,
+        "descHash": 552199
+      },
+      {
+        "nameHash": 2316341393,
+        "descHash": 3717716927
+      },
+      {
+        "nameHash": 2221287353,
+        "descHash": 3627816983
+      },
+      {
+        "nameHash": 1596851281,
+        "descHash": 2857247287
+      }
+    ],
+    "energySkill": {
+      "nameHash": 207401861,
+      "descHash": 1476893920
+    },
+    "skills": [
+      {
+        "nameHash": 2933047013,
+        "descHash": 3127230504
+      },
+      {
+        "nameHash": 3028595085,
+        "descHash": 917615616
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3816902837,
+        "descHash": 1196405195
+      },
+      {
+        "nameHash": 3169168565,
+        "descHash": 2828541003
+      },
+      {
+        "nameHash": 1867531237,
+        "descHash": 3605696435
+      }
+    ]
+  },
+  {
+    "id": 10000064,
+    "weaponType": "polearm",
+    "titleHash": 1737472474,
+    "detailHash": 2551483266,
+    "constellationHash": 3086360386,
+    "rarity": 4,
+    "vision": "geo",
+    "nameId": "yun_jin",
+    "nameHash": 655825874,
+    "descHash": 4037633993,
+    "constellations": [
+      {
+        "nameHash": 3266663729,
+        "descHash": 196548151
+      },
+      {
+        "nameHash": 3949157249,
+        "descHash": 1258924591
+      },
+      {
+        "nameHash": 3536888569,
+        "descHash": 26925591
+      },
+      {
+        "nameHash": 2785617601,
+        "descHash": 2804375063
+      },
+      {
+        "nameHash": 1985942201,
+        "descHash": 1265824527
+      },
+      {
+        "nameHash": 2696040833,
+        "descHash": 3355249799
+      }
+    ],
+    "energySkill": {
+      "nameHash": 3248431565,
+      "descHash": 1997720160
+    },
+    "skills": [
+      {
+        "nameHash": 4286587805,
+        "descHash": 1810789288
+      },
+      {
+        "nameHash": 2178272253,
+        "descHash": 1567883432
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 2061261821,
+        "descHash": 1764840187
+      },
+      {
+        "nameHash": 1468378453,
+        "descHash": 3288929659
+      },
+      {
+        "nameHash": 773398885,
+        "descHash": 1415116931
+      }
+    ]
+  },
+  {
+    "id": 10000065,
+    "weaponType": "sword",
+    "titleHash": 1098938354,
+    "detailHash": 1310009266,
+    "constellationHash": 1722980498,
+    "rarity": 4,
+    "vision": "electro",
+    "nameId": "kuki_shinobu",
+    "nameHash": 1940821986,
+    "descHash": 738455441,
+    "constellations": [
+      {
+        "nameHash": 3845919769,
+        "descHash": 248122007
+      },
+      {
+        "nameHash": 1476645953,
+        "descHash": 1650156031
+      },
+      {
+        "nameHash": 969784713,
+        "descHash": 1031038967
+      },
+      {
+        "nameHash": 1870557153,
+        "descHash": 1847218111
+      },
+      {
+        "nameHash": 2031120145,
+        "descHash": 70909911
+      },
+      {
+        "nameHash": 856483153,
+        "descHash": 3252448839
+      }
+    ],
+    "energySkill": {
+      "nameHash": 1690703909,
+      "descHash": 3065150096
+    },
+    "skills": [
+      {
+        "nameHash": 2013854373,
+        "descHash": 3593456928
+      },
+      {
+        "nameHash": 1345666909,
+        "descHash": 4080904480
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 98541941,
+        "descHash": 3324442635
+      },
+      {
+        "nameHash": 2905492469,
+        "descHash": 2362024107
+      },
+      {
+        "nameHash": 345260181,
+        "descHash": 1072782803
+      }
+    ]
+  },
+  {
+    "id": 10000066,
+    "weaponType": "sword",
+    "titleHash": 448523378,
+    "detailHash": 1492104922,
+    "constellationHash": 3121506370,
+    "rarity": 5,
+    "vision": "hydro",
+    "nameId": "kamisato_ayato",
+    "nameHash": 1588620330,
+    "descHash": 2887592185,
+    "constellations": [
+      {
+        "nameHash": 2715418569,
+        "descHash": 501879071
+      },
+      {
+        "nameHash": 4259062785,
+        "descHash": 3191408815
+      },
+      {
+        "nameHash": 2402833929,
+        "descHash": 893583671
+      },
+      {
+        "nameHash": 517644137,
+        "descHash": 1916995439
+      },
+      {
+        "nameHash": 993707681,
+        "descHash": 2541322175
+      },
+      {
+        "nameHash": 1168376425,
+        "descHash": 2267009151
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2907386981,
+      "descHash": 993012864
+    },
+    "skills": [
+      {
+        "nameHash": 3116393605,
+        "descHash": 3145153016
+      },
+      {
+        "nameHash": 856237685,
+        "descHash": 64942672
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3736274925,
+        "descHash": 2546406659
+      },
+      {
+        "nameHash": 8289349,
+        "descHash": 1701064667
+      },
+      {
+        "nameHash": 1590740317,
+        "descHash": 720429075
+      }
+    ]
+  },
+  {
     "id": 10000067,
     "weaponType": "bow",
     "titleHash": 3714185090,
@@ -3376,72 +3442,6 @@ const characterInfo = [
       {
         "nameHash": 3064942109,
         "descHash": 1937602267
-      }
-    ]
-  },
-  {
-    "id": 10000069,
-    "weaponType": "bow",
-    "titleHash": 3265594242,
-    "detailHash": 3478695082,
-    "constellationHash": 18086514,
-    "rarity": 5,
-    "vision": "dendro",
-    "nameId": "tighnari",
-    "nameHash": 2506955778,
-    "descHash": 2793013657,
-    "constellations": [
-      {
-        "nameHash": 3505971089,
-        "descHash": 1106096311
-      },
-      {
-        "nameHash": 2309081673,
-        "descHash": 1101606991
-      },
-      {
-        "nameHash": 3708646913,
-        "descHash": 1850244687
-      },
-      {
-        "nameHash": 376580577,
-        "descHash": 1776421039
-      },
-      {
-        "nameHash": 3499024713,
-        "descHash": 2666902391
-      },
-      {
-        "nameHash": 2750929897,
-        "descHash": 2217630895
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3822928381,
-      "descHash": 1756743120
-    },
-    "skills": [
-      {
-        "nameHash": 3409522557,
-        "descHash": 416050040
-      },
-      {
-        "nameHash": 3726986301,
-        "descHash": 3970361016
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 4268651301,
-        "descHash": 2730346547
-      },
-      {
-        "nameHash": 848821669,
-        "descHash": 3888956347
-      },
-      {
-        "nameHash": 704527549,
-        "descHash": 2405982315
       }
     ]
   },
@@ -3512,68 +3512,134 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000072,
-    "weaponType": "polearm",
-    "titleHash": 260307914,
-    "detailHash": 1266475946,
-    "constellationHash": 1078252442,
-    "rarity": 4,
-    "vision": "hydro",
-    "nameId": "candace",
-    "nameHash": 3092975658,
-    "descHash": 369426969,
+    "id": 10000069,
+    "weaponType": "bow",
+    "titleHash": 3265594242,
+    "detailHash": 3478695082,
+    "constellationHash": 18086514,
+    "rarity": 5,
+    "vision": "dendro",
+    "nameId": "tighnari",
+    "nameHash": 2506955778,
+    "descHash": 2793013657,
     "constellations": [
       {
-        "nameHash": 449508113,
-        "descHash": 1938462311
+        "nameHash": 3505971089,
+        "descHash": 1106096311
       },
       {
-        "nameHash": 3442281625,
-        "descHash": 1981457807
+        "nameHash": 2309081673,
+        "descHash": 1101606991
       },
       {
-        "nameHash": 3256412025,
-        "descHash": 3763148479
+        "nameHash": 3708646913,
+        "descHash": 1850244687
       },
       {
-        "nameHash": 984253913,
-        "descHash": 33452751
+        "nameHash": 376580577,
+        "descHash": 1776421039
       },
       {
-        "nameHash": 2382311049,
-        "descHash": 1048738031
+        "nameHash": 3499024713,
+        "descHash": 2666902391
       },
       {
-        "nameHash": 955051961,
-        "descHash": 2921686415
+        "nameHash": 2750929897,
+        "descHash": 2217630895
       }
     ],
     "energySkill": {
-      "nameHash": 2669120029,
-      "descHash": 2300903224
+      "nameHash": 3822928381,
+      "descHash": 1756743120
     },
     "skills": [
       {
-        "nameHash": 2594921261,
-        "descHash": 3352315424
+        "nameHash": 3409522557,
+        "descHash": 416050040
       },
       {
-        "nameHash": 2160740245,
-        "descHash": 2763201128
+        "nameHash": 3726986301,
+        "descHash": 3970361016
       }
     ],
     "passives": [
       {
-        "nameHash": 2824567053,
-        "descHash": 956822595
+        "nameHash": 4268651301,
+        "descHash": 2730346547
       },
       {
-        "nameHash": 997098981,
-        "descHash": 1769542171
+        "nameHash": 848821669,
+        "descHash": 3888956347
       },
       {
-        "nameHash": 3750730405,
-        "descHash": 109186163
+        "nameHash": 704527549,
+        "descHash": 2405982315
+      }
+    ]
+  },
+  {
+    "id": 10000070,
+    "weaponType": "sword",
+    "titleHash": 2558588218,
+    "detailHash": 3517922962,
+    "constellationHash": 4233109642,
+    "rarity": 5,
+    "vision": "hydro",
+    "nameId": "nilou",
+    "nameHash": 3850149970,
+    "descHash": 3126933153,
+    "constellations": [
+      {
+        "nameHash": 3475888113,
+        "descHash": 2661312839
+      },
+      {
+        "nameHash": 318992601,
+        "descHash": 3919673783
+      },
+      {
+        "nameHash": 4083203921,
+        "descHash": 3288808887
+      },
+      {
+        "nameHash": 3019515057,
+        "descHash": 888080927
+      },
+      {
+        "nameHash": 4211988457,
+        "descHash": 4076971143
+      },
+      {
+        "nameHash": 684061273,
+        "descHash": 3861878943
+      }
+    ],
+    "energySkill": {
+      "nameHash": 1967463157,
+      "descHash": 3122656376
+    },
+    "skills": [
+      {
+        "nameHash": 1390577909,
+        "descHash": 1185988448
+      },
+      {
+        "nameHash": 2640547533,
+        "descHash": 3630489128
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 1079985949,
+        "descHash": 2790893747
+      },
+      {
+        "nameHash": 4260729629,
+        "descHash": 174660427
+      },
+      {
+        "nameHash": 746325437,
+        "descHash": 141861795
       }
     ]
   },
@@ -3644,68 +3710,68 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000070,
-    "weaponType": "sword",
-    "titleHash": 2558588218,
-    "detailHash": 3517922962,
-    "constellationHash": 4233109642,
-    "rarity": 5,
+    "id": 10000072,
+    "weaponType": "polearm",
+    "titleHash": 260307914,
+    "detailHash": 1266475946,
+    "constellationHash": 1078252442,
+    "rarity": 4,
     "vision": "hydro",
-    "nameId": "nilou",
-    "nameHash": 3850149970,
-    "descHash": 3126933153,
+    "nameId": "candace",
+    "nameHash": 3092975658,
+    "descHash": 369426969,
     "constellations": [
       {
-        "nameHash": 3475888113,
-        "descHash": 2661312839
+        "nameHash": 449508113,
+        "descHash": 1938462311
       },
       {
-        "nameHash": 318992601,
-        "descHash": 3919673783
+        "nameHash": 3442281625,
+        "descHash": 1981457807
       },
       {
-        "nameHash": 4083203921,
-        "descHash": 3288808887
+        "nameHash": 3256412025,
+        "descHash": 3763148479
       },
       {
-        "nameHash": 3019515057,
-        "descHash": 888080927
+        "nameHash": 984253913,
+        "descHash": 33452751
       },
       {
-        "nameHash": 4211988457,
-        "descHash": 4076971143
+        "nameHash": 2382311049,
+        "descHash": 1048738031
       },
       {
-        "nameHash": 684061273,
-        "descHash": 3861878943
+        "nameHash": 955051961,
+        "descHash": 2921686415
       }
     ],
     "energySkill": {
-      "nameHash": 1967463157,
-      "descHash": 3122656376
+      "nameHash": 2669120029,
+      "descHash": 2300903224
     },
     "skills": [
       {
-        "nameHash": 1390577909,
-        "descHash": 1185988448
+        "nameHash": 2594921261,
+        "descHash": 3352315424
       },
       {
-        "nameHash": 2640547533,
-        "descHash": 3630489128
+        "nameHash": 2160740245,
+        "descHash": 2763201128
       }
     ],
     "passives": [
       {
-        "nameHash": 1079985949,
-        "descHash": 2790893747
+        "nameHash": 2824567053,
+        "descHash": 956822595
       },
       {
-        "nameHash": 4260729629,
-        "descHash": 174660427
+        "nameHash": 997098981,
+        "descHash": 1769542171
       },
       {
-        "nameHash": 746325437,
-        "descHash": 141861795
+        "nameHash": 3750730405,
+        "descHash": 109186163
       }
     ]
   },
@@ -3842,72 +3908,6 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000076,
-    "weaponType": "bow",
-    "titleHash": 2857055778,
-    "detailHash": 3768390994,
-    "constellationHash": 3178353930,
-    "rarity": 4,
-    "vision": "anemo",
-    "nameId": "faruzan",
-    "nameHash": 2387711994,
-    "descHash": 4013065569,
-    "constellations": [
-      {
-        "nameHash": 2013089553,
-        "descHash": 1528960167
-      },
-      {
-        "nameHash": 4140551721,
-        "descHash": 1173832871
-      },
-      {
-        "nameHash": 1613893961,
-        "descHash": 2257513135
-      },
-      {
-        "nameHash": 1099441465,
-        "descHash": 2239791463
-      },
-      {
-        "nameHash": 2879411097,
-        "descHash": 3222950735
-      },
-      {
-        "nameHash": 1813996249,
-        "descHash": 2194389751
-      }
-    ],
-    "energySkill": {
-      "nameHash": 2294046741,
-      "descHash": 3288766632
-    },
-    "skills": [
-      {
-        "nameHash": 47732325,
-        "descHash": 4233673024
-      },
-      {
-        "nameHash": 593897829,
-        "descHash": 3487349912
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2949865501,
-        "descHash": 67427819
-      },
-      {
-        "nameHash": 3724169037,
-        "descHash": 2841068683
-      },
-      {
-        "nameHash": 2732974245,
-        "descHash": 494209243
-      }
-    ]
-  },
-  {
     "id": 10000075,
     "weaponType": "catalyst",
     "titleHash": 3790608850,
@@ -3970,6 +3970,72 @@ const characterInfo = [
       {
         "nameHash": 4150377701,
         "descHash": 2518698739
+      }
+    ]
+  },
+  {
+    "id": 10000076,
+    "weaponType": "bow",
+    "titleHash": 2857055778,
+    "detailHash": 3768390994,
+    "constellationHash": 3178353930,
+    "rarity": 4,
+    "vision": "anemo",
+    "nameId": "faruzan",
+    "nameHash": 2387711994,
+    "descHash": 4013065569,
+    "constellations": [
+      {
+        "nameHash": 2013089553,
+        "descHash": 1528960167
+      },
+      {
+        "nameHash": 4140551721,
+        "descHash": 1173832871
+      },
+      {
+        "nameHash": 1613893961,
+        "descHash": 2257513135
+      },
+      {
+        "nameHash": 1099441465,
+        "descHash": 2239791463
+      },
+      {
+        "nameHash": 2879411097,
+        "descHash": 3222950735
+      },
+      {
+        "nameHash": 1813996249,
+        "descHash": 2194389751
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2294046741,
+      "descHash": 3288766632
+    },
+    "skills": [
+      {
+        "nameHash": 47732325,
+        "descHash": 4233673024
+      },
+      {
+        "nameHash": 593897829,
+        "descHash": 3487349912
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 2949865501,
+        "descHash": 67427819
+      },
+      {
+        "nameHash": 3724169037,
+        "descHash": 2841068683
+      },
+      {
+        "nameHash": 2732974245,
+        "descHash": 494209243
       }
     ]
   },
@@ -4370,72 +4436,6 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000061,
-    "weaponType": "sword",
-    "titleHash": 3294635634,
-    "detailHash": 882707162,
-    "constellationHash": 1610912066,
-    "rarity": 4,
-    "vision": "dendro",
-    "nameId": "kirara",
-    "nameHash": 1456643042,
-    "descHash": 3108007489,
-    "constellations": [
-      {
-        "nameHash": 3502158873,
-        "descHash": 1368346599
-      },
-      {
-        "nameHash": 3954516065,
-        "descHash": 2538080919
-      },
-      {
-        "nameHash": 3397892401,
-        "descHash": 3218345863
-      },
-      {
-        "nameHash": 3551684865,
-        "descHash": 2912087495
-      },
-      {
-        "nameHash": 34942769,
-        "descHash": 2975759831
-      },
-      {
-        "nameHash": 2439940993,
-        "descHash": 335597623
-      }
-    ],
-    "energySkill": {
-      "nameHash": 2543392221,
-      "descHash": 2438885328
-    },
-    "skills": [
-      {
-        "nameHash": 2089915453,
-        "descHash": 288912712
-      },
-      {
-        "nameHash": 3512914781,
-        "descHash": 2238189056
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 4017209669,
-        "descHash": 4023198939
-      },
-      {
-        "nameHash": 2101970181,
-        "descHash": 2938529283
-      },
-      {
-        "nameHash": 3092482013,
-        "descHash": 1887945779
-      }
-    ]
-  },
-  {
     "id": 10000083,
     "weaponType": "sword",
     "titleHash": 1033214146,
@@ -4634,72 +4634,6 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000087,
-    "weaponType": "catalyst",
-    "titleHash": 129466210,
-    "detailHash": 3392552986,
-    "constellationHash": 3286900818,
-    "rarity": 5,
-    "vision": "hydro",
-    "nameId": "neuvillette",
-    "nameHash": 1504902330,
-    "descHash": 3918027945,
-    "constellations": [
-      {
-        "nameHash": 3840366369,
-        "descHash": 1228355591
-      },
-      {
-        "nameHash": 2437610633,
-        "descHash": 3291076927
-      },
-      {
-        "nameHash": 2720290529,
-        "descHash": 2622238719
-      },
-      {
-        "nameHash": 1561601289,
-        "descHash": 3253387287
-      },
-      {
-        "nameHash": 4222513497,
-        "descHash": 3167903271
-      },
-      {
-        "nameHash": 1739750817,
-        "descHash": 2954032279
-      }
-    ],
-    "energySkill": {
-      "nameHash": 2195272997,
-      "descHash": 3656534880
-    },
-    "skills": [
-      {
-        "nameHash": 2288777957,
-        "descHash": 2402676976
-      },
-      {
-        "nameHash": 3874529309,
-        "descHash": 1570362832
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 3686583445,
-        "descHash": 616645987
-      },
-      {
-        "nameHash": 2519986829,
-        "descHash": 2736917675
-      },
-      {
-        "nameHash": 2693276525,
-        "descHash": 632427675
-      }
-    ]
-  },
-  {
     "id": 10000086,
     "weaponType": "catalyst",
     "titleHash": 1614804522,
@@ -4762,6 +4696,72 @@ const characterInfo = [
       {
         "nameHash": 1753732789,
         "descHash": 408336923
+      }
+    ]
+  },
+  {
+    "id": 10000087,
+    "weaponType": "catalyst",
+    "titleHash": 129466210,
+    "detailHash": 3392552986,
+    "constellationHash": 3286900818,
+    "rarity": 5,
+    "vision": "hydro",
+    "nameId": "neuvillette",
+    "nameHash": 1504902330,
+    "descHash": 3918027945,
+    "constellations": [
+      {
+        "nameHash": 3840366369,
+        "descHash": 1228355591
+      },
+      {
+        "nameHash": 2437610633,
+        "descHash": 3291076927
+      },
+      {
+        "nameHash": 2720290529,
+        "descHash": 2622238719
+      },
+      {
+        "nameHash": 1561601289,
+        "descHash": 3253387287
+      },
+      {
+        "nameHash": 4222513497,
+        "descHash": 3167903271
+      },
+      {
+        "nameHash": 1739750817,
+        "descHash": 2954032279
+      }
+    ],
+    "energySkill": {
+      "nameHash": 2195272997,
+      "descHash": 3656534880
+    },
+    "skills": [
+      {
+        "nameHash": 2288777957,
+        "descHash": 2402676976
+      },
+      {
+        "nameHash": 3874529309,
+        "descHash": 1570362832
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 3686583445,
+        "descHash": 616645987
+      },
+      {
+        "nameHash": 2519986829,
+        "descHash": 2736917675
+      },
+      {
+        "nameHash": 2693276525,
+        "descHash": 632427675
       }
     ]
   },
@@ -4898,72 +4898,6 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000091,
-    "weaponType": "claymore",
-    "titleHash": 2673266866,
-    "detailHash": 3521032186,
-    "constellationHash": 785421794,
-    "rarity": 5,
-    "vision": "geo",
-    "nameId": "navia",
-    "nameHash": 2877588578,
-    "descHash": 251470345,
-    "constellations": [
-      {
-        "nameHash": 3689024969,
-        "descHash": 1833391103
-      },
-      {
-        "nameHash": 4246729273,
-        "descHash": 3824009927
-      },
-      {
-        "nameHash": 4008218041,
-        "descHash": 3410355711
-      },
-      {
-        "nameHash": 3461445297,
-        "descHash": 601633783
-      },
-      {
-        "nameHash": 3983244161,
-        "descHash": 2676785151
-      },
-      {
-        "nameHash": 4110233153,
-        "descHash": 2381304071
-      }
-    ],
-    "energySkill": {
-      "nameHash": 3301203725,
-      "descHash": 519817776
-    },
-    "skills": [
-      {
-        "nameHash": 2696840005,
-        "descHash": 1654915064
-      },
-      {
-        "nameHash": 4005542485,
-        "descHash": 1529102704
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 610153453,
-        "descHash": 1457246011
-      },
-      {
-        "nameHash": 1794143765,
-        "descHash": 224154643
-      },
-      {
-        "nameHash": 438270701,
-        "descHash": 3514609507
-      }
-    ]
-  },
-  {
     "id": 10000090,
     "weaponType": "polearm",
     "titleHash": 2576986026,
@@ -5026,6 +4960,72 @@ const characterInfo = [
       {
         "nameHash": 281288237,
         "descHash": 3695857659
+      }
+    ]
+  },
+  {
+    "id": 10000091,
+    "weaponType": "claymore",
+    "titleHash": 2673266866,
+    "detailHash": 3521032186,
+    "constellationHash": 785421794,
+    "rarity": 5,
+    "vision": "geo",
+    "nameId": "navia",
+    "nameHash": 2877588578,
+    "descHash": 251470345,
+    "constellations": [
+      {
+        "nameHash": 3689024969,
+        "descHash": 1833391103
+      },
+      {
+        "nameHash": 4246729273,
+        "descHash": 3824009927
+      },
+      {
+        "nameHash": 4008218041,
+        "descHash": 3410355711
+      },
+      {
+        "nameHash": 3461445297,
+        "descHash": 601633783
+      },
+      {
+        "nameHash": 3983244161,
+        "descHash": 2676785151
+      },
+      {
+        "nameHash": 4110233153,
+        "descHash": 2381304071
+      }
+    ],
+    "energySkill": {
+      "nameHash": 3301203725,
+      "descHash": 519817776
+    },
+    "skills": [
+      {
+        "nameHash": 2696840005,
+        "descHash": 1654915064
+      },
+      {
+        "nameHash": 4005542485,
+        "descHash": 1529102704
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 610153453,
+        "descHash": 1457246011
+      },
+      {
+        "nameHash": 1794143765,
+        "descHash": 224154643
+      },
+      {
+        "nameHash": 438270701,
+        "descHash": 3514609507
       }
     ]
   },
@@ -5228,6 +5228,72 @@ const characterInfo = [
     ]
   },
   {
+    "id": 10000095,
+    "weaponType": "bow",
+    "titleHash": 1006607674,
+    "detailHash": 2479226994,
+    "constellationHash": 3701764290,
+    "rarity": 5,
+    "vision": "hydro",
+    "nameId": "sigewinne",
+    "nameHash": 781488962,
+    "descHash": 1746058729,
+    "constellations": [
+      {
+        "nameHash": 2069380665,
+        "descHash": 62042775
+      },
+      {
+        "nameHash": 2490532081,
+        "descHash": 3504124391
+      },
+      {
+        "nameHash": 2818554353,
+        "descHash": 4146947367
+      },
+      {
+        "nameHash": 952229337,
+        "descHash": 2940536535
+      },
+      {
+        "nameHash": 3412453553,
+        "descHash": 1790125943
+      },
+      {
+        "nameHash": 2161046649,
+        "descHash": 2720279207
+      }
+    ],
+    "energySkill": {
+      "nameHash": 35144573,
+      "descHash": 1952003288
+    },
+    "skills": [
+      {
+        "nameHash": 2933818773,
+        "descHash": 2071310448
+      },
+      {
+        "nameHash": 4122008677,
+        "descHash": 2707021480
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 1653891701,
+        "descHash": 1747985019
+      },
+      {
+        "nameHash": 3692863445,
+        "descHash": 2473339683
+      },
+      {
+        "nameHash": 2759902629,
+        "descHash": 2591230947
+      }
+    ]
+  },
+  {
     "id": 10000096,
     "weaponType": "polearm",
     "titleHash": 3049476050,
@@ -5290,72 +5356,6 @@ const characterInfo = [
       {
         "nameHash": 1874329437,
         "descHash": 936115699
-      }
-    ]
-  },
-  {
-    "id": 10000098,
-    "weaponType": "sword",
-    "titleHash": 2204666066,
-    "detailHash": 3607804282,
-    "constellationHash": 3930517194,
-    "rarity": 5,
-    "vision": "electro",
-    "nameId": "clorinde",
-    "nameHash": 2745369298,
-    "descHash": 3165106529,
-    "constellations": [
-      {
-        "nameHash": 3895585233,
-        "descHash": 1687782079
-      },
-      {
-        "nameHash": 1056604337,
-        "descHash": 3535418991
-      },
-      {
-        "nameHash": 808249241,
-        "descHash": 2013066655
-      },
-      {
-        "nameHash": 3782829777,
-        "descHash": 2706606543
-      },
-      {
-        "nameHash": 2786589217,
-        "descHash": 2982049503
-      },
-      {
-        "nameHash": 2154723033,
-        "descHash": 3835955255
-      }
-    ],
-    "energySkill": {
-      "nameHash": 2680644485,
-      "descHash": 1317936912
-    },
-    "skills": [
-      {
-        "nameHash": 3852547301,
-        "descHash": 170937832
-      },
-      {
-        "nameHash": 2915566557,
-        "descHash": 322812776
-      }
-    ],
-    "passives": [
-      {
-        "nameHash": 2922943605,
-        "descHash": 2183367531
-      },
-      {
-        "nameHash": 1935840165,
-        "descHash": 2086955811
-      },
-      {
-        "nameHash": 994844541,
-        "descHash": 3297764699
       }
     ]
   },
@@ -5426,68 +5426,68 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000095,
-    "weaponType": "bow",
-    "titleHash": 1006607674,
-    "detailHash": 2479226994,
-    "constellationHash": 3701764290,
+    "id": 10000098,
+    "weaponType": "sword",
+    "titleHash": 2204666066,
+    "detailHash": 3607804282,
+    "constellationHash": 3930517194,
     "rarity": 5,
-    "vision": "hydro",
-    "nameId": "sigewinne",
-    "nameHash": 781488962,
-    "descHash": 1746058729,
+    "vision": "electro",
+    "nameId": "clorinde",
+    "nameHash": 2745369298,
+    "descHash": 3165106529,
     "constellations": [
       {
-        "nameHash": 2069380665,
-        "descHash": 62042775
+        "nameHash": 3895585233,
+        "descHash": 1687782079
       },
       {
-        "nameHash": 2490532081,
-        "descHash": 3504124391
+        "nameHash": 1056604337,
+        "descHash": 3535418991
       },
       {
-        "nameHash": 2818554353,
-        "descHash": 4146947367
+        "nameHash": 808249241,
+        "descHash": 2013066655
       },
       {
-        "nameHash": 952229337,
-        "descHash": 2940536535
+        "nameHash": 3782829777,
+        "descHash": 2706606543
       },
       {
-        "nameHash": 3412453553,
-        "descHash": 1790125943
+        "nameHash": 2786589217,
+        "descHash": 2982049503
       },
       {
-        "nameHash": 2161046649,
-        "descHash": 2720279207
+        "nameHash": 2154723033,
+        "descHash": 3835955255
       }
     ],
     "energySkill": {
-      "nameHash": 35144573,
-      "descHash": 1952003288
+      "nameHash": 2680644485,
+      "descHash": 1317936912
     },
     "skills": [
       {
-        "nameHash": 2933818773,
-        "descHash": 2071310448
+        "nameHash": 3852547301,
+        "descHash": 170937832
       },
       {
-        "nameHash": 4122008677,
-        "descHash": 2707021480
+        "nameHash": 2915566557,
+        "descHash": 322812776
       }
     ],
     "passives": [
       {
-        "nameHash": 1653891701,
-        "descHash": 1747985019
+        "nameHash": 2922943605,
+        "descHash": 2183367531
       },
       {
-        "nameHash": 3692863445,
-        "descHash": 2473339683
+        "nameHash": 1935840165,
+        "descHash": 2086955811
       },
       {
-        "nameHash": 2759902629,
-        "descHash": 2591230947
+        "nameHash": 994844541,
+        "descHash": 3297764699
       }
     ]
   },
@@ -5628,6 +5628,76 @@ const characterInfo = [
     ]
   },
   {
+    "id": 10000101,
+    "weaponType": "claymore",
+    "titleHash": 3971938690,
+    "detailHash": 3369230146,
+    "constellationHash": 988403722,
+    "rarity": 5,
+    "vision": "dendro",
+    "nameId": "kinich",
+    "nameHash": 4172712634,
+    "descHash": 279112361,
+    "constellations": [
+      {
+        "nameHash": 1583880905,
+        "descHash": 2148535143
+      },
+      {
+        "nameHash": 2132485057,
+        "descHash": 193919799
+      },
+      {
+        "nameHash": 4288565513,
+        "descHash": 813677743
+      },
+      {
+        "nameHash": 815285033,
+        "descHash": 1290482255
+      },
+      {
+        "nameHash": 1182554297,
+        "descHash": 1617442455
+      },
+      {
+        "nameHash": 981774713,
+        "descHash": 3619914391
+      }
+    ],
+    "energySkill": {
+      "nameHash": 1181453621,
+      "descHash": 2445789712
+    },
+    "skills": [
+      {
+        "nameHash": 535629773,
+        "descHash": 1264932640
+      },
+      {
+        "nameHash": 2146107581,
+        "descHash": 2166306472
+      }
+    ],
+    "passives": [
+      {
+        "nameHash": 941099205,
+        "descHash": 1465446299
+      },
+      {
+        "nameHash": 3419772861,
+        "descHash": 792984923
+      },
+      {
+        "nameHash": 3527544989,
+        "descHash": 2149903347
+      },
+      {
+        "nameHash": 1603240741,
+        "descHash": 2707321883
+      }
+    ]
+  },
+  {
     "id": 10000102,
     "weaponType": "catalyst",
     "titleHash": 2563734330,
@@ -5698,72 +5768,72 @@ const characterInfo = [
     ]
   },
   {
-    "id": 10000101,
-    "weaponType": "claymore",
-    "titleHash": 3971938690,
-    "detailHash": 3369230146,
-    "constellationHash": 988403722,
+    "id": 10000103,
+    "weaponType": "sword",
+    "titleHash": 2460167938,
+    "detailHash": 4022124610,
+    "constellationHash": 2486497690,
     "rarity": 5,
-    "vision": "dendro",
-    "nameId": "kinich",
-    "nameHash": 4172712634,
-    "descHash": 279112361,
+    "vision": "geo",
+    "nameId": "xilonen",
+    "nameHash": 2515292882,
+    "descHash": 2708312545,
     "constellations": [
       {
-        "nameHash": 1583880905,
-        "descHash": 2148535143
+        "nameHash": 440486569,
+        "descHash": 4073543231
       },
       {
-        "nameHash": 2132485057,
-        "descHash": 193919799
+        "nameHash": 1513759721,
+        "descHash": 2110223647
       },
       {
-        "nameHash": 4288565513,
-        "descHash": 813677743
+        "nameHash": 2144038849,
+        "descHash": 3601606127
       },
       {
-        "nameHash": 815285033,
-        "descHash": 1290482255
+        "nameHash": 3939402377,
+        "descHash": 1779334775
       },
       {
-        "nameHash": 1182554297,
-        "descHash": 1617442455
+        "nameHash": 344656665,
+        "descHash": 3810218279
       },
       {
-        "nameHash": 981774713,
-        "descHash": 3619914391
+        "nameHash": 132224481,
+        "descHash": 4289888135
       }
     ],
     "energySkill": {
-      "nameHash": 1181453621,
-      "descHash": 2445789712
+      "nameHash": 3155535173,
+      "descHash": 2246355928
     },
     "skills": [
       {
-        "nameHash": 535629773,
-        "descHash": 1264932640
+        "nameHash": 1335063693,
+        "descHash": 2284081200
       },
       {
-        "nameHash": 2146107581,
-        "descHash": 2166306472
+        "nameHash": 743563437,
+        "descHash": 3703823376
       }
     ],
     "passives": [
       {
-        "nameHash": 941099205,
-        "descHash": 1465446299
+        "nameHash": 2823819941,
+        "descHash": 367126683
       },
       {
-        "nameHash": 3419772861,
-        "descHash": 792984923
+        "nameHash": 3492827813,
+        "descHash": 2419557667
       },
       {
-        "nameHash": 3527544989,
-        "descHash": 2149903347
+        "nameHash": 3681753285,
+        "descHash": 4164895091
       },
       {
-        "nameHash": 1603240741,
-        "descHash": 2707321883
+        "nameHash": 4165601605,
+        "descHash": 3463625755
       }
     ]
   }
