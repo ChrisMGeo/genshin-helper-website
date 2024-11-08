@@ -1071,7 +1071,7 @@ const characterBuilds = [
     "nameId": "gaming",
     "element": "pyro",
     "weapon": "claymore",
-    "notes": "VAPORIZE DPS\nGaming can reliably Vaporize most if not all of his Skill-enhanced Plunge Attacks. This allows him to deal high amounts of damage during his Burst's Wushou state.\n\nRegarding Weapon Choices:\nSerpent Spine: The value of Serpent Spine decreases if it is lower refinements and Gaming cannot maintain stacks with it (i.e. without a shielder).\nRainslasher: At [R5] this weapon is about equal to Redhorn Stonethresher.\nEnergy Recharge Weapons: These weapons gain value the higher Gaming's Energy Requirements are.\n\nRegarding Artifact Choices:\nMarechaussee Hunter (4): This set performs worse if Gaming is [C6] and using a weapon with a Crit Rate secondary stat.\n\nRegarding Talent Priority:\nNormal Attack: Prioritize this over the Burst talent if using [C6] Bennett and/or Xianyun.",
+    "notes": "VAPORIZE DPS\nGaming can reliably Vaporize most if not all of his Skill-enhanced Plunge Attacks. This allows him to deal high amounts of damage during his Burst's Wushou state.\n\nRegarding Weapon Choices:\nFruitful Hook: At [R4+], this weapon is Gaming's best weapon.\nSerpent Spine: The value of Serpent Spine decreases if it is lower refinements and Gaming cannot maintain stacks with it (i.e. without a shielder).\nRainslasher: At [R5] this weapon is about equal to Redhorn Stonethresher.\nEnergy Recharge Weapons: These weapons gain value the higher Gaming's Energy Requirements are.\n\nRegarding Artifact Choices:\nMarechaussee Hunter (4): This set performs worse if Gaming is [C6] and using a weapon with a Crit Rate secondary stat.\n\nRegarding Talent Priority:\nNormal Attack: Prioritize this over the Burst talent if using [C6] Bennett and/or Xianyun.",
     "builds": [
       {
         "name": "VAPORIZE DPS\n✩",
@@ -1083,6 +1083,7 @@ const characterBuilds = [
           "serpent_spine",
           "redhorn_stonethresher",
           "beacon_of_the_reed_sea",
+          "fruitful_hook",
           "wolf_s_gravestone",
           "rainslasher",
           "song_of_broken_pines",
